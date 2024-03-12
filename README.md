@@ -23,5 +23,5 @@ Here are some ideas to get you started:
 <div size='20px'> Hi! My name is Satviky. Thank You for taking the time to view my GitHub Profile :smile: 
 </div>
 
-- 🌱 I’m currently learning UI/UX OR Web Development and Data Structures   
+- 🌱 I’m currently learning UI/UX OR Web Development.
  
