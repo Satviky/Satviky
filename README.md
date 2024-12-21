@@ -18,7 +18,7 @@
 
 ### 📫 How to Reach Me:
 - **Email**: [Satvik Gupta](mailto:satvikgupta050404@gmail.com)
-- **LinkedIn**: [Your LinkedIn](https://www.linkedin.com/in/satvik-g-27bb4a26a/)
+- **LinkedIn**: [Satviky](https://www.linkedin.com/in/satvik-g-27bb4a26a/)
 <!-- - **Portfolio**: [Your Portfolio](https://your-portfolio.com) -->
 
 ---
