@@ -43,12 +43,12 @@
 ---
 
 ### 📈 GitHub Stats:
-![Satviky's GitHub stats](https://github-readme-stats.vercel.app/api?username=your-username&show_icons=true&theme=radical)
+![Satviky's GitHub stats](https://github-readme-stats.vercel.app/api?username=Satviky&show_icons=true&theme=radical)
 
 ---
 
 ### 🌟 Languages:
-![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=your-username&layout=compact&theme=radical)
+![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=Satviky&layout=compact&theme=radical)
 
 ---
 
