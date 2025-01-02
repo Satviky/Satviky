@@ -68,17 +68,9 @@ footer {
     align-items: center;
     padding: 10px;
     width: 99vw;
-    background-color: (var(--footer-bg));
+    background-color: #202020;
 }
 
-.pg-footer{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 10px;
-    width: 99vw;
-    background-color: (var(--footer-bg));
-}
 
 nav a,footer a {
     color: lavender;
