@@ -234,19 +234,35 @@
                 </ul>
             </div>
             <button class="btn btn-dark btn-outline-light" type="button" data-bs-toggle="offcanvas"
-                data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">Know More
+                data-bs-target="#offcanvasProjectRescue" aria-controls="offcanvasProjectRescue">Know More
             </button>
 
-            <div data-bs-theme="dark" class="offcanvas offcanvas-end oc-p" tabindex="-1" id="offcanvasRight"
-                aria-labelledby="offcanvasRightLabel">
+            <div data-bs-theme="dark" class="offcanvas offcanvas-end oc-p" tabindex="-1" id="offcanvasProjectRescue"
+                aria-labelledby="offcanvasProjectRescueLabel">
                 <div class="offcanvas-header">
-                    <h5 class="offcanvas-title" id="offcanvasRightLabel">Project Rescue</h5>
+                    <h5 class="offcanvas-title" id="offcanvasProjectRescueLabel">Project Rescue</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                 </div>
                 <div class="offcanvas-body">
                     <div class="conclusion">
-                        <p>Project Rescue represents a significant achievement in developing a mystery based game for web(prototype), Android and Ios. By utilizing modern web technology along with the story writting and videography, we made this app.</p>
-                        <h4>Hey Achievements</h4>
+                        <p>Project Rescue represents a significant achievement in developing a mystery-based game for
+                            web (prototype), Android, and iOS.</p>
+                        <h4>Key Achievements:</h4>
+                        <ul>
+                            <li><b>Immersive Storyline:</b> Developed an engaging and immersive storyline that
+                                captivates players.</li>
+                            <li><b>Cross-Platform Compatibility:</b> Ensured compatibility across web, Android, and iOS
+                                platforms.</li>
+                            <li><b>Innovative Gameplay:</b> Created unique gameplay mechanics that enhance the player
+                                experience.</li>
+                            <li><b>Visual Appeal:</b> Designed stunning graphics and visual elements to enhance the
+                                game's appeal.</li>
+                        </ul>
+                        <h4>Future Enhancements:</h4>
+                        <p>
+                            We plan to implement real-time multiplayer features, integrate advanced AI for dynamic
+                            storytelling, and enhance graphics to provide a more realistic experience.
+                        </p>
                     </div>
                 </div>
             </div>
@@ -254,38 +270,42 @@
         <div id="ai-companion">
             <h2>AI Companion</h2>
             <p>Yet Another Personal Project, but for students, like me.</p>
+
+            <button class="btn btn-dark btn-outline-light" type="button" data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasFutureAI" aria-controls="offcanvasFutureAI">Know More
+          </button>
+        
+          <div data-bs-theme="dark" class="offcanvas offcanvas-end oc-p" tabindex="-1" id="offcanvasFutureAI"
+            aria-labelledby="offcanvasFutureAILabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasFutureAILabel">Future AI Project</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <div class="conclusion">
+                <p>Placeholder text for Future AI Project. More details will be added here later.</p>
+                <h4>Placeholder Key Achievements:</h4>
+                <ul>
+                  <li><b>Achievement 1:</b> Placeholder for key achievement 1.</li>
+                  <li><b>Achievement 2:</b> Placeholder for key achievement 2.</li>
+                </ul>
+                <h4>Placeholder Future Enhancements:</h4>
+                <p>
+                  Placeholder text for future enhancements. More details will be added here later.
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
     </section>
+
+  
 
 
 </body>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
     </script>
-<script>
-    document.addEventListener('DOMContentLoaded', function () {
-        const links = document.querySelectorAll('.offcanvas .nav-link');
-        links.forEach(link => {
-            link.addEventListener('click', function (event) {
-                const targetId = this.getAttribute('href').substring(1);
-                const targetElement = document.getElementById(targetId);
-                if (targetElement) {
-                    targetElement.scrollIntoView({ behavior: 'smooth' });
-                }
-                const offcanvas = document.querySelector('.offcanvas');
-                const bootstrapOffcanvas = bootstrap.Offcanvas.getInstance(offcanvas);
-                bootstrapOffcanvas.hide();
-            });
-        });
-
-        const offcanvasElement = document.getElementById('offcanvasNavbar');
-        offcanvasElement.addEventListener('hidden.bs.offcanvas', function () {
-            const target = document.querySelector(window.location.hash);
-            if (target) {
-                target.scrollIntoView({ behavior: 'smooth' });
-            }
-        });
-    });
-</script>
 
 </html>
+
