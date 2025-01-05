@@ -29,15 +29,17 @@ app.get('/contact', (req, res) => {
 app.get('/error', (req, res) => {
     res.render('not-found');
 });
-app.get('/humanities', (req, res) => {
-    res.render('hsmc-501');
-});
+
 app.get('/os', (req, res) => {
     res.render('os-s5');
 });
 app.get('/study-plans', (req, res) => {
     res.render('plans');
 });
+
+app.use((req, res) => {
+     res.status(404).render('not-found'); 
+    });
 
 // Start the server
 app.listen(port, () => {
