@@ -36,6 +36,9 @@ app.get('/os', (req, res) => {
 app.get('/study-plans', (req, res) => {
     res.render('plans');
 });
+app.get('/test', (req, res) => {
+    res.render('test');
+});
 
 app.use((req, res) => {
      res.status(404).render('not-found'); 
