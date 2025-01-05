@@ -162,4 +162,8 @@ footer{
         display: none;
     }
 
+    .oc-p{
+        max-width: 95vw;
+    }
+
 }
