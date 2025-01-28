@@ -54,4 +54,4 @@
 
 ### 🎮 Fun Fact:
 - I love gaming and my favorite game is Minecraft!
-- In my free time, I enjoy writing stories and poems.
+- In my free time, I enjoy writing stories, novels and poems.
