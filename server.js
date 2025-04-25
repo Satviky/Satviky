@@ -40,6 +40,10 @@ app.get('/test', (req, res) => {
     res.render('test');
 });
 
+app.get('/lt', (req, res) => {
+    res.render('index');
+});
+
 app.use((req, res) => {
      res.status(404).render('not-found'); 
     });
