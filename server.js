@@ -41,7 +41,7 @@ app.get('/test', (req, res) => {
 });
 
 app.get('/lt', (req, res) => {
-    res.render('index');
+    res.render('lt');
 });
 
 app.use((req, res) => {
