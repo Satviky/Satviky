@@ -96,6 +96,20 @@ button:hover {
     transition: background-color 0.3s ease, color 0.3s ease;
 }
 
+.table {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    grid-auto-rows: minmax(100px, auto);
+  }
+
+  .table > div {
+    border: 2px solid azure;
+    border-radius: 5px;
+    background-color:aliceblue;
+    padding: 1em;
+    color: #202020;
+  }
 
 
 @keyframes fadeIn {
