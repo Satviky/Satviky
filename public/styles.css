@@ -111,8 +111,9 @@ button:hover {
     padding: 1em;
     color: #202020;
   }
-
-
+.table a{
+    color: blueviolet;
+}
 @keyframes fadeIn {
     from {
         opacity: 0;
