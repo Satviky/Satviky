@@ -44,6 +44,14 @@ app.get('/lt', (req, res) => {
     res.render('lt');
 });
 
+app.get('/privacy-policy', (req, res) => {
+    res.render('privacy-policy');
+});
+
+app.get('/ToS', (req, res) => {
+    res.render('tos');
+});
+
 app.use((req, res) => {
      res.status(404).render('not-found'); 
     });
