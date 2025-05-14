@@ -97,7 +97,7 @@ button:hover {
 }
 
 .table {
-    max-width: 400px;
+    max-width: 600px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 10px;
@@ -114,6 +114,7 @@ button:hover {
 .table a{
     color: blueviolet;
 }
+
 @keyframes fadeIn {
     from {
         opacity: 0;
@@ -136,6 +137,7 @@ footer{
     position: fixed;
     bottom: 0;
 }
+
 @media screen and (max-width: 768px) {
     body {
         width: 100%;
