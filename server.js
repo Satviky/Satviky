@@ -20,7 +20,7 @@ app.get('/cv', (req, res) => {
 app.get('/projects', (req, res) => {
     res.render('projects');
 });
-app.get('/ai', (req, res) => {
+app.get('/app', (req, res) => {
     res.render('ai');
 });
 app.get('/contact', (req, res) => {
