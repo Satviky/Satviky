@@ -52,6 +52,10 @@ app.get('/ToS', (req, res) => {
     res.render('tos');
 });
 
+app.get('/shadowveil-studioZ', (req, res) => {
+    res.render('ssz');
+});
+
 app.use((req, res) => {
      res.status(404).render('not-found'); 
     });
