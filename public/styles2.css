@@ -84,4 +84,28 @@ nav div ul{
         display: block;
     }
 
+#toggle-btn {
+    background: none;
+    color: white;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+#nav-menu {
+    list-style: none;
+    padding: 0;
+    display: none;
+}
+
+#nav-menu li {
+    padding: 10px;
+    background: #444;
+}
+
+#nav-menu a {
+    color: white;
+    text-decoration: none;
+}
+
 }
