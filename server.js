@@ -49,6 +49,9 @@ app.get('/ToS', (req, res) => {
 app.get('/shadowveil-studioZ', (req, res) => {
     res.render('ssz');
 });
+app.get('/shadowveil-studioZ/projects', (req, res) => {
+    res.render('ssproj');
+});
 app.get('/shadowveil-studioZ/simplify-goals', (req, res) => {
     res.render('sg');
 });
