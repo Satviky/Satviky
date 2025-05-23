@@ -25,15 +25,63 @@ body {
 }
 
 .logo>img{
-    height: 2em;
-    width:  2em;
+    height: 4em;
+    width:  4em;
+}
+nav{
+    padding:5px;
+    background:#202020
 }
 
-nav,ul{
+nav,nav div ul{
     display:flex;
+    align-items: center;
     justify-content:space-between;
-    align-content:center;
 }
+
 li{
     list-style:none
+}
+
+nav div ul{
+    width:60vw;
+    justify-content:space-between
+}
+
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.fade-in {
+    animation: fadeIn 2s ease-in;
+}
+
+.nav-phone{
+    display: none;
+}
+
+
+
+@media screen and (max-width: 768px) {
+    body {
+        width: 100%;
+        height: 100%;
+        overflow-x: hidden;
+    }
+
+    .no-phone{
+        display: none;
+    }
+
+    .nav-default{
+        display: none;
+    }
+
 }
