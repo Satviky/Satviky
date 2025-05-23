@@ -45,7 +45,6 @@ li{
 
 nav div ul{
     width:60vw;
-    justify-content:space-between
 }
 
 
@@ -63,7 +62,7 @@ nav div ul{
     animation: fadeIn 2s ease-in;
 }
 
-.nav-phone{
+.sc{
     display: none;
 }
 
@@ -80,8 +79,8 @@ nav div ul{
         display: none;
     }
 
-    .nav-default{
-        display: none;
+    .sc{
+        display: block;
     }
 
 }
