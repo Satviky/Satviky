@@ -30,12 +30,6 @@ app.get('/error', (req, res) => {
     res.render('not-found');
 });
 
-app.get('/os', (req, res) => {
-    res.render('os-s5');
-});
-app.get('/study-plans', (req, res) => {
-    res.render('plans');
-});
 app.get('/test', (req, res) => {
     res.render('test');
 });
@@ -54,6 +48,9 @@ app.get('/ToS', (req, res) => {
 
 app.get('/shadowveil-studioZ', (req, res) => {
     res.render('ssz');
+});
+app.get('/shadowveil-studioZ/simplify-goals', (req, res) => {
+    res.render('sg');
 });
 
 app.use((req, res) => {
