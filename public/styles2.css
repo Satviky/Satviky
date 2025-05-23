@@ -28,3 +28,12 @@ body {
     height: 2em;
     width:  2em;
 }
+
+nav,ul{
+    display:flex;
+    justify-content:space-between;
+    align-content:center;
+}
+li{
+    list-style:none
+}
