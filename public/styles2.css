@@ -28,6 +28,7 @@ body {
     height: 4em;
     width:  4em;
 }
+
 nav{
     padding:5px;
     background:#202020
@@ -90,6 +91,8 @@ nav div ul{
     border: none;
     font-size: 20px;
     cursor: pointer;
+    height: 4em;
+    width: 4em;
 }
 
 #nav-menu {
