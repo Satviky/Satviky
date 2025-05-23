@@ -1,0 +1,30 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --bg-color: #353935;
+    --text-color: #f4f4f4;
+    --header-bg: #18121b;
+    --footer-bg: #202020;
+    --link-color: lavender;
+    --button-bg: #333;
+    --button-text: white;
+    --bs-nav-link-color: aliceblue;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    margin: 0;
+    padding: 0;
+    transition: all 1s ease-out;
+}
+
+nav.logo{
+    height: 24px;
+    width: 24px;
+}
