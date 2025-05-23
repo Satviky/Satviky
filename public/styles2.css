@@ -1,4 +1,4 @@
-*{
+* {
     margin: 0;
     padding: 0;
 }
@@ -24,29 +24,30 @@ body {
     transition: all 1s ease-out;
 }
 
-.icon{
+.icon {
     height: 4em;
-    width:  4em;
+    width: 4em;
 }
 
-nav{
-    padding:5px;
-    background:#202020
+nav {
+    padding: 5px;
+    background: #202020
 }
 
-nav,nav div ul{
-    display:flex;
+nav, nav div ul {
+    display: flex;
     align-items: center;
-    justify-content:space-between;
+    justify-content: space-between;
 }
 
-li,li>a{
-    list-style:none;
+li,
+li>a {
+    list-style: none;
     color: var(--link-color);
 }
 
-nav div ul{
-    width:60vw;
+nav div ul {
+    width: 60vw;
 }
 
 
@@ -64,7 +65,7 @@ nav div ul{
     animation: fadeIn 2s ease-in;
 }
 
-.sc{
+.sc {
     display: none;
 }
 
@@ -77,38 +78,38 @@ nav div ul{
         overflow-x: hidden;
     }
 
-    .no-phone{
+    .no-phone {
         display: none;
     }
 
-    .sc{
+    .sc {
         display: block;
     }
 
-#toggle-btn {
-    background: none;
-    color: white;
-    border: none;
-    font-size: 20px;
-    cursor: pointer;
-    height: 4em;
-    width: 4em;
-}
+    #toggle-btn {
+        background: none;
+        color: white;
+        border: none;
+        font-size: 20px;
+        cursor: pointer;
+        height: 4em;
+        width: 4em;
+    }
 
-#nav-menu {
-    list-style: none;
-    padding: 0;
-    display: none;
-}
+    #nav-menu {
+        list-style: none;
+        padding: 0;
+        display: none;
+    }
 
-#nav-menu li {
-    padding: 10px;
-    background: #444;
-}
+    #nav-menu li {
+        padding: 10px;
+        background: #444;
+    }
 
-#nav-menu a {
-    color: white;
-    text-decoration: none;
-}
+    #nav-menu a {
+        color: white;
+        text-decoration: none;
+    }
 
 }
