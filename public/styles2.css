@@ -24,7 +24,7 @@ body {
     transition: all 1s ease-out;
 }
 
-.logo>img{
+.icon{
     height: 4em;
     width:  4em;
 }
