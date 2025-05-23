@@ -39,8 +39,9 @@ nav,nav div ul{
     justify-content:space-between;
 }
 
-li{
-    list-style:none
+li,li>a{
+    list-style:none;
+    color: var(--link-color);
 }
 
 nav div ul{
