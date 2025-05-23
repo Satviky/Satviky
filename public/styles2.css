@@ -69,6 +69,12 @@ nav div ul {
     display: none;
 }
 
+.nbc1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 
 
 @media screen and (max-width: 768px) {
