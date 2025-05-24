@@ -40,7 +40,7 @@ nav {
 }
 
 nav,
-nav div ul {
+nav div ul, .proj-header {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -64,7 +64,7 @@ nav div ul {
 #km {
     margin: 5px;
     padding: 5px;
-    background: #333;
+    background: #1d1a1a;
     color: white;
     border-radius: 5px;
     border: solid #191818
@@ -106,6 +106,9 @@ ul {
 }
 .sl:hover{
     background: lavender;
+    color: #202020;
+}
+.sl>a:hover{
     color: #202020;
 }
 @media screen and (max-width: 768px) {
