@@ -40,7 +40,7 @@ nav {
 }
 
 nav,
-nav div ul, .proj-header {
+nav div ul{
     display: flex;
     align-items: center;
     justify-content: space-between;
