@@ -83,6 +83,13 @@ ul {
     border-radius: 5px;
 }
 
+.msep{
+    height: 1px;
+    width: 100vw;
+    background-color: #202020;
+    opacity: 30%;
+}
+
 @media screen and (max-width: 768px) {
     body {
         width: 100%;
