@@ -104,6 +104,10 @@ ul {
     max-width:fit-content;
     border-radius:5px;
 }
+.sl:hover{
+    background: lavender;
+    color: #202020;
+}
 @media screen and (max-width: 768px) {
     body {
         width: 100%;
