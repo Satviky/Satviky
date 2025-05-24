@@ -55,7 +55,6 @@ nav div ul {
     display: none;
 }
 
-
 #km{
     margin:5px;
     padding: 5px;
@@ -69,7 +68,16 @@ nav div ul {
     background: #18121b;
 }
 
+section,ul{
+    margin: 5px;
+}
 
+.sep{
+    height: 5px;
+    width: 95vw;
+    background-color: whitesmoke;
+    opacity: 50%;
+}
 
 @media screen and (max-width: 768px) {
     body {
