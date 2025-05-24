@@ -44,41 +44,31 @@ li,
 li>a {
     list-style: none;
     color: var(--link-color);
+    text-decoration: none;
 }
 
 nav div ul {
     width: 60vw;
 }
 
-
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-    }
-
-    to {
-        opacity: 1;
-    }
-}
-
-.fade-in {
-    animation: fadeIn 2s ease-in;
-}
-
 .sc {
     display: none;
 }
 
-.km{
+
+#km{
+    margin:5px;
     padding: 5px;
     background: #333;
     color: white;
+    border-radius:5px;
+    border: solid #191818
 }
 
-.km:hover{
+#km:hover{
     background: #18121b;
-    transform: scale(1.2);
 }
+
 
 
 @media screen and (max-width: 768px) {
@@ -125,4 +115,18 @@ nav div ul {
         text-decoration: none;
     }
 
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.fade-in {
+    animation: fadeIn 2s ease-in;
 }
