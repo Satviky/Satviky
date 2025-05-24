@@ -69,6 +69,16 @@ nav div ul {
     display: none;
 }
 
+.km{
+    padding: 5px;
+    background: #333;
+    color: white;
+}
+
+.km:hover{
+    background: #18121b;
+    transform: scale(1.2);
+}
 
 
 @media screen and (max-width: 768px) {
