@@ -34,7 +34,8 @@ nav {
     background: #202020
 }
 
-nav, nav div ul {
+nav,
+nav div ul {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -55,29 +56,31 @@ nav div ul {
     display: none;
 }
 
-#km{
-    margin:5px;
+#km {
+    margin: 5px;
     padding: 5px;
     background: #333;
     color: white;
-    border-radius:5px;
+    border-radius: 5px;
     border: solid #191818
 }
 
-#km:hover{
+#km:hover {
     background: #18121b;
 }
 
-section,ul{
+section,
+ul {
     margin: 5px;
 }
 
-.sep{
-    height: 5px;
-    width: 95vw;
+.sep {
+    height: 3px;
+    width: 99vw;
     background-color: whitesmoke;
     opacity: 50%;
     margin: auto;
+    border-radius: 5px;
 }
 
 @media screen and (max-width: 768px) {
