@@ -174,3 +174,11 @@ ul {
 .fade-in {
     animation: fadeIn 2s ease-in;
 }
+
+.zoom {
+  transition: transform 0.3s ease;
+}
+
+.zoom:hover {
+  transform: scale(1.05);
+}
