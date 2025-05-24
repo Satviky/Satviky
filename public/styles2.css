@@ -24,6 +24,11 @@ body {
     transition: all 1s ease-out;
 }
 
+a{
+    color:aliceblue;
+    text-decoration:none;
+}
+
 .icon {
     height: 4em;
     width: 4em;
@@ -72,6 +77,7 @@ nav div ul {
 section,
 ul {
     margin: 5px;
+    padding:5px;
 }
 
 .sep {
@@ -84,12 +90,20 @@ ul {
 }
 
 .msep{
-    height: 1px;
+    height: 3px;
     width: 100vw;
     background-color: #202020;
     opacity: 30%;
+    margin-top: 5px;
+    margin-bottom: 5px;
 }
-
+.sl{
+    padding:10px;
+    margin:3px;
+    background:black;
+    max-width:fit-content;
+    border-radius:5px;
+}
 @media screen and (max-width: 768px) {
     body {
         width: 100%;
