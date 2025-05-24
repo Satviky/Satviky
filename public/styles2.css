@@ -60,6 +60,11 @@ nav div ul {
 .sc {
     display: none;
 }
+.proj-header {
+    display: flex;
+    align-items: center;
+    width: 60vw;
+}
 
 #km {
     margin: 5px;
