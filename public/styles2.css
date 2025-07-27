@@ -136,6 +136,51 @@ ul {
     color: blueviolet;
 }
 
+.hero-intro {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 2rem;
+  background-color: #fdfdfd;
+  color: #1a1a1a;
+}
+
+.intro-container h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.intro-container p {
+  font-size: 1.1rem;
+  margin: 0.5rem 0;
+}
+
+.scroll-down {
+  margin-top: 2rem;
+  animation: bounce 2s infinite;
+}
+
+.scroll-down span {
+  display: block;
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.scroll-icon {
+  width: 30px;
+  margin-top: 0.3rem;
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
+  40% { transform: translateY(8px); }
+  60% { transform: translateY(4px); }
+}
+
+
 
 @media screen and (max-width: 768px) {
     body {
