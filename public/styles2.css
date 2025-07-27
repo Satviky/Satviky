@@ -176,6 +176,21 @@ ul {
   filter: invert(1);
 }
 
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    width: 100vw;
+    background-color: #202020;
+}
+
+
+nav a,
+footer a {
+    color: lavender;
+}
+
 @keyframes bounce {
   0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
   40% { transform: translateY(8px); }
