@@ -143,7 +143,7 @@ ul {
   justify-content: center;
   text-align: center;
   padding: 2rem;
-  background-color: #656565;
+  background-color: #262626;
   color: #fdfdfd;
 }
 
@@ -161,6 +161,7 @@ ul {
 .scroll-down {
   margin-top: 2rem;
   animation: bounce 2s infinite;
+  color: #b6d1fc;
 }
 
 .scroll-down span {
