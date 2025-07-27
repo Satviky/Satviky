@@ -143,8 +143,8 @@ ul {
   justify-content: center;
   text-align: center;
   padding: 2rem;
-  background-color: #fdfdfd;
-  color: #1a1a1a;
+  background-color: #656565;
+  color: #fdfdfd;
 }
 
 .intro-container h2 {
@@ -172,6 +172,7 @@ ul {
 .scroll-icon {
   width: 30px;
   margin-top: 0.3rem;
+  filter: invert(1);
 }
 
 @keyframes bounce {
