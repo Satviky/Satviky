@@ -38,6 +38,7 @@ app.get('/lt', (req, res) => {
     res.render('lt');
 });
 
+
 app.get('/privacy-policy', (req, res) => {
     res.render('privacy-policy');
 });
@@ -54,6 +55,10 @@ app.get('/shadowveil-studioZ/projects', (req, res) => {
 });
 app.get('/shadowveil-studioZ/simplify-goals', (req, res) => {
     res.render('sg');
+});
+
+app.get('/shadowveil-studioz/lt', (req, res) => {
+    res.render('lk-ssz');
 });
 
 app.use((req, res) => {
