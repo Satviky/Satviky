@@ -61,6 +61,19 @@ app.get('/shadowveil-studioz/lt', (req, res) => {
     res.render('lk-ssz');
 });
 
+app.get('/shadowveil-studioz/lingo', (req, res) => {
+    res.render('lingo');
+});
+
+app.get('/shadowveil-studioz/lingo/privacy-policy', (req, res) => {
+    res.render('lingo-pp');
+});
+app.get('/shadowveil-studioz/lingo/tos', (req, res) => {
+    res.render('lingo-tos');
+});
+
+
+
 app.use((req, res) => {
      res.status(404).render('not-found'); 
     });
