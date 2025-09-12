@@ -14,12 +14,12 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
   <link rel="stylesheet" href="/sayori.css">
 
-  
+
 </head>
 
 <body>
   <!-- Navbar -->
-  <nav class="p-3 mb-2 d-flex justify-content-lg-between align-items-center">
+  <nav class="p-3 mb-2 d-flex justify-content-lg-between align-items-center no-phone">
     <div class="my-name">Sayori</div>
     <div class="nav-default">
       <ul class="nav nav-underline">
@@ -30,6 +30,14 @@
       </ul>
     </div>
   </nav>
+
+  <!-- Navbar -->
+  <nav class="gothic-nav d-flex justify-content-center align-items-center">
+    <a href="/shadowveil-studioz/sayori/privacy-policy" class="nav-icon" title="Privacy Policy">📜</a>
+    <a href="/shadowveil-studioz/sayori/tos" class="nav-icon" title="ToS">⚖️</a>
+    <a href="https://discord.com/invite/VVzrS4JA" target="_blank" class="nav-icon discord-icon" title="Join Discord">💬</a>
+  </nav>
+
 
   <!-- Hero -->
   <header class="text-center py-5" data-aos="fade-down">
@@ -110,28 +118,6 @@
   </div>
 
 
-  <!-- <div class="container my-5" id="discord-widget" data-aos="fade-up">
-    <div class="card text-center p-4 shadow-lg" style="background: linear-gradient(135deg, #111, #1e1e2f);
-              border: 2px solid #ff4d88;
-              border-radius: 16px;
-              color: #f8f9fa;
-              font-family: 'Cinzel Decorative', serif;">
-      <h3 id="server-name" class="fw-bold mb-3">Loading...</h3>
-      <p id="member-count" class="fs-5">Fetching online members...</p>
-      <a id="discord-link" href="#" target="_blank" class="btn btn-lg mt-3" style="background: linear-gradient(90deg, #8b5cf6, #ec4899);
-              border: none;
-              border-radius: 12px;
-              padding: 12px 24px;
-              color: white;
-              font-size: 1.2rem;
-              text-shadow: 0 0 8px rgba(0,0,0,0.8);
-              transition: all 0.3s;">
-        🚀 Join Our Discord
-      </a>
-    </div>
-  </div> -->
-
-
   <!-- Discord Widget -->
   <div class="container my-5" id="discord-widget" data-aos="fade-up">
     <div class="discord-card text-center p-4">
@@ -145,7 +131,7 @@
     </div>
   </div>
 
-  
+
 
   <script>
     async function loadDiscordWidget() {
