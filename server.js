@@ -72,6 +72,10 @@ app.get('/shadowveil-studioz/lingo/tos', (req, res) => {
     res.render('lingo-tos');
 });
 
+app.get('/shadowveil-studioz/sayori', (req, res) => {
+    res.render('sayori');
+});
+
 
 
 app.use((req, res) => {

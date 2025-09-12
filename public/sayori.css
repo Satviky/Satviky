@@ -1,0 +1,225 @@
+/* General Page Aesthetic */
+body {
+  background: linear-gradient(180deg, #0f172a, #1e293b); /* dark blue-gray */
+  color: #e2e8f0; /* soft light gray */
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+/* Navbar */
+nav {
+  background: linear-gradient(90deg, #111827, #1e1e2f);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+nav .my-name {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #ff4d88;
+}
+nav .nav-link {
+  color: #e2e8f0 !important;
+}
+nav .nav-link:hover {
+  color: #ff4d88 !important;
+}
+
+/* Header */
+header {
+  background: linear-gradient(180deg, #1e293b, #111827);
+  color: #f1f5f9;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.1);
+}
+header h1 {
+  text-shadow: 0 0 10px rgba(255, 77, 136, 0.4);
+}
+
+/* Section Headings */
+section h2, .container h2 {
+  color: #ff4d88;
+  font-weight: 600;
+  text-shadow: 0 0 6px rgba(255, 77, 136, 0.3);
+}
+
+/* Command Cards */
+.command-box {
+  background: linear-gradient(145deg, #1a1a2e, #111827);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 12px;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  box-shadow: 5px 5px 15px rgba(0,0,0,0.6), -5px -5px 15px rgba(255,255,255,0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.command-box:hover {
+  transform: translateY(-6px) scale(1.02);
+  box-shadow: 0 8px 24px rgba(236, 72, 153, 0.35);
+}
+
+/* Discord Gothic Card */
+.discord-card {
+  position: relative;
+  background: linear-gradient(135deg, #111, #1e1e2f);
+  border: 2px solid #ff4d88;
+  border-radius: 16px;
+  color: #f8f9fa;
+  overflow: hidden;
+  box-shadow: 0 0 20px rgba(255, 77, 136, 0.3);
+  transition: transform 0.2s ease;
+}
+.discord-card:hover {
+  transform: perspective(600px) rotateX(2deg) rotateY(-2deg);
+}
+.discord-heading {
+  font-family: 'Cinzel Decorative', serif;
+  font-size: 1.8rem;
+  color: #ff4d88;
+  text-shadow: 0 0 8px #ff4d88, 0 0 20px #ff99bb;
+}
+
+/* Divider */
+.discord-divider {
+  border: 0;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, #ff4d88, transparent);
+  margin: 1rem auto;
+  width: 60%;
+}
+
+/* Join Button */
+.discord-btn {
+  display: inline-block;
+  background: linear-gradient(90deg, #8b5cf6, #ec4899);
+  border-radius: 12px;
+  padding: 12px 24px;
+  color: white;
+  font-size: 1.2rem;
+  text-shadow: 0 0 6px rgba(0,0,0,0.8);
+  box-shadow: 0 0 15px rgba(236, 72, 153, 0.5);
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+
+.discord-btn:hover {
+  transform: translateY(-3px) scale(1.05);
+  box-shadow: 0 0 25px rgba(236, 72, 153, 0.8), 0 0 40px rgba(139, 92, 246, 0.6);
+}
+
+/* Footer */
+footer {
+  background: #0f172a;
+  color: #94a3b8;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+
+/* Gothic Card */
+.discord-card {
+    position: relative;
+    background: linear-gradient(135deg, #111, #1e1e2f);
+    border: 2px solid #ff4d88;
+    border-radius: 16px;
+    color: #f8f9fa;
+    
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(255, 77, 136, 0.3);
+    transition: transform 0.2s ease;
+}
+
+.discord-card:hover {
+    transform: perspective(600px) rotateX(2deg) rotateY(-2deg);
+}
+
+/* Heading Glitch */
+.discord-heading {
+    font-family: 'Cinzel Decorative', serif;
+    font-size: 1.8rem;
+    color: #ff4d88;
+    text-shadow: 0 0 8px #ff4d88, 0 0 20px #ff99bb;
+    animation: flicker 2.5s infinite alternate;
+}
+
+@keyframes flicker {
+
+    0%,
+    19%,
+    21%,
+    23%,
+    25%,
+    54%,
+    56%,
+    100% {
+        opacity: 1;
+    }
+
+    20%,
+    24%,
+    55% {
+        opacity: 0.7;
+    }
+}
+
+/* Divider */
+.discord-divider {
+    border: 0;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #ff4d88, transparent);
+    margin: 1rem auto;
+    width: 60%;
+}
+
+/* Button Glow */
+.discord-btn {
+    display: inline-block;
+    background: linear-gradient(90deg, #8b5cf6, #ec4899);
+    border: none;
+    border-radius: 12px;
+    padding: 12px 24px;
+    color: white;
+    font-size: 1.2rem;
+    /* font-family: 'Cinzel Decorative', serif; */
+    text-shadow: 0 0 6px rgba(0, 0, 0, 0.8);
+    box-shadow: 0 0 15px rgba(236, 72, 153, 0.5);
+    transition: all 0.3s ease;
+}
+
+.discord-btn:hover {
+    transform: translateY(-3px) scale(1.05);
+    box-shadow: 0 0 25px rgba(236, 72, 153, 0.8), 0 0 40px rgba(139, 92, 246, 0.6);
+}
+
+/* Background Particles */
+.particle-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: transparent;
+    pointer-events: none;
+    overflow: hidden;
+}
+
+.particle-bg::before,
+.particle-bg::after {
+    content: "";
+    position: absolute;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle, rgba(236, 72, 153, 0.1) 2px, transparent 2px);
+    background-size: 40px 40px;
+    animation: drift 60s linear infinite;
+}
+
+.particle-bg::after {
+    background: radial-gradient(circle, rgba(139, 92, 246, 0.15) 2px, transparent 2px);
+    animation-duration: 90s;
+}
+
+@keyframes drift {
+    from {
+        transform: translate(0, 0);
+    }
+
+    to {
+        transform: translate(-200px, -200px);
+    }
+}

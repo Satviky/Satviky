@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sayori Bot</title>
+  <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+  <meta name="description" content="Sayori is a Discord bot with fun trivia, guessing, and leaderboard commands.">
+
+  <!-- Bootstrap + AOS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
+  <link rel="stylesheet" href="/sayori.css">
+
+  
+</head>
+
+<body>
+  <!-- Navbar -->
+  <nav class="p-3 mb-2 d-flex justify-content-lg-between align-items-center">
+    <div class="my-name">Sayori</div>
+    <div class="nav-default">
+      <ul class="nav nav-underline">
+        <li class="nav-item"><a class="nav-link" href="/shadowveil-studioz/sayori">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="/shadowveil-studioz/sayori/privacy-policy">Privacy Policy</a>
+        </li>
+        <li class="nav-item"><a class="nav-link" href="/shadowveil-studioz/sayori/tos">Terms of Service</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <header class="text-center py-5" data-aos="fade-down">
+    <h1 class="display-4 fw-bold">Sayori Bot</h1>
+    <p class="lead">Fun Trivia • Guess Games • Leaderboards</p>
+  </header>
+
+  <!-- Commands -->
+  <div class="container my-5">
+    <h2 class="text-center mb-4" data-aos="fade-up">Tea Games</h2>
+    <div class="row">
+      <div class="col-md-6 command-box" data-aos="fade-up">
+        <h5>!countrytea start &lt;pts&gt;</h5>
+        <p>Starts a Competetive country trivia game where the user with each correct answer gets 5 points. The user who
+          reaches a certain points(decided by the user who starts) first becomes the winner</p>
+      </div>
+      <div class="col-md-6 command-box" data-aos="fade-up" data-aos-delay="100">
+        <h5>!mathtea start &lt;pts&gt; &lt;difficulty&gt;</h5>
+        <p>Starts a Competetive Math trivia game where the user with each correct answer gets 5 points. The user who
+          reaches a certain points(decided by the user who starts) first becomes the winner</p>
+      </div>
+      <div class="col-md-6 command-box" data-aos="fade-up" data-aos-delay="200">
+        <h5>!animetea start &lt;pts&gt; &lt;category&gt;</h5>
+        <p>Starts a Competetive Anime trivia game of your favourite Anime where the user with each correct answer gets 5
+          points. The user who reaches a certain points(decided by the user who starts) first becomes the winner</p>
+      </div>
+      <div class="col-md-6 command-box" data-aos="fade-up" data-aos-delay="300">
+        <h5>!geotea start &lt;pts&gt;</h5>
+        <p>Starts a Competetive Geography trivia game where the user with each correct answer gets 5 points. The user
+          who reaches a certain points(decided by the user who starts) first becomes the winner</p>
+      </div>
+      <div class="col-md-12 command-box" data-aos="fade-up" data-aos-delay="400">
+        <h5>!endgame</h5>
+        <p>Used to end the tea games (applicable for all games mentions above)</p>
+      </div>
+    </div>
+
+    <h2 class="text-center my-5" data-aos="fade-up">Guess Games</h2>
+    <div class="row">
+      <div class="col-md-6 command-box" data-aos="fade-up">
+        <h5>!guess</h5>
+        <p>Starts a normal guess the number round of range (1–100000)</p>
+      </div>
+      <div class="col-md-6 command-box" data-aos="fade-up" data-aos-delay="100">
+        <h5>!guesstime &lt;seconds&gt;</h5>
+        <p>Starts a Timed mode guess the number with range (1-1000)</p>
+      </div>
+      <div class="col-md-6 command-box" data-aos="fade-up" data-aos-delay="200">
+        <h5>!guessword / !gw</h5>
+        <p>Start a Guess the Word where the bot choses a hint giver (who gets a Secret Word by the bot) and the others
+          have to guess the secret word</p>
+      </div>
+      <div class="col-md-6 command-box" data-aos="fade-up" data-aos-delay="300">
+        <h5>!guesshelp</h5>
+        <p>Help for Guess Games.</p>
+      </div>
+      <div class="col-md-12 command-box" data-aos="fade-up" data-aos-delay="400">
+        <h5>!endgame</h5>
+        <p>Ends all Guess Games except !gw.</p>
+      </div>
+    </div>
+
+    <h2 class="text-center my-5" data-aos="fade-up">Misc Commands</h2>
+    <div class="row">
+      <div class="col-md-4 command-box" data-aos="fade-up">
+        <h5>!leaderboard / !lb</h5>
+        <p>Shows server leaderboard.</p>
+      </div>
+      <div class="col-md-4 command-box" data-aos="fade-up" data-aos-delay="100">
+        <h5>!stats</h5>
+        <p>Shows server and global stats.</p>
+      </div>
+      <div class="col-md-4 command-box" data-aos="fade-up" data-aos-delay="200">
+        <h5>!help / /help</h5>
+        <p>Displays the help menu.</p>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- <div class="container my-5" id="discord-widget" data-aos="fade-up">
+    <div class="card text-center p-4 shadow-lg" style="background: linear-gradient(135deg, #111, #1e1e2f);
+              border: 2px solid #ff4d88;
+              border-radius: 16px;
+              color: #f8f9fa;
+              font-family: 'Cinzel Decorative', serif;">
+      <h3 id="server-name" class="fw-bold mb-3">Loading...</h3>
+      <p id="member-count" class="fs-5">Fetching online members...</p>
+      <a id="discord-link" href="#" target="_blank" class="btn btn-lg mt-3" style="background: linear-gradient(90deg, #8b5cf6, #ec4899);
+              border: none;
+              border-radius: 12px;
+              padding: 12px 24px;
+              color: white;
+              font-size: 1.2rem;
+              text-shadow: 0 0 8px rgba(0,0,0,0.8);
+              transition: all 0.3s;">
+        🚀 Join Our Discord
+      </a>
+    </div>
+  </div> -->
+
+
+  <!-- Discord Widget -->
+  <div class="container my-5" id="discord-widget" data-aos="fade-up">
+    <div class="discord-card text-center p-4">
+      <h3 id="server-name" class="discord-heading mb-2">Loading...</h3>
+      <hr class="discord-divider">
+      <p id="member-count" class="fs-5">Fetching online members...</p>
+      <a id="discord-link" href="#" target="_blank" class="discord-btn mt-3">
+        🚀 Join Our Discord
+      </a>
+      <div class="particle-bg"></div>
+    </div>
+  </div>
+
+  
+
+  <script>
+    async function loadDiscordWidget() {
+      try {
+        const res = await fetch("https://discord.com/api/guilds/989942565908389908/widget.json");
+        const data = await res.json();
+
+        document.getElementById("server-name").textContent = data.name;
+
+        animateCount("member-count", data.presence_count);
+        document.getElementById("discord-link").href = data.instant_invite;
+      } catch (err) {
+        document.getElementById("server-name").textContent = "Server unavailable";
+        document.getElementById("member-count").textContent = "Try again later.";
+      }
+    }
+
+    function animateCount(id, target) {
+      let el = document.getElementById(id);
+      let current = 0;
+      let increment = Math.ceil(target / 60);
+      let interval = setInterval(() => {
+        current += increment;
+        if (current >= target) {
+          current = target;
+          clearInterval(interval);
+        }
+        el.textContent = `${current} online members ✨`;
+      }, 16);
+    }
+
+    // Initial load
+    loadDiscordWidget();
+
+    // Auto-refresh every 30s
+    setInterval(loadDiscordWidget, 30000);
+  </script>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&display=swap" rel="stylesheet">
+
+
+
+  <!-- Footer -->
+  <footer class="text-center p-3 mt-5">
+    &copy; <%= new Date().getFullYear() %> Sayori Bot — A Shadowveil Studioz Project.
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script>AOS.init();</script>
+</body>
+
+</html>
