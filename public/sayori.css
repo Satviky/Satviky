@@ -7,8 +7,7 @@ body {
   font-family: system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
 }
 
-/* Navbar */
-
+/* Navbar ise bilkul touch mat krna... kafi mushkil se kuch set kiya hai*/
 .gothic-nav {
   display: none;
 }
@@ -98,57 +97,6 @@ section h2,
   box-shadow: 0 8px 24px rgba(236, 72, 153, 0.35);
 }
 
-/* Discord Gothic Card */
-.discord-card {
-  position: relative;
-  background: linear-gradient(135deg, #111, #1e1e2f);
-  border: 2px solid #ff4d88;
-  border-radius: 16px;
-  color: #f8f9fa;
-  overflow: hidden;
-  box-shadow: 0 0 20px rgba(255, 77, 136, 0.3);
-  transition: transform 0.2s ease;
-}
-
-.discord-card:hover {
-  transform: perspective(600px) rotateX(2deg) rotateY(-2deg);
-}
-
-.discord-heading {
-  font-family: 'Cinzel Decorative', serif;
-  font-size: 1.8rem;
-  color: #ff4d88;
-  text-shadow: 0 0 8px #ff4d88, 0 0 20px #ff99bb;
-}
-
-/* Divider */
-.discord-divider {
-  border: 0;
-  height: 2px;
-  background: linear-gradient(90deg, transparent, #ff4d88, transparent);
-  margin: 1rem auto;
-  width: 60%;
-}
-
-/* Join Button */
-.discord-btn {
-  display: inline-block;
-  background: linear-gradient(90deg, #8b5cf6, #ec4899);
-  border-radius: 12px;
-  padding: 12px 24px;
-  color: white;
-  font-size: 1.2rem;
-  text-shadow: 0 0 6px rgba(0, 0, 0, 0.8);
-  box-shadow: 0 0 15px rgba(236, 72, 153, 0.5);
-  transition: all 0.3s ease;
-  text-decoration: none;
-}
-
-.discord-btn:hover {
-  transform: translateY(-3px) scale(1.05);
-  box-shadow: 0 0 25px rgba(236, 72, 153, 0.8), 0 0 40px rgba(139, 92, 246, 0.6);
-}
-
 /* Footer */
 footer {
   background: #0f172a;
@@ -185,20 +133,11 @@ footer {
 
 @keyframes flicker {
 
-  0%,
-  19%,
-  21%,
-  23%,
-  25%,
-  54%,
-  56%,
-  100% {
+  0%, 19%, 21%, 23%, 25%, 54%, 56%, 100% {
     opacity: 1;
   }
 
-  20%,
-  24%,
-  55% {
+  20%, 24%, 55% {
     opacity: 0.7;
   }
 }
@@ -268,4 +207,8 @@ footer {
   to {
     transform: translate(-200px, -200px);
   }
+}
+
+@keyframe luminous{
+
 }
