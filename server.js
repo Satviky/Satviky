@@ -75,6 +75,12 @@ app.get('/shadowveil-studioz/lingo/tos', (req, res) => {
 app.get('/shadowveil-studioz/sayori', (req, res) => {
     res.render('sayori');
 });
+app.get('/shadowveil-studioz/sayori/privacy-policy', (req, res) => {
+    res.render('sayori/sayori-prpo');
+});
+app.get('/shadowveil-studioz/sayori/tos', (req, res) => {
+    res.render('sayori/sayori-tos');
+});
 
 
 

@@ -16,6 +16,10 @@ body {
   display: block;
 }
 
+.bold{
+  font-weight: bold;
+}
+
 
 nav {
   background: linear-gradient(90deg, #111827, #1e1e2f);
@@ -209,6 +213,3 @@ footer {
   }
 }
 
-@keyframe luminous{
-
-}
