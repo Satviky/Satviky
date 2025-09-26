@@ -20,10 +20,17 @@ body {
   font-weight: bold;
 }
 
-.add-btn{
-  border-radius: 5px;
-  background-color: #ec4899;
+.add-btn {
+  background: linear-gradient(90deg, #210639, #11001c);
+  border-radius: 9px;
   padding: 0px 5px;
+  color: white;
+  text-shadow: 0 0 6px rgba(234, 146, 146, 0.8);
+  box-shadow: 0 0 15px rgba(210, 119, 240, 0.5);
+  transition: all 0.3s ease;
+}
+.add-btn:hover {
+  box-shadow: 0 0 25px rgba(224, 121, 171, 0.8), 0 0 40px rgba(152, 73, 217, 0.6);
 }
 
 nav {
@@ -106,12 +113,27 @@ section h2,
   box-shadow: 0 8px 24px rgba(236, 72, 153, 0.35);
 }
 
+.join-btn {
+  background: linear-gradient(90deg, #1d0040, #050049);
+  border-radius: 9px;
+  padding: 0px 5px;
+  color: white;
+  text-shadow: 0 0 6px rgba(227, 239, 12, 0.8);
+  box-shadow: 0 0 15px rgba(95, 165, 209, 0.5);
+  transition: all 0.3s ease;
+}
+.join-btn:hover {
+  box-shadow: 0 0 25px rgba(224, 121, 171, 0.8), 0 0 40px rgba(152, 73, 217, 0.6);
+}
+
 /* Footer */
 footer {
   background: #0f172a;
   color: #94a3b8;
   border-top: 1px solid rgba(255, 255, 255, 0.1);
 }
+
+
 
 
 /* Gothic Card */
@@ -179,6 +201,31 @@ footer {
   transform: translateY(-3px) scale(1.05);
   box-shadow: 0 0 25px rgba(236, 72, 153, 0.8), 0 0 40px rgba(139, 92, 246, 0.6);
 }
+
+.discord-btn2 {
+  display: inline-block;
+  background: linear-gradient(90deg, #2a0923, #11001c);
+  border: none;
+  border-radius: 12px;
+  padding: 12px 24px;
+  color: white;
+  font-size: 1.2rem;
+  /* font-family: 'Cinzel Decorative', serif; */
+  text-shadow: 0 0 6px rgba(234, 146, 146, 0.8);
+  box-shadow: 0 0 15px rgba(210, 119, 240, 0.5);
+  transition: all 0.3s ease;
+}
+
+.discord-btn2>a{
+  color:#e2e8f0;
+  text-decoration: none;
+}
+
+.discord-btn2:hover {
+  transform: translateY(-3px) scale(1.05);
+  box-shadow: 0 0 25px rgba(224, 121, 171, 0.8), 0 0 40px rgba(152, 73, 217, 0.6);
+}
+
 
 /* Background Particles */
 .particle-bg {
