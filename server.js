@@ -81,6 +81,9 @@ app.get('/shadowveil-studioz/sayori/privacy-policy', (req, res) => {
 app.get('/shadowveil-studioz/sayori/tos', (req, res) => {
     res.render('sayori/sayori-tos');
 });
+app.get('/shadowveil-studioz/sayori/mafia/rules', (req, res) => {
+    res.render('sayori/mafia-rules');
+});
 
 
 

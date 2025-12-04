@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sayori's Mafia Rules</title>
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <meta name="description" content="Sayori is a Discord bot with fun trivia, guessing, and leaderboard commands. Mafia is an interactive chat based games based on one's intuition and noticing behaviour pattern.">
+
+    <!-- Bootstrap + AOS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
+    <link rel="stylesheet" href="/sayori.css">
+
+
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="p-3 mb-2 d-flex justify-content-lg-between align-items-center no-phone">
+        <div class="my-name">Sayori</div>
+        <div class="nav-default">
+            <ul class="nav nav-underline">
+                <li class="nav-item"><a class="nav-link" href="/shadowveil-studioz/sayori">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="/shadowveil-studioz/sayori/privacy-policy">Privacy
+                        Policy</a>
+                </li>
+                <li class="nav-item add-btn"><a class="nav-link"
+                        href="https://discord.com/oauth2/authorize?client_id=1403392346053411029">Add me!</a></li>
+                <li class="nav-item join-btn"><a class="nav-link" href="https://discord.gg/sC6SQBd8As">Join Server!</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Navbar -->
+    <nav class="gothic-nav d-flex justify-content-center align-items-center">
+        <a href="/shadowveil-studioz/sayori" class="nav-icon" title="Home">🏠</a>
+        <a href="/shadowveil-studioz/sayori/privacy-policy" class="nav-icon" title="Privacy Policy">📜</a>
+        
+        <a href="https://discord.com/oauth2/authorize?client_id=1403392346053411029" class="nav-icon"
+            title="Add me">➕</a>
+        <a href="https://discord.gg/CAzPpWJfmS" class="nav-icon" title="Join Discord">💬</a>
+    </nav>
+
+    <header class="text-center py-5">
+        <h1 class="display-4 fw-bold">Mafia Rules</h1>
+        <p class="lead">Rules? Why not? </p>
+    </header>
+
+    <div class="container mt-4" data-aos="fade-up">
+        Mafia is a logic-based game. <br> Repeated personal targetting, metagaming, or illogical spam accusations ruin the fun for everyone.
+    </div>
+
+    <div class="container mt-4" data-aos="fade-up">
+
+        <h2>1. No personal targetting</h2>
+        <p>Players cannot repeatedly vote or accuse the same person without in-game reasoning.</p>
+        <h3>Examples of wrong conducts</h3>
+        <ul>
+            <li>Let's all vote Satviky because I hate her.</li>
+            <li>Let's all vote Satviky cuz the other person remaining is my friend.</li>
+            <li>Let's all vote Endeavor cuz whenever he plays he is the mafia.</li>
+            <li>Let's all vote Christa otherwise she will catch me.</li>
+        </ul>
+        <p>If someone repeats this illogical behaviour, they will start to recieve warnings and on repeated infractions mafia blacklist.</p>
+
+        <h2>2. All accusations must have Game-Based logic</h2>
+        <p>If you are planning to target someone then at least give ONE in-game reason:
+        <p>
+            <h3>Acceptable Reasons:</h3>
+        <ul>
+            <li>Suspicious Message.</li>
+            <li>Night Action Misalignment.</li>
+            <li>Vote Pattern.</li>
+            <li>Weird Defence.</li>
+        </ul>
+        <p>If a player cannot provide <strong>any</strong> reason -> acusation is <strong>Invalid</strong></p>
+
+        <h2>3. No out of Game knowing</h2>
+        <h3>Player cannot use:</h3>
+        <ul>
+            <li>Past games</li>
+            <li>Friendship</li>
+            <li>Behaviour outside games</li>
+            <li>VC talks</li>
+            <li>Private chats</li>
+            <li>Teaming up with actual mafia to ruin the experience of others</li>
+        </ul>
+
+        <h2>4. No Fake Info Flooding</h2>
+        <p>Players cannot spam false accusations repeatedly to manupulate others.</p>
+        <ul>
+            <li>It's Kaddu. <strong>TRUST ME BRO</strong></li>
+            <li>It's definitely Endeavor and Satviky [There is only 1 Mafia]</li>
+        </ul>
+        <p>This reduces fun and confuses new players.</p>
+
+        <h2>5. Mafia players cannot Hard-Accuse Randomly</h2>
+        <p>If you are Mafia, you are allowed to lie...</p>
+        <p>... but <strong>you can't break rule #1 by personally targetting the same person with no in-game logic.</strong></p>
+        <ul>
+            <li>Palak as Mafia saying <strong>'IT'S SATVIKY'</strong> every message</li>
+            <li>forcing others to dogpile</li>
+        </ul>
+        <p>This is <strong>not bluffing,</strong> it's <strong>rule-breaking</strong></p>
+        <h2>6. No asking others to vote xyz without explaination</h2>
+        <p>If you are asking everyone to agree to vote xyz, then give good reason to <strong>Why</strong> everyone should vote XYZ.</p>
+        <h2>7. No revealing of rules</h2>
+        <p>You can't send screenshot of DM sent by Sayori to prove that you are not Mafia.</p>
+        <ul>
+            <li>You can keep saying I am detective, I am doctor but you are not allowed to share DM screenshots as proof.</li>
+            <li>In case of singe mafia, If in the end of night Sayori sends a message saying "Mafia tried to kill `xyz` but doctor saved them", then this message can be used by xyz as proof of them not being mafia, and this is considered a fair use.</li>
+        </ul>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>AOS.init();</script>
+</body>
+
+</html>
