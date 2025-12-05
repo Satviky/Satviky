@@ -5,7 +5,9 @@ body {
   color: #e2e8f0;
   /* soft light gray */
   font-family: system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+
 }
+
 
 /* Navbar ise bilkul touch mat krna... kafi mushkil se kuch set kiya hai*/
 .gothic-nav {
@@ -135,6 +137,12 @@ footer {
   border-top: 1px solid rgba(255, 255, 255, 0.1);
 }
 
+.srfb{
+  background: #202020;
+  color: #94a3b8;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 3px;
+}
 
 
 
