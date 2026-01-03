@@ -1,11 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Guess the Agent</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Guess the Agent</title>
+  <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+  <meta name="description" content="Sayori is a Discord bot with fun trivia, guessing, and leaderboard commands.">
+
+  <!-- Bootstrap + AOS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
+  <link rel="stylesheet" href="/sayori.css">
+
 </head>
+
 <body>
-    
+  <nav class="p-3 mb-2 d-flex justify-content-lg-between align-items-center no-phone">
+    <div class="my-name">Sayori</div>
+    <div class="nav-default">
+      <ul class="nav nav-underline">
+        <!-- <li class="nav-item"><a class="nav-link" href="/shadowveil-studioz/sayori">Home</a></li> -->
+        <li class="nav-item"><a class="nav-link" href="/shadowveil-studioz/sayori/privacy-policy">Privacy Policy</a>
+        </li>
+        <li class="nav-item"><a class="nav-link" href="/shadowveil-studioz/sayori/tos">Terms of Service</a></li>
+        <li class="nav-item add-btn"><a class="nav-link"
+            href="https://discord.com/oauth2/authorize?client_id=1403392346053411029">Add me!</a></li>
+        <li class="nav-item join-btn"><a class="nav-link" href="https://discord.gg/sC6SQBd8As">Join Server!</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Navbar -->
+  <nav class="gothic-nav d-flex justify-content-center align-items-center">
+    <a href="/shadowveil-studioz/sayori/privacy-policy" class="nav-icon" title="Privacy Policy">📜</a>
+    <a href="/shadowveil-studioz/sayori/tos" class="nav-icon" title="ToS">⚖️</a>
+    <a href="https://discord.com/oauth2/authorize?client_id=1403392346053411029" class="nav-icon" title="Add Me">➕</a>
+    <a href="https://discord.gg/CAzPpWJfmS" class="nav-icon" title="Join Discord">💬</a>
+  </nav>
+
+  <header class="text-center py-5" data-aos="fade-down">
+    <h1 class="display-4 fw-bold">Guess The Agent</h1>
+    <p class="lead">Agent Black • Agent White • Agent Red</p>
+  </header>
+
+  <div class="container d-flex flex-column flex-md-row justify-content-between align-items-md-center">
+
+    <div class="container my-5">
+      <h2 class="text-center mb-4" data-aos="fade-up">How to play</h2>
+      <div>
+        <ul>
+          <li>Use `!gta` to start the game, and react to the embed. <br>
+          </li>
+          <div class="mx-auto" style="
+    max-width: 762px;
+    aspect-ratio: 762 / 555;
+  ">
+            <img src="/gif/gta-join.gif" class="w-100 h-100" style="object-fit: contain;" alt="Demo" />
+          </div>
+          <!-- <img class="img-fluid" style="max-width: 762px;" src="/gif/gta-join.gif" alt=""> -->
+
+          <li>Once you react to the embed you will receive a DM confirming your entry.</li>
+
+        </ul>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script>AOS.init();</script>
 </body>
+
 </html>

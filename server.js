@@ -84,6 +84,9 @@ app.get('/shadowveil-studioz/sayori/tos', (req, res) => {
 app.get('/shadowveil-studioz/sayori/mafia/rules', (req, res) => {
     res.render('sayori/mafia-rules');
 });
+app.get('/shadowveil-studioz/sayori/gta', (req, res) => {
+    res.render('sayori/sayori-games/gta');
+});
 
 
 
