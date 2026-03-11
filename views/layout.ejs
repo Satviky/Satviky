@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>
+        <%= meta.title %>
+    </title>
+    <meta name="description" content="<%= meta.description %>" />
+    <meta name="author" content="<%= meta.author || 'Satvik Gupta' %>" />
+
+    <% if (meta.keywords) { %>
+        <meta name="keywords" content="<%= meta.keywords %>" />
+        <% } %>
+
+            <link rel="canonical" href="<%= meta.canonical %>" />
+
+            <!-- Favicons (global) -->
+            <link rel="icon" href="/favicon.ico" />
+            <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+            <link rel="manifest" href="/site.webmanifest" />
+
+            <!-- Open Graph -->
+            <meta property="og:type" content="website" />
+            <meta property="og:title" content="<%= meta.ogTitle || meta.title %>" />
+            <meta property="og:description" content="<%= meta.ogDescription || meta.description %>" />
+            <meta property="og:url" content="<%= meta.canonical %>" />
+            <meta property="og:image" content="<%= meta.ogImage %>" />
+
+            <!-- Twitter -->
+            <meta name="twitter:card" content="summary_large_image" />
+            <meta name="twitter:title" content="<%= meta.ogTitle || meta.title %>" />
+            <meta name="twitter:description" content="<%= meta.ogDescription || meta.description %>" />
+            <meta name="twitter:image" content="<%= meta.ogImage %>" />
+
+            <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@unocss/reset/tailwind.min.css" />
+            <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+            <link rel="stylesheet" href="/css/layout.css">
+            <link rel="stylesheet" href="/css/animation.css">
+</head>
+
+<body class="<%= brand %>">
+    <!-- Navbar is below, using personal, ssz, sayori -->
+    <% if (brand==='personal' ) { %>
+        <%- include('components/nav-personal') %>
+            <% } else if (brand==='ssz' ) { %>
+                <%- include('components/nav-ssz') %>
+                    <% } else if (brand==='sayori' ) { %>
+                        <%- include('components/nav-sayori') %>
+                            <% } %>
+
+
+                                <!-- this logic is incomplete -->
+                                <% if (typeof progressType !=='undefined' && progressType===true) { %>
+                                    <%- include('components/progCircle', { type: brand }) %>
+                                        <% } %>
+
+                                            <%- body %>
+
+                                                <!-- ... and then load the runtime -->
+                                                <script src="https://cdn.jsdelivr.net/npm/@unocss/runtime"></script>
+                                                <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+                                                <script>
+                                                    AOS.init();
+                                                </script>
+
+</body>
+
+</html>

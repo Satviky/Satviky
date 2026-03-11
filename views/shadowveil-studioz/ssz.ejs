@@ -1,0 +1,165 @@
+<style>
+    details summary {
+        cursor: pointer;
+        transition: color .3s;
+    }
+
+    details[open] summary {
+        color: #00eaff;
+    }
+</style>
+
+
+<header class="relative text-center min-h-screen flex flex-col justify-center items-center overflow-hidden">
+
+    <div class="absolute inset-0 opacity-20 pointer-events-none">
+        <div id="particles" class="absolute inset-0"></div>
+    </div>
+
+    <div class="absolute left-1/2 top-40 -translate-x-1/2 w-[600px] h-[600px] bg-cyan-500/10 blur-[160px] rounded-full">
+    </div>
+    <h1 class="text-5xl md:text-6xl font-bold text-cyan-300 tracking-wide drop-shadow-[0_0_12px_#00eaff]">
+        Shadowveil StudioZ
+    </h1>
+
+    <p class="text-gray-400 mt-6 max-w-xl mx-auto text-lg">
+
+        Where ideas become systems and stories become experiences.
+    </p>
+
+    <div class="mt-8 text-xs text-cyan-400 animate-pulse" data-aos="fade-up">
+        Experimental Lab Interface
+    </div>
+    <div class="mt-8 text-xs text-cyan-400 animate-pulse" data-aos="fade-up">
+        ↓
+    </div>
+    
+
+</header>
+
+<section class="max-w-4xl mx-auto text-center py-20 px-6">
+
+    <h2 class="text-3xl font-semibold text-cyan-300 mb-8">
+        Studio Philosophy
+    </h2>
+
+    <p class="text-gray-400 leading-relaxed">
+        Shadowveil StudioZ is an indie digital studio crafting meaningful,
+        immersive, and delightful experiences.
+    </p>
+
+    <p class="text-gray-400 mt-6 leading-relaxed" data-aos="fade-up">
+        We are not just developers; we are storytellers,
+        dreamers, and builders exploring new forms of
+        interactive digital experiences.
+    </p>
+
+</section>
+
+<div class="flex justify-center my-10">
+    <div class="w-[200px] h-[1px] bg-gradient-to-r from-transparent via-cyan-400/40 to-transparent"></div>
+</div>
+
+<section class="py-24">
+
+    <h2 class="text-center text-3xl text-cyan-300 mb-16" data-aos="fade-up">
+        Current Experiments
+    </h2>
+
+    <div class="grid md:grid-cols-2 gap-10 max-w-5xl mx-auto px-6">
+
+        <div class="bg-[#101626] p-6 rounded-xl border border-cyan-500/20
+hover:border-cyan-400/40 transition" data-aos="fade-up">
+
+            <h3 class="text-xl text-cyan-300 mb-2">Spiele Zone</h3>
+            <p class="text-gray-400 text-sm">
+                Retro browser game platform built for fun and experimentation.
+            </p>
+
+        </div>
+
+        <div class="bg-[#101626] p-6 rounded-xl border border-cyan-500/20
+hover:border-cyan-400/40 transition" data-aos="fade-up">
+
+            <h3 class="text-xl text-cyan-300 mb-2">ResQ</h3>
+            <p class="text-gray-400 text-sm">
+                Interactive narrative mystery system built around investigation mechanics.
+            </p>
+
+        </div>
+
+        <div class="bg-[#101626] p-6 rounded-xl border border-cyan-500/20
+hover:border-cyan-400/40 transition" data-aos="fade-up">
+
+            <h3 class="text-xl text-cyan-300 mb-2">Simplify Goals</h3>
+            <p class="text-gray-400 text-sm">
+                Experimental productivity system exploring consistency mechanics.
+            </p>
+
+        </div>
+
+        <div class="bg-[#101626] p-6 rounded-xl border border-cyan-500/20
+hover:border-cyan-400/40 transition" data-aos="fade-up">
+
+            <h3 class="text-xl text-cyan-300 mb-2">Chromogram</h3>
+
+            <p class="text-gray-400 text-sm">
+                A handcrafted cryptogram puzzle game with hundreds of levels and elegant gameplay.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+<div class="flex justify-center my-10">
+    <div class="w-[200px] h-[1px] bg-gradient-to-r from-transparent via-cyan-400/40 to-transparent"></div>
+</div>
+
+<section id="team" class="text-center py-20">
+
+    <h2 class="text-3xl text-cyan-300 mb-6" data-aos="fade-up">
+        The Team
+    </h2>
+
+    <p class="text-gray-400" data-aos="fade-up" >
+        A trio collaborating to create awesome and cool stuffs.
+    </p>
+
+</section>
+
+<div class="flex justify-center my-10">
+    <div class="w-[200px] h-[1px] bg-gradient-to-r from-transparent via-cyan-400/40 to-transparent"></div>
+</div>
+
+
+<footer class="text-center py-16 text-gray-500 text-sm">
+
+    <p class="mb-2">Shadowveil StudioZ</p>
+    <p>Experimental Digital Systems Laboratory? Maybe or maybe Accidental Studio.</p>
+
+</footer>
+
+<script>
+    const particles = document.getElementById("particles");
+
+    if (particles) {
+
+        for (let i = 0; i < 25; i++) {
+
+            const p = document.createElement("div");
+
+            p.className = "absolute w-[4px] h-[4px] bg-cyan-300 rounded-full opacity-60";
+
+            p.style.left = Math.random() * 100 + "%";
+            p.style.bottom = "-10px";
+
+            p.style.animation = `float ${10 + Math.random() * 15}s linear infinite`;
+
+            particles.appendChild(p);
+
+        }
+
+    }
+</script>

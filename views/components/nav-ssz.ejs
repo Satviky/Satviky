@@ -1,0 +1,97 @@
+<nav class="fixed z-50 w-full flex justify-center py-4 px-4">
+
+    <div class="
+flex items-center justify-between
+w-full max-w-[1000px]
+px-6 py-4
+rounded-2xl
+bg-[#0f0114]/40
+backdrop-blur-xl
+border border-white/10
+shadow-[0_0_20px_rgba(0,255,255,0.06)]
+">
+
+        <!-- Logo -->
+        <a href="/shadowveil-studioZ" class="flex items-center gap-3 text-cyan-300 font-semibold">
+
+            <img src="/images/ssz-logo-def.png" class="h-8">
+
+            <span class="font-[Orbitron] text-sm sm:text-base">
+                Shadowveil StudioZ
+            </span>
+
+        </a>
+
+
+        <!-- Mobile toggle -->
+        <button onclick="toggleSSZNav()"
+            class="md:hidden w-10 h-10 flex items-center justify-center rounded-lg bg-white/10 hover:bg-white/20 transition">
+
+            ☰
+
+        </button>
+
+
+        <!-- Links -->
+        <ul id="ssz-nav-links" class="hidden md:flex items-center gap-8 text-gray-300">
+
+            <li>
+                <a href="/shadowveil-studioZ/projects" class="hover:text-cyan-300 transition">
+                    Experiments
+                </a>
+            </li>
+
+            <li>
+                <a href="/shadowveil-studioz#team" class="hover:text-cyan-300 transition">
+                    Team
+                </a>
+            </li>
+
+            <li>
+                <a href="/contact" class="hover:text-cyan-300 transition">
+                    Contact
+                </a>
+            </li>
+
+            <li>
+                <a href="/shadowveil-studioz/lt" class="hover:text-cyan-300 transition">
+                    Links
+                </a>
+            </li>
+
+        </ul>
+
+    </div>
+
+
+    <!-- Mobile menu -->
+    <div id="ssz-mobile-menu" class="hidden absolute top-full left-0 w-full mt-3 px-4 md:hidden">
+
+        <div class="
+bg-[#0f0114]/90
+backdrop-blur-xl
+border border-white/10
+rounded-xl
+py-4
+flex flex-col gap-4
+text-center
+text-gray-300">
+
+            <a href="/shadowveil-studioZ/projects" class="hover:text-cyan-300">Experiments</a>
+            <a href="#team" class="hover:text-cyan-300">Team</a>
+            <a href="/contact" class="hover:text-cyan-300">Contact</a>
+            <a href="/shadowveil-studioz/lt" class="hover:text-cyan-300">Links</a>
+
+        </div>
+
+    </div>
+
+</nav>
+
+<script>
+    function toggleSSZNav() {
+        const menu = document.getElementById("ssz-mobile-menu")
+        if (!menu) return
+        menu.classList.toggle("hidden")
+    }
+</script>

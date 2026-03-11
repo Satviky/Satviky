@@ -1,0 +1,111 @@
+<style>
+    .progress-container {
+        position: fixed;
+        bottom: 30px;
+        right: 30px;
+        width: 60px;
+        height: 60px;
+    }
+
+    .progress-ring {
+        transform: rotate(-90deg);
+    }
+
+    .progress-bg {
+        fill: none;
+        stroke: rgba(255, 255, 255, 0.1);
+        stroke-width: 4;
+    }
+
+    .progress-bar {
+        fill: none;
+        stroke-width: 4;
+        stroke-linecap: round;
+        stroke-dasharray: 163;
+        /* circumference */
+        stroke-dashoffset: 163;
+        transition: stroke-dashoffset 0.1s linear;
+    }
+
+    .progress-dot {
+        position: absolute;
+        /* text-align: center; */
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+        top: 50%;
+        left: 50%;
+        transform-origin: center;
+    }
+
+    .progress-container.personal .progress-bar {
+        stroke: #a78bfa;
+    }
+
+    .progress-container.personal .progress-dot {
+        background: #a78bfa;
+        color: #a78bfa;
+        box-shadow: 0 0 8px #a78bfa;
+    }
+
+    .progress-container.ssz .progress-bar {
+        stroke: #22c55e;
+    }
+
+    .progress-container.ssz .progress-dot {
+        background: #22c55e;
+        box-shadow: 0 0 12px #22c55e;
+    }
+
+    .progress-container.sayori .progress-bar {
+        stroke: #888;
+    }
+
+    .progress-container.sayori .progress-dot {
+        background: #aaa;
+        box-shadow: none;
+    }
+
+    @keyframes spin {
+        from {
+            transform: rotate(0deg);
+        }
+
+        to {
+            transform: rotate(360deg);
+        }
+    }
+</style>
+
+<div id="progress-container" class="progress-container <%= type %>">
+    <div class="progress-dot"></div>
+    <svg class="progress-ring" width="60" height="60">
+        <circle class="progress-bg" cx="30" cy="30" r="26"></circle>
+        <circle class="progress-bar" cx="30" cy="30" r="26"></circle>
+    </svg>
+
+</div>
+
+<script>
+    const circle = document.querySelector('.progress-bar');
+    const dot = document.querySelector('.progress-dot');
+
+    const radius = 26;
+    const circumference = 2 * Math.PI * radius;
+
+    window.addEventListener('scroll', () => {
+        const scrollTop = window.scrollY;
+        const docHeight = document.body.scrollHeight - window.innerHeight;
+
+        const progress = scrollTop / docHeight;
+
+        // circle fill
+        const offset = circumference - progress * circumference;
+        circle.style.strokeDashoffset = offset;
+
+        // rotate dot
+        const angle = progress * 360;
+        dot.style.transform = `rotate(${angle}deg) translate(0,-26px) rotate(-${angle}deg)`;
+    });
+
+</script>
