@@ -35,6 +35,25 @@
             <meta name="twitter:description" content="<%= meta.ogDescription || meta.description %>" />
             <meta name="twitter:image" content="<%= meta.ogImage %>" />
 
+
+            <%
+                let safeSchema = null;
+
+                try {
+                if (schema && typeof schema === "object") {
+                    safeSchema = JSON.stringify(schema);
+                }
+                } catch (e) {
+                safeSchema = null;
+                }
+                %>
+
+                <% if (safeSchema) { %>
+                <script type="application/ld+json">
+                    <%- safeSchema %>
+                </script>
+                <% } %>
+
             <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@unocss/reset/tailwind.min.css" />
             <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
             <link rel="stylesheet" href="/css/layout.css">

@@ -114,7 +114,22 @@ app.get('/', (req, res) => {
             keywords: homeKeywords,
             ogTitle: 'Satvik Gupta | Satviky Portfolio',
             ogDescription: 'Visit the site to know about Satvik Gupta, web developer, creator of Project Rescue, and founder of Shadowveil Studioz.'
-        }
+        },
+        schema: {
+            "@context": "https://schema.org",
+            "@type": "Person",
+            "name": "Satvik Gupta",
+            "url": "https://www.gsatvik.in",
+            "sameAs": [
+                "https://github.com/satviky",
+                "https://www.linkedin.com/in/satvik-g-27bb4a26a/"
+            ],
+            "jobTitle": "Founder & Developer",
+            "worksFor": {
+                "@type": "Organization",
+                "name": "Shadowveil Studioz"
+            }
+        },
     });
 });
 
