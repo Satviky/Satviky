@@ -224,7 +224,7 @@ app.get('/contact', (req, res) => {
             title: 'Contact || Satviky',
             description: 'Contact Satvik Gupta for collaborations, freelance work, project ideas, or creative discussions.',
             keywords: contactKeywords,
-            ogTitle: 'Contact Satviky',
+            ogTitle: 'Contact',
             ogDescription: 'Get in touch with Satvik Gupta for collaborations, ideas, and project discussions.'
         },
         schema: {
@@ -336,7 +336,7 @@ app.get('/shadowveil-studioZ/projects', (req, res) => {
         schema: {
             "@context": "https://schema.org",
             "@type": "CollectionPage",
-            "name": "Shadowveil StudioZ",
+            "name": "Shadowveil StudioZ - Projects",
             "url": "https://www.gsatvik.in/Shadowveil-StudioZ/projects",
             "logo": "https://www.gsatvik.in/images/ssz-logo-def.png",
             "email": "shadowveilstudioz@gmail.com",
