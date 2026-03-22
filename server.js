@@ -119,6 +119,9 @@ app.get('/', (req, res) => {
             "@context": "https://schema.org",
             "@type": "Person",
             "name": "Satvik Gupta",
+            "nationality": "India",
+            "birthDate": "2004-05-04",
+            "email": "satvikgupta050404@email.com",
             "url": "https://www.gsatvik.in",
             "sameAs": [
                 "https://github.com/satviky",
@@ -144,7 +147,18 @@ app.get('/cv', (req, res) => {
             keywords: cvKeywords,
             ogTitle: 'Satvik Gupta | CV',
             ogDescription: 'Resume, experience, skills, and project highlights of Satvik Gupta.'
-        }
+        },
+        schema: {
+            "@context": "https://schema.org",
+            "@type": "Person",
+            "name": "Satvik Gupta",
+            "url": "https://www.gsatvik.in/cv",
+            "email": "satvikgupta050404@email.com",
+            "sameAs": [
+                "https://github.com/satviky",
+                "https://www.linkedin.com/in/satvik-g-27bb4a26a/"
+            ]
+        },
     });
 });
 
@@ -158,7 +172,17 @@ app.get('/projects', (req, res) => {
             keywords: projectsKeywords,
             ogTitle: 'Satviky | Projects',
             ogDescription: 'Explore Project Rescue, web experiments, and other builds by Satvik Gupta.'
-        }
+        },
+        schema: {
+            "@context": "https://schema.org",
+            "@type": "Person",
+            "name": "Satvik Gupta",
+            "email": "satvikgupta050404@email.com",
+            "url": "https://www.gsatvik.in/projects",
+            "sameAs": [
+                "https://github.com/Satviky?tab=repositories",
+            ]
+        },
     });
 });
 
@@ -172,7 +196,22 @@ app.get('/app', (req, res) => {
             keywords: appKeywords,
             ogTitle: 'Satviky | App Development',
             ogDescription: 'Explore mobile app ideas and app development work by Satvik Gupta.'
-        }
+        },
+        schema: {
+            "@context": "https://schema.org",
+            "@type": "Person",
+            "name": "Satvik Gupta",
+            "email": "satvikgupta050404@email.com",
+            "url": "https://www.gsatvik.in/apps",
+            "sameAs": [
+                "https://github.com/Satviky?tab=repositories",
+            ],
+            "jobTitle": "Founder & Developer",
+            "worksFor": {
+                "@type": "Organization",
+                "name": "Shadowveil Studioz"
+            }
+        },
     });
 });
 
@@ -186,6 +225,17 @@ app.get('/contact', (req, res) => {
             keywords: contactKeywords,
             ogTitle: 'Contact Satviky',
             ogDescription: 'Get in touch with Satvik Gupta for collaborations, ideas, and project discussions.'
+        },
+        schema: {
+            "@context": "https://schema.org",
+            "@type": "Organization",
+            "name": "Shadowveil Studioz",
+            "url": "https://www.gsatvik.in/contact",
+            "email": "shadowveilstudioz@email.com",
+            "founder": {
+                "@type": "Person",
+                "name": "Satvik Gupta"
+            }
         }
     });
 });
