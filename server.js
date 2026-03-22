@@ -9,6 +9,7 @@ app.set('view engine', 'ejs');
 app.set('views', path.join(__dirname, 'views'));
 
 const expressLayouts = require('express-ejs-layouts');
+const { type } = require('os');
 
 app.use(expressLayouts);
 app.set('layout', 'layout');
@@ -121,7 +122,7 @@ app.get('/', (req, res) => {
             "name": "Satvik Gupta",
             "nationality": "India",
             "birthDate": "2004-05-04",
-            "email": "satvikgupta050404@email.com",
+            "email": "satvikgupta050404@gmail.com",
             "url": "https://www.gsatvik.in",
             "sameAs": [
                 "https://github.com/satviky",
@@ -153,7 +154,7 @@ app.get('/cv', (req, res) => {
             "@type": "Person",
             "name": "Satvik Gupta",
             "url": "https://www.gsatvik.in/cv",
-            "email": "satvikgupta050404@email.com",
+            "email": "satvikgupta050404@gmail.com",
             "sameAs": [
                 "https://github.com/satviky",
                 "https://www.linkedin.com/in/satvik-g-27bb4a26a/"
@@ -177,7 +178,7 @@ app.get('/projects', (req, res) => {
             "@context": "https://schema.org",
             "@type": "Person",
             "name": "Satvik Gupta",
-            "email": "satvikgupta050404@email.com",
+            "email": "satvikgupta050404@gmail.com",
             "url": "https://www.gsatvik.in/projects",
             "sameAs": [
                 "https://github.com/Satviky?tab=repositories",
@@ -201,7 +202,7 @@ app.get('/app', (req, res) => {
             "@context": "https://schema.org",
             "@type": "Person",
             "name": "Satvik Gupta",
-            "email": "satvikgupta050404@email.com",
+            "email": "satvikgupta050404@gmail.com",
             "url": "https://www.gsatvik.in/apps",
             "sameAs": [
                 "https://github.com/Satviky?tab=repositories",
@@ -231,7 +232,7 @@ app.get('/contact', (req, res) => {
             "@type": "Organization",
             "name": "Shadowveil Studioz",
             "url": "https://www.gsatvik.in/contact",
-            "email": "shadowveilstudioz@email.com",
+            "email": "shadowveilstudioz@gmail.com",
             "founder": {
                 "@type": "Person",
                 "name": "Satvik Gupta"
@@ -279,6 +280,44 @@ app.get('/shadowveil-studioZ', (req, res) => {
             keywords: sszHomeKeywords,
             ogTitle: 'Shadowveil Studioz',
             ogDescription: 'Enter the experimental lab of Shadowveil Studioz and explore current digital projects.'
+        },
+        schema: {
+            "@context": "https://schema.org",
+            "@type": "Organization",
+            "name": "Shadowveil StudioZ",
+            "url": "https://www.gsatvik.in/Shadowveil-StudioZ",
+            "logo": "https://www.gsatvik.in/images/ssz-logo-def.png",
+            "email": "shadowveilstudioz@gmail.com",
+            "@id": "https://www.gsatvik.in/#organisation",
+
+            "address": {
+                "@type": "PostalAddress",
+                "addressCountry": "IN"
+            },
+
+            "founder": [
+                {
+                    "@type": "Person",
+                    "name": "Satvik Gupta",
+                    "url": "https://www.gsatvik.in"
+                },
+                {
+                    "@type": "Person",
+                    "name": "Saksham Gupta",
+                    "url": "https://www.gsatvik.in/team#cofounder"
+                }
+            ],
+
+            "description": "Shadowveil StudioZ creates narrative games, productivity tools, and digital experiences. Known for Spiele Zone and Simplify Goals.",
+            "contactPoint": {
+                "@type": "ContactPoint",
+                "contactType": "business inquiries",
+                "email": "shadowveilstudioz@gmail.com"
+            },
+            "sameAs": [
+                "https://github.com/Shadowveil-StudioZ",
+                "https://www.linkedin.com/company/shadowveil-studioz"
+            ]
         }
     });
 });
@@ -293,6 +332,22 @@ app.get('/shadowveil-studioZ/projects', (req, res) => {
             keywords: sszProjectsKeywords,
             ogTitle: 'Shadowveil Studioz Projects',
             ogDescription: 'Explore current experiments and interactive projects by Shadowveil Studioz.'
+        },
+        schema: {
+            "@context": "https://schema.org",
+            "@type": "CollectionPage",
+            "name": "Shadowveil StudioZ",
+            "url": "https://www.gsatvik.in/Shadowveil-StudioZ/projects",
+            "logo": "https://www.gsatvik.in/images/ssz-logo-def.png",
+            "email": "shadowveilstudioz@gmail.com",
+
+            "sameAs": [
+                "https://github.com/orgs/Shadowveil-StudioZ",
+                "https://www.linkedin.com/company/shadowveil-studioz"
+            ],
+            "creator": {
+                "@id": "https://www.gsatvik.in/#organisation"
+            }
         }
     });
 });
@@ -307,6 +362,22 @@ app.get('/shadowveil-studioZ/simplify-goals', (req, res) => {
             keywords: simplifyGoalsKeywords,
             ogTitle: 'Simplify Goals | Shadowveil Studioz',
             ogDescription: 'Read about Simplify Goals, a productivity system concept by Shadowveil Studioz.'
+        },
+        schema: {
+            "@context": "https://schema.org",
+            "@type": "SoftwareApplication",
+            "name": "Simplify Goals",
+            "url": "https://www.gsatvik.in/shadowveil-studioz/simplify-goals",
+
+            "codeRepository": "https://github.com/Satviky/Simplify-Goals",
+
+            "creator": {
+                "@id": "https://www.gsatvik.in/#organisation"
+            },
+            "author": {
+                "@type": "Person",
+                "name": "Satvik Gupta"
+            }
         }
     });
 });
@@ -321,6 +392,18 @@ app.get('/shadowveil-studioz/lt', (req, res) => {
             keywords: sszLinkKeywords,
             ogTitle: 'Shadowveil Studioz Links',
             ogDescription: 'Browse key links and pages from Shadowveil Studioz.'
+        },
+        schema: {
+            "@context": "https://schema.org",
+            "@type": "CollectionPage",
+            "name": "Shadowveil StudioZ- Link Tree",
+            "url": "https://www.gsatvik.in/Shadowveil-StudioZ/lt",
+            "logo": "https://www.gsatvik.in/images/ssz-logo-def.png",
+            "email": "shadowveilstudioz@gmail.com",
+
+            "creator": {
+                "@id": "https://www.gsatvik.in/#organisation"
+            }
         }
     });
 });
@@ -335,6 +418,21 @@ app.get('/shadowveil-studioz/lingo', (req, res) => {
             keywords: lingoHomeKeywords,
             ogTitle: 'Lingo | Shadowveil Studioz',
             ogDescription: 'Explore Lingo by Shadowveil Studioz.'
+        },
+        schema: {
+            "@context": "https://schema.org",
+            "@type": "SoftwareApplication",
+            "name": "Lingo",
+            "applicationCategory": "BotApplication",
+            "url": "https://www.gsatvik.in/shadowveil-studioz/lingo",
+            "operatingSystem": "Discord",
+            "creator": {
+                "@id": "https://www.gsatvik.in/#organisation"
+            },
+            "author": {
+                "@type": "Person",
+                "name": "Satvik Gupta"
+            }
         }
     });
 });
@@ -377,6 +475,21 @@ app.get('/shadowveil-studioz/sayori', (req, res) => {
             keywords: sayoriHomeKeywords,
             ogTitle: 'Sayori | Shadowveil Studioz',
             ogDescription: 'Meet Sayori, the interactive Discord bot by Shadowveil Studioz.'
+        },
+        schema: {
+            "@context": "https://schema.org",
+            "@type": "SoftwareApplication",
+            "name": "Sayori",
+            "applicationCategory": "BotApplication",
+            "url": "https://www.gsatvik.in/shadowveil-studioz/sayori",
+            "operatingSystem": "Discord",
+            "creator": {
+                "@id": "https://www.gsatvik.in/#organisation"
+            },
+            "author": {
+                "@type": "Person",
+                "name": "Saksham Gupta"
+            }
         }
     });
 });
