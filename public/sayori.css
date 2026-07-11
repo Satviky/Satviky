@@ -237,6 +237,8 @@ footer {
 }
 
 
+
+
 /* Background Particles */
 .particle-bg {
   position: absolute;
@@ -275,3 +277,16 @@ footer {
   }
 }
 
+
+
+.copy-command {
+  cursor: pointer;
+}
+
+.copy-command:hover {
+  box-shadow: 0 8px 24px rgba(157, 72, 236, 0.425);
+}
+
+.endgame-com:hover {
+  box-shadow: 0 8px 26px rgba(210, 119, 240, 0.5);
+}
