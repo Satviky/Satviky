@@ -1,0 +1,228 @@
+<main class="sayori-home">
+    <section class="sayori-section pt-16 lg:pt-24">
+        <div class="max-w-[1180px] mx-auto px-5">
+            <p class="hero-eyebrow">CATEGORY</p>
+            <h1 class="font-serif text-[clamp(3rem,8vw,5.5rem)] leading-[0.92] mt-4">
+                SimpleFun:
+                <span class="text-[#FFD34E]">
+                    Single Player
+                </span>
+            </h1>
+
+            <p class="hero-description mt-6 max-w-2xl">
+                A lot of different types of games, which we were not able to fit in any other category.
+            </p>
+
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mt-12">
+
+                <div class="game-stat bg-[#562447]">
+                    <span>Games</span>
+                    <strong>2</strong>
+                </div>
+
+                <div class="game-stat bg-[#562447]">
+                    <span>Players</span>
+                    <strong>1</strong>
+                </div>
+
+                <div class="game-stat bg-[#562447]">
+                    <span>Commands</span>
+                    <strong>2</strong>
+                </div>
+
+                <div class="game-stat bg-[#562447]">
+                    <span>Status</span>
+                    <strong>Active</strong>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sidebar -->
+    <aside class="hidden lg:block">
+        <div class="sticky top-8">
+            <div class="sidebar-card bg-[#562447]">
+                <p class="section-kicker">Games</p>
+                <nav class="mt-6 space-y-2">
+                    <a href="#blackjack" class="sidebar-link hover:bg-[#6A2E58] hover:text-[#FFD34E]">
+                        🃏Blackjack
+                    </a>
+                    <a href="#minesweeper" class="sidebar-link hover:bg-[#6A2E58] hover:text-[#FFD34E]">
+                        💥Minesweeper
+                    </a>
+                    <a href="#coming-soon" class="sidebar-link hover:text-[#FFD34E]">
+                        ＋ More Coming Soon
+                    </a>
+                </nav>
+                <div class="mt-8 pt-6 border-t border-[var(--sayori-border)]">
+
+                    <p class="text-sm text-[var(--sayori-muted)]">
+                        Need a specific command?
+                    </p>
+                    <a href="?explore" class="sayori-btn mt-4">
+                        📖 Gamebook
+                    </a>
+                </div>
+            </div>
+        </div>
+    </aside>
+    <div class="hidden lg:block min-h-[8px]"></div>
+
+    <!-- Only visible on mobile -->
+    <div class="lg:hidden mb-10 max-w-[99vw]">
+        <select
+            class="w-[99vw] max-w-[99vw] bg-[#562447] border border-[var(--sayori-border)] rounded-xl p-4 text-[var(--sayori-text)]"
+            onchange="location.hash=this.value">
+            <option value="">Browse Games</option>
+            <option value="blackjack"> 🃏Blackjack </option>
+            <option value="minesweeper"> 💥Minesweeper </option>
+        </select>
+    </div>
+    <div>
+
+        <section id="blackjack"
+            class="game-card rounded-3xl overflow-hidden bg-[#562447] border border-[var(--sayori-border)]">
+            <header class="card-header px-8 py-12">
+                <div class="card-symbol">
+                    🃏
+                </div>
+                <h2 class="text-2xl text-[var(--sayori-lavender-bright)]">Blackjack</h2>
+                <p class="card-tagline">
+                    Classic card thing.
+                </p>
+            </header>
+
+            <div class="px-8 pb-8 space-y-10">
+                <section>
+                    <h3 class="flex items-center gap-2 text-xl font-semibold mb-4">🎮 How to Play</h3>
+                    <p class="text-[var(--sayori-muted)] leading-8">
+                        Dealer deals the card and you get two cards. Now dealer will only reveal one card to you. The
+                        goal of the game is to reach 21 or be closer to 21. Having a number higher than 21 will make you
+                        lose automatically.
+                    </p>
+                    <ul class="space-y-3 text-[var(--sayori-muted)]">
+                        <li>- Pressing hit will give you a card from the deck.</li>
+                        <li>- Double fold is forfeit.</li>
+                        <li>- Pressing stand means you do not wish to draw any new card and whatever cards you have
+                            currently is your final cards.</li>
+                    </ul>
+                </section>
+                <section>
+
+                    <h3 class="flex items-center gap-2 text-xl font-semibold mb-4">⌨ Commands</h3>
+                    <div class="flex flex-wrap gap-3">
+                        <button class="copy-command p-2 rounded" data-command="/blackjack">
+                            /blackjack
+                        </button>
+                    </div>
+                </section>
+                <section>
+                    <h3 class="flex items-center gap-2 text-xl font-semibold"> Important stuffs:</h3>
+                    <ul class="space-y-3 text-[var(--sayori-muted)]">
+                        <li>- Value of face cards is 10.</li>
+                        <li>- Value of Ace is 1.</li>
+                        <li>- The one closer to 21 wins.</li>
+                        <li>- If you cross 21 then you lose..</li>
+                    </ul>
+                </section>
+                <section>
+                    <h3 class="flex items-center gap-2 text-xl font-semibold"> Tips:</h3>
+                    <ul class="space-y-3 text-[var(--sayori-muted)]">
+                        <li>- If the value of your cards is more than 15, do not press hit... Most of the times it's a
+                            bad choice.</li>
+                        <li>- Press hit when the values is really small.</li>
+                        <li>- Most of the time, it is safe to press 'stand' when you have 17 or higher.</li>
+                    </ul>
+                </section>
+            </div>
+        </section>
+        <div class="min-h-[3px]"></div>
+        <section id="minesweeper"
+            class="game-card rounded-3xl overflow-hidden bg-[#562447] border border-[var(--sayori-border)]">
+            <header class="card-header px-8 py-12">
+                <div class="card-symbol">
+                    💥
+                </div>
+                <h2 class="text-2xl text-[var(--sayori-lavender-bright)]">Minesweeper</h2>
+                <p class="card-tagline">
+                    Nostalgiaaaaa...
+                </p>
+            </header>
+
+            <div class="px-8 pb-8 space-y-10">
+                <section>
+                    <h3 class="flex items-center gap-2 text-xl font-semibold mb-4">
+                        🎮 How to Play
+                    </h3>
+                    <p class="text-[var(--sayori-muted)] leading-8">
+                        Your goal is to reveal every safe tile without clicking on a mine. Whenever you reveal a safe
+                        tile, it may display a number. That number tells you how many mines exist in the eight tiles
+                        surrounding it. If no number, you can press every box around it without fear, Wohoo.
+                    </p>
+                    <ul class="space-y-3 text-[var(--sayori-muted)]">
+                        <li>- A tile showing <strong>1</strong> means exactly one nearby tile contains a mine.</li>
+                        <li>- A tile showing <strong>2</strong> means exactly two nearby tiles contain mines.</li>
+                        <li>- Use those numbers to figure out which tiles are safe.</li>
+                        <li>- Clicking on a mine ends the game immediately.</li>
+                        <li>- Empty box, click everything around it.</li>
+                    </ul>
+
+                </section>
+                <section>
+
+                    <h3 class="flex items-center gap-2 text-xl font-semibold mb-4">⌨ Commands</h3>
+                    <div class="flex flex-wrap gap-3">
+                        <button class="copy-command p-2 rounded" data-command="/minesweeper">
+                            /minesweeper
+                        </button>
+                    </div>
+                </section>
+                <section>
+                    <h3 class="flex items-center gap-2 text-xl font-semibold"> Tips </h3>
+                    <ul class="space-y-3 text-[var(--sayori-muted)]">
+                        <li>- Start from a corner or edge whenever possible.</li>
+                        <li>- A tile marked <strong>1</strong> means exactly one surrounding tile contains a mine.</li>
+                        <li>- Empty spaces reveal large safe areas automatically, so use them to gather information.
+                        </li>
+                        <li>- Don't guess unless every logical move has been exhausted.</li>
+                    </ul>
+                </section>
+            </div>
+        </section>
+
+    </div>
+    <div class="min-h-[6px]"></div>
+
+    <section id="coming-soon" class="mt-16 p-2">
+        <p class="section-kicker">
+            More Games
+        </p>
+        <h2 class="font-serif text-4xl mt-3">
+            Coming Soon
+        </h2>
+        <p class="hero-description mt-4 max-w-2xl">
+            Nothing hurts in giving a sneak peek.
+        </p>
+        <div class="grid gap-5 md:grid-cols-3 mt-10">
+            <article
+                class="rounded-3xl p-6 bg-[#562447] border border-dashed border-[var(--sayori-border)] transition duration-200 hover:-translate-y-1 hover:border-[var(--sayori-lavender)] cursor-pointer">
+                <span
+                    class="inline-flex items-center rounded-full px-3 py-1 text-xs tracking-widest uppercase bg-[rgba(185,163,230,.08)] text-[var(--sayori-orange)]">
+                    Form
+                </span>
+                <h3 class="font-serif text-3xl mt-5">
+                    Do you have a cool guessing game idea?
+                </h3>
+                <p class="text-[var(--sayori-muted)] leading-8 mt-4">
+                    Drop your ideas in the form provided.
+                </p>
+                <p class="text-[var(--sayori-muted)] leading-8 mt-4">
+                    To be honest, could there be any single player game which can be added? Is there anything?
+                </p>
+                <a class="sayori-btn sayori-btn-secondary bg-[#FFD34E] text-black"
+                    href="https://forms.gle/w36x89tjFFxE32rY8 ">Form!</a>
+            </article>
+        </div>
+    </section>
+
+</main>

@@ -1,0 +1,398 @@
+<main class="sayori-home">
+    <section class="sayori-section pt-16 lg:pt-24">
+        <div class="max-w-[1180px] mx-auto px-5">
+            <p class="hero-eyebrow">CATEGORY</p>
+            <h1 class="font-serif text-[clamp(3rem,8vw,5.5rem)] leading-[0.92] mt-4">
+                Games:
+                <span class="text-[#000c97]">
+                    Guess
+                </span>
+            </h1>
+
+            <p class="hero-description mt-6 max-w-2xl">
+                Just guessing. Is this the answer? Wait no, maybe THAT is the answers.
+            </p>
+
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mt-12">
+
+                <div class="game-stat bg-[#000c37]">
+                    <span>Games</span>
+                    <strong>4</strong>
+                </div>
+
+                <div class="game-stat bg-[#000c37]">
+                    <span>Players</span>
+                    <strong>1-∞</strong>
+                </div>
+
+                <div class="game-stat bg-[#000c37]">
+                    <span>Commands</span>
+                    <strong>6+</strong>
+                </div>
+
+                <div class="game-stat bg-[#000c37]">
+                    <span>Status</span>
+                    <strong>Active</strong>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sidebar -->
+    <aside class="hidden lg:block">
+        <div class="sticky top-8">
+            <div class="sidebar-card bg-[#000c37]">
+                <p class="section-kicker">Games</p>
+                <nav class="mt-6 space-y-2">
+                    <a href="#guess" class="sidebar-link hover:bg-[#111155] hover:color-[#0000ee]">
+                        🔢 Guess
+                    </a>
+                    <a href="#gt" class="sidebar-link hover:bg-[#111155] hover:color-[#0000ee]">
+                        ⏱️ Guesstime
+                    </a>
+                    <a href="#gta" class="sidebar-link hover:bg-[#111155] hover:color-[#0000ee]">
+                        🕵 Guess the Agent
+                    </a>
+                    <a href="#gw" class="sidebar-link hover:bg-[#111155] hover:color-[#0000ee]">
+                        🔍 GuessWord
+                    </a>
+
+                    <a href="#coming-soon" class="sidebar-link hover:color-[#0000ee]">
+                        ＋ More Coming Soon
+                    </a>
+                </nav>
+                <div class="mt-8 pt-6 border-t border-[var(--sayori-border)]">
+
+                    <p class="text-sm text-[var(--sayori-muted)]">
+                        Need a specific command?
+                    </p>
+                    <a href="?explore" class="sayori-btn mt-4">
+                        📖 Gamebook
+                    </a>
+                </div>
+            </div>
+        </div>
+    </aside>
+    <div class="hidden lg:block min-h-[8px]"></div>
+
+    <!-- Only visible on mobile -->
+    <div class="lg:hidden mb-10 max-w-[99vw]">
+        <select
+            class="w-[99vw] max-w-[99vw] bg-[#000c37] border border-[var(--sayori-border)] rounded-xl p-4 text-[var(--sayori-text)]"
+            onchange="location.hash=this.value">
+            <option value="">Browse Games</option>
+            <option value="guess"> guess </option>
+            <option value="gt"> Guesstime </option>
+            <option value="gta"> Guess the Agent </option>
+            <option value="gw"> Guess Word </option>
+        </select>
+    </div>
+    <div>
+
+        <section id="guess" class="game-card rounded-3xl overflow-hidden bg-[#000c37] border border-[var(--sayori-border)]">
+            <header class="card-header px-8 py-12">
+                <div class="card-symbol">
+                    🔢
+                </div>
+                <h2 class="text-2xl text-[var(--sayori-lavender-bright)]">guess</h2>
+                <p class="card-tagline">
+                    Channel guessing game. Long format. Big Range.
+                </p>
+                <div class="flex flex-wrap gap-3 mt-8">
+                    <div class="game-chip">
+                        👥 1-∞
+                    </div>
+                    <div class="game-chip">
+                        ⏱ 30s-∞
+                    </div>
+                    <div class="game-chip">
+                        💬 Text
+                    </div>
+                    <div class="game-chip">
+                        🎭 Hidden Number
+                    </div>
+
+                </div>
+
+            </header>
+
+            <div class="px-8 pb-8 space-y-10">
+                <section>
+                    <h3 class="flex items-center gap-2 text-xl font-semibold mb-4">🎮 How to Play</h3>
+                    <p class="text-[var(--sayori-muted)] leading-8">
+                        Just type in any random number and wait for bot to react. If bot reacts up, guess a larger number and vice versa.
+                    </p>
+                </section>
+                <section>
+
+                    <p class="text-[var(--sayori-muted)] mt-5 leading-8">
+                        This one doesn't end on it's own until we restart the bot so keep guessing.
+                    </p>
+                </section>
+                <section>
+
+                    <h3 class="flex items-center gap-2 text-xl font-semibold mb-4">⌨ Commands</h3>
+                    <div class="flex flex-wrap gap-3">
+                        <button class="copy-command p-2 rounded" data-command="/guess">
+                            /guess
+                        </button>
+                        <button class="copy-command p-2 rounded" data-command="/endgame">
+                            /endgame
+                        </button>
+                    </div>
+                </section>
+                <section>
+                    <h3 class="flex items-center gap-2 text-xl font-semibold"> Tips</h3>
+                    <ul class="space-y-3 text-[var(--sayori-muted)]">
+                        <li>- Pay attention to what the bot reacts.</li>
+                        <li>- Take numbers to make the range shorter.</li>
+                    </ul>
+                </section>
+            </div>
+        </section>
+        <div class="min-h-[3px]"></div>
+        <section id="gt" class="game-card rounded-3xl overflow-hidden bg-[#000c37] border border-[var(--sayori-border)]">
+            <header class="card-header px-8 py-12">
+                <div class="card-symbol">
+                    ⏱️
+                </div>
+                <h2 class="text-2xl text-[var(--sayori-lavender-bright)]">Guesstime</h2>
+                <p class="card-tagline">
+                    30 seconds[default] to guess a number between 1-10 (inclusive).
+                </p>
+                <div class="flex flex-wrap gap-3 mt-8">
+                    <div class="game-chip">
+                        👥 1-∞
+                    </div>
+                    <div class="game-chip">
+                        ⏱ 1sec-5min
+                    </div>
+                    <div class="game-chip">
+                        💬 Text
+                    </div>
+                    <div class="game-chip">
+                        🎭 Guessing Number
+                    </div>
+                </div>
+            </header>
+
+            <div class="px-8 pb-8 space-y-10">
+                <section>
+                    <h3 class="flex items-center gap-2 text-xl font-semibold mb-4">🎮 How to Play</h3>
+                    <p class="text-[var(--sayori-muted)] leading-8">
+                        Find the number before anyone else does.
+                    </p>
+                </section>
+                <section>
+
+                    <p class="text-[var(--sayori-muted)] mt-5 leading-8">
+                        mechanism work same as the <code>Guess</code> game.
+                    </p>
+                </section>
+                <section>
+
+                    <h3 class="flex items-center gap-2 text-xl font-semibold mb-4">⌨ Commands</h3>
+                    <div class="flex flex-wrap gap-3">
+                        <button class="copy-command p-2 rounded" data-command="/guesstime">
+                            /guesstime
+                        </button>
+                        <button class="copy-command p-2 rounded" data-command="/endgame">
+                            /endgame
+                        </button>
+                    </div>
+                </section>
+                <section>
+                    <h3 class="flex items-center gap-2 text-xl font-semibold"> Tips</h3>
+                    <ul class="space-y-3 text-[var(--sayori-muted)]">
+                        <li>- Do not make your word obvious.</li>
+                        <li>- Do not type your word anywhere in chat.</li>
+                    </ul>
+                </section>
+            </div>
+        </section>
+        <div class="min-h-[3px]"></div>
+        <section id="gta" class="game-card rounded-3xl overflow-hidden bg-[#000c37] border border-[var(--sayori-border)]">
+            <header class="card-header px-8 py-12">
+                <div class="card-symbol">
+                    <img src="/images/sayori/detective.png" alt="gta" class="card-symbol">
+                </div>
+                <h2 class="text-2xl text-[var(--sayori-lavender-bright)]">Guess The Agent</h2>
+                <p class="card-tagline">
+                    Who is imposter, among us?
+                </p>
+                <div class="flex flex-wrap gap-3 mt-8">
+                    <div class="game-chip">
+                        👥 4–10
+                    </div>
+                    <div class="game-chip">
+                        ⏱ 5-10 min
+                    </div>
+                    <div class="game-chip">
+                        💬 Text
+                    </div>
+                    <div class="game-chip">
+                        🎭 Hidden Roles
+                    </div>
+
+                </div>
+
+            </header>
+
+            <div class="px-8 pb-8 space-y-10">
+                <section>
+                    <h3 class="flex items-center gap-2 text-xl font-semibold mb-4">🎮 How to Play</h3>
+                    <p class="text-[var(--sayori-muted)] leading-8">
+                        Every player is secretly given a word, while Agent white gets no word. Agent red are the
+                        imposters and have different word.
+                    </p>
+                </section>
+                <section>
+
+                    <h3 class="flex items-center gap-2 text-xl font-semibold mb-4">🎭 Roles</h3>
+
+                    <div class="flex flex-wrap gap-3">
+                        <span class="game-chip">Agent Black</span>
+                        <span class="game-chip">Agent Red</span>
+                        <span class="game-chip">Agent White</span>
+                    </div>
+
+                    <p class="text-[var(--sayori-muted)] mt-5 leading-8">
+                        Everyone describe their words, while trying to eliminate agent red and white.
+                    </p>
+                </section>
+                <section>
+
+                    <h3 class="flex items-center gap-2 text-xl font-semibold mb-4">⌨ Commands</h3>
+                    <div class="flex flex-wrap gap-3">
+                        <button class="copy-command p-2 rounded" data-command="/gta">
+                            /gta
+                        </button>
+                        <button class="copy-command p-2 rounded" data-command="/gta action:Begin">
+                            /gta action: Begin
+                        </button>
+                        <button class="copy-command p-2 rounded" data-command="/gta action:Skip">
+                            /gta action: Skip
+                        </button>
+                        <button class="copy-command p-2 rounded" data-command="/gta action:Kick">
+                            /gta action: Kick
+                        </button>
+                    </div>
+                </section>
+                <section>
+                    <h3 class="flex items-center gap-2 text-xl font-semibold"> Tips</h3>
+                    <ul class="space-y-3 text-[var(--sayori-muted)]">
+                        <li>- Do not make your word obvious.</li>
+                        <li>- Do not type your word anywhere in chat.</li>
+                    </ul>
+                </section>
+            </div>
+            <section class="rounded-2xl border border-[var(--sayori-border)] p-6 bg-[#0d2346]">
+                <p class="section-kicker">Want to become a better Agent?</p>
+                <h3 class="font-serif text-3xl mt-3">Explore the complete GTA guide.</h3>
+                <p class="text-[var(--sayori-muted)] mt-4 leading-8">
+                    Learn every role, victory condition, and strategy in the dedicated guide.
+                </p>
+                <a href="/shadowveil-studioz/sayori/gta" class="sayori-btn sayori-btn-primary mt-6">
+                    Open Full Guide →
+                </a>
+            </section>
+        </section>
+        <div class="min-h-[3px]"></div>
+        <section id="gw"
+            class="game-card rounded-3xl overflow-hidden bg-[#000c37] border border-[var(--sayori-border)]">
+            <header class="card-header px-8 py-12">
+                <div class="card-symbol">
+                    🔍
+                </div>
+                <h2 class="text-2xl text-[var(--sayori-lavender-bright)]">Guess Word</h2>
+                <p class="card-tagline">
+                    What's this word?
+                </p>
+                <div class="flex flex-wrap gap-3 mt-8">
+                    <div class="game-chip">
+                        👥 2–As many
+                    </div>
+                    <div class="game-chip">
+                        ⏱ 1-2 min
+                    </div>
+                    <div class="game-chip">
+                        💬 Text
+                    </div>
+                    <div class="game-chip">
+                        🔍 Hidden Word
+                    </div>
+
+                </div>
+
+            </header>
+
+            <div class="px-8 pb-8 space-y-10">
+                <section>
+                    <h3 class="flex items-center gap-2 text-xl font-semibold mb-4">🎮 How to Play</h3>
+                    <p class="text-[var(--sayori-muted)] leading-8">
+                        One of the player who reacted will be selected as hint giver. The job of hint giver is to describe their word as precisely as possible.
+                    </p>
+                </section>
+                <section>
+
+                    <h3 class="flex items-center gap-2 text-xl font-semibold mb-4">🎭 Roles</h3>
+
+                    <div class="flex flex-wrap gap-3">
+                        <span class="game-chip">Hint Giver</span>
+                        <span class="game-chip">Guessers</span>
+                    </div>
+
+                    <p class="text-[var(--sayori-muted)] mt-5 leading-8">
+                        Hint giver is supposed to give hints to make other guess what their word is.
+                    </p>
+                </section>
+                <section>
+
+                    <h3 class="flex items-center gap-2 text-xl font-semibold mb-4">⌨ Command</h3>
+                    <div class="flex flex-wrap gap-3">
+                        <button class="copy-command p-2 rounded" data-command="/guessword">
+                            /guessword
+                        </button>
+                    </div>
+                </section>
+                <section>
+                    <h3 class="flex items-center gap-2 text-xl font-semibold"> Tips</h3>
+                    <ul class="space-y-3 text-[var(--sayori-muted)]">
+                        <li>- Do not reveal your word directly in the chat.</li>
+                        <li>- Do not use fill in the blanks format.</li>
+                    </ul>
+                </section>
+            </div>
+        </section>
+    </div>
+    <div class="min-h-[6px]"></div>
+
+    <section id="coming-soon" class="mt-16 p-2">
+        <p class="section-kicker">
+            More Games
+        </p>
+        <h2 class="font-serif text-4xl mt-3">
+            Coming Soon
+        </h2>
+        <p class="hero-description mt-4 max-w-2xl">
+            Nothing hurts in giving a sneak peek.
+        </p>
+        <div class="grid gap-5 md:grid-cols-3 mt-10">
+            <article
+                class="rounded-3xl p-6 bg-[#060647] border border-dashed border-[var(--sayori-border)] transition duration-200 hover:-translate-y-1 hover:border-[var(--sayori-lavender)] cursor-pointer">
+                <span
+                    class="inline-flex items-center rounded-full px-3 py-1 text-xs tracking-widest uppercase bg-[rgba(185,163,230,.08)] text-[var(--sayori-orange)]">
+                    Form
+                </span>
+                <h3 class="font-serif text-3xl mt-5">
+                    Do you have a cool guessing game idea?
+                </h3>
+                <p class="text-[var(--sayori-muted)] leading-8 mt-4">
+                    Drop your ideas in the form provided.
+                </p>
+                <a class="sayori-btn sayori-btn-secondary bg-[#1111DD]" href="https://forms.gle/w36x89tjFFxE32rY8 ">Form!</a>
+            </article>
+        </div>
+    </section>
+
+</main>

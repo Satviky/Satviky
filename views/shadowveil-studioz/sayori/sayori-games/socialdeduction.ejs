@@ -1,0 +1,389 @@
+<main class="sayori-home">
+    <section class="sayori-section pt-16 lg:pt-24">
+        <div class="max-w-[1180px] mx-auto px-5">
+            <p class="hero-eyebrow">CATEGORY</p>
+            <h1 class="font-serif text-[clamp(3rem,8vw,5.5rem)] leading-[0.92] mt-4">
+                Social
+                <span class="text-[var(--sayori-lavender)]">
+                    Deduction
+                </span>
+            </h1>
+
+            <p class="hero-description mt-6 max-w-2xl">
+                Hidden information.
+                Careful discussion.
+                Broken trust.
+                Every decision changes the game.
+            </p>
+
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mt-12">
+
+                <div class="game-stat bg-[var(--sayori-surface)]">
+                    <span>Games</span>
+                    <strong>3</strong>
+                </div>
+
+                <div class="game-stat bg-[var(--sayori-surface)]">
+                    <span>Players</span>
+                    <strong>4-25</strong>
+                </div>
+
+                <div class="game-stat bg-[var(--sayori-surface)]">
+                    <span>Commands</span>
+                    <strong>6+</strong>
+                </div>
+
+                <div class="game-stat bg-[var(--sayori-surface)]">
+                    <span>Status</span>
+                    <strong>Active</strong>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sidebar -->
+    <aside class="hidden lg:block">
+        <div class="sticky top-8">
+            <div class="sidebar-card bg-[var(--sayori-surface)]">
+                <p class="section-kicker">Games</p>
+                <nav class="mt-6 space-y-2">
+                    <a href="#mafia" class="sidebar-link hover:bg-[var(--sayori-raised)] hover:color-[var(--sayori-lavender)]">
+                        🌛 Mafia
+                    </a>
+                    <a href="#gta" class="sidebar-link hover:bg-[var(--sayori-raised)] hover:color-[var(--sayori-lavender)]">
+                        🕵 Guess the Agent
+                    </a>
+                    <a href="#fn" class="sidebar-link hover:bg-[var(--sayori-raised)] hover:color-[var(--sayori-lavender)]">
+                        🗡️ Final Night
+                    </a>
+
+                    <a href="#coming-soon" class="sidebar-link hover:bg-[var(--sayori-raised)] hover:color-[var(--sayori-lavender)]">
+                        ＋ More Coming Soon
+                    </a>
+                </nav>
+                <div class="mt-8 pt-6 border-t border-[var(--sayori-border)]">
+
+                    <p class="text-sm text-[var(--sayori-muted)]">
+                        Need a specific command?
+                    </p>
+                    <a href="?explore" class="sayori-btn mt-4">
+                        📖 Gamebook
+                    </a>
+                </div>
+            </div>
+        </div>
+    </aside>
+    <div class="hidden lg:block min-h-[8px]"></div>
+
+    <!-- Only visible on mobile -->
+    <div class="lg:hidden mb-10 max-w-[99vw]">
+        <select
+            class="w-[99vw] max-w-[99vw] bg-[var(--sayori-surface)] border border-[var(--sayori-border)] rounded-xl p-4 text-[var(--sayori-text)]"
+            onchange="location.hash=this.value">
+            <option value="">Browse Games</option>
+            <option value="mafia"> Mafia </option>
+            <option value="gta"> Guess the Agent </option>
+            <option value="fn"> Final Night </option>
+        </select>
+    </div>
+    <div>
+
+        <section id="mafia"
+            class="game-card rounded-3xl overflow-hidden bg-[var(--sayori-surface)] border border-[var(--sayori-border)]">
+            <header class="card-header px-8 py-12">
+                <div class="card-symbol">
+                    <img src="/images/sayori/Sayori_mafia.png" alt="Mafia" class="card-symbol">
+                </div>
+                <h2 class="text-2xl text-[var(--sayori-lavender-bright)]">Mafia</h2>
+                <p class="card-tagline">
+                    The world sleeps.
+                    The Mafia doesn't.
+                </p>
+                <div class="flex flex-wrap gap-3 mt-8">
+                    <div class="game-chip">
+                        👥 4–25
+                    </div>
+                    <div class="game-chip">
+                        ⏱ 15–30 min
+                    </div>
+                    <div class="game-chip">
+                        💬 Text + Voice
+                    </div>
+                    <div class="game-chip">
+                        🎭 Hidden Roles
+                    </div>
+
+                </div>
+
+            </header>
+
+            <div class="px-8 pb-8 space-y-10">
+                <section>
+                    <h3 class="flex items-center gap-2 text-xl font-semibold mb-4">🎮 How to Play</h3>
+                    <p class="text-[var(--sayori-muted)] leading-8">
+                        Every player is secretly assigned a role. Night time mafia kill someone, during the day players
+                        discuss. The game continues until the civilians or mafia's are eliminated.
+                    </p>
+                </section>
+                <section>
+
+                    <h3 class="flex items-center gap-2 text-xl font-semibold mb-4">🎭 Roles</h3>
+
+                    <div class="flex flex-wrap gap-3">
+                        <span class="game-chip">Civilian</span>
+                        <span class="game-chip">Mafia</span>
+                        <span class="game-chip">Doctor</span>
+                        <span class="game-chip">Detective</span>
+                        <span class="game-chip">+ More</span>
+                    </div>
+
+                    <p class="text-[var(--sayori-muted)] mt-5 leading-8">
+                        Every role has a unique objective. Some can inspect a users role, some can protect teammates,
+                        while the Mafias work together to decieve the civilians.
+                    </p>
+                </section>
+                <section>
+
+                    <h3 class="flex items-center gap-2 text-xl font-semibold mb-4">⌨ Commands</h3>
+                    <div class="flex flex-wrap gap-3">
+                        <button class="copy-command p-2 rounded" data-command="/mafia">
+                            /mafia
+                        </button>
+                        <button class="copy-command p-2 rounded" data-command="/mafia action: Skip">
+                            /mafia action: Skip
+                        </button>
+                    </div>
+                </section>
+                <section>
+                    <h3 class="flex items-center gap-2 text-xl font-semibold"> Tips</h3>
+                    <ul class="space-y-3 text-[var(--sayori-muted)]">
+                        <li>- Pay attention to how players vote, not just what they say.</li>
+                        <li>- Revealing your role too early can make you an easy target.</li>
+                        <li>- Even silence can provide valuable information.</li>
+                    </ul>
+                </section>
+            </div>
+            <section class="rounded-2xl border border-[var(--sayori-border)] p-6 bg-[var(--sayori-raised)]">
+                <p class="section-kicker">Want to become a better detective?</p>
+                <h3 class="font-serif text-3xl mt-3">Explore the complete Mafia guide.</h3>
+                <p class="text-[var(--sayori-muted)] mt-4 leading-8">
+                    Learn every role, night order, victory condition, advanced settings,
+                    hosting tips, and strategy in the dedicated guide.
+                </p>
+                <a href="/shadowveil-studioz/sayori/mafia" class="sayori-btn sayori-btn-primary mt-6">
+                    Open Full Guide →
+                </a>
+            </section>
+        </section>
+        <div class="min-h-[3px]"></div>
+        <section id="gta" class="game-card rounded-3xl overflow-hidden bg-[var(--sayori-surface)] border border-[var(--sayori-border)]">
+            <header class="card-header px-8 py-12">
+                <div class="card-symbol">
+                    <img src="/images/sayori/detective.png" alt="gta" class="card-symbol">
+                </div>
+                <h2 class="text-2xl text-[var(--sayori-lavender-bright)]">Guess The Agent</h2>
+                <p class="card-tagline">
+                    Who is imposter, among us?
+                </p>
+                <div class="flex flex-wrap gap-3 mt-8">
+                    <div class="game-chip">
+                        👥 4–10
+                    </div>
+                    <div class="game-chip">
+                        ⏱ 5-10 min
+                    </div>
+                    <div class="game-chip">
+                        💬 Text
+                    </div>
+                    <div class="game-chip">
+                        🎭 Hidden Roles
+                    </div>
+
+                </div>
+
+            </header>
+
+            <div class="px-8 pb-8 space-y-10">
+                <section>
+                    <h3 class="flex items-center gap-2 text-xl font-semibold mb-4">🎮 How to Play</h3>
+                    <p class="text-[var(--sayori-muted)] leading-8">
+                        Every player is secretly given a word, while Agent white gets no word. Agent red are the
+                        imposters and have different word.
+                    </p>
+                </section>
+                <section>
+
+                    <h3 class="flex items-center gap-2 text-xl font-semibold mb-4">🎭 Roles</h3>
+
+                    <div class="flex flex-wrap gap-3">
+                        <span class="game-chip">Agent Black</span>
+                        <span class="game-chip">Agent Red</span>
+                        <span class="game-chip">Agent White</span>
+                    </div>
+
+                    <p class="text-[var(--sayori-muted)] mt-5 leading-8">
+                        Everyone describe their words, while trying to eliminate agent red and white.
+                    </p>
+                </section>
+                <section>
+
+                    <h3 class="flex items-center gap-2 text-xl font-semibold mb-4">⌨ Commands</h3>
+                    <div class="flex flex-wrap gap-3">
+                        <button class="copy-command p-2 rounded" data-command="/gta">
+                            /gta
+                        </button>
+                        <button class="copy-command p-2 rounded" data-command="/gta action:Begin">
+                            /gta action: Begin
+                        </button>
+                        <button class="copy-command p-2 rounded" data-command="/gta action:Skip">
+                            /gta action: Skip
+                        </button>
+                        <button class="copy-command p-2 rounded" data-command="/gta action:Kick">
+                            /gta action: Kick
+                        </button>
+                    </div>
+                </section>
+                <section>
+                    <h3 class="flex items-center gap-2 text-xl font-semibold"> Tips</h3>
+                    <ul class="space-y-3 text-[var(--sayori-muted)]">
+                        <li>- Do not make your word obvious.</li>
+                        <li>- Do not type your word anywhere in chat.</li>
+                    </ul>
+                </section>
+            </div>
+            <section class="rounded-2xl border border-[var(--sayori-border)] p-6 bg-[var(--sayori-raised)]">
+                <p class="section-kicker">Want to become a better Agent?</p>
+                <h3 class="font-serif text-3xl mt-3">Explore the complete GTA guide.</h3>
+                <p class="text-[var(--sayori-muted)] mt-4 leading-8">
+                    Learn every role, victory condition, and strategy in the dedicated guide.
+                </p>
+                <a href="/shadowveil-studioz/sayori/gta" class="sayori-btn sayori-btn-primary mt-6">
+                    Open Full Guide →
+                </a>
+            </section>
+        </section>
+        <div class="min-h-[3px]"></div>
+        <section id="fn" class="game-card rounded-3xl overflow-hidden bg-[var(--sayori-surface)] border border-[var(--sayori-border)]">
+            <header class="card-header px-8 py-12">
+                <div class="card-symbol">
+                    <img src="/images/sayori/sayori_phone.png" alt="sayori using phone" class="card-symbol">
+                </div>
+                <h2 class="text-2xl text-[var(--sayori-lavender-bright)]">Final Night</h2>
+                <p class="card-tagline">
+                    Kill! Kill! Kill!
+                </p>
+                <div class="flex flex-wrap gap-3 mt-8">
+                    <div class="game-chip">
+                        👥 4–10
+                    </div>
+                    <div class="game-chip">
+                        ⏱ 7-10 min
+                    </div>
+                    <div class="game-chip">
+                        💬 Text
+                    </div>
+                    <div class="game-chip">
+                        🎭 Hidden Roles
+                    </div>
+
+                </div>
+
+            </header>
+
+            <div class="px-8 pb-8 space-y-10">
+                <section>
+                    <h3 class="flex items-center gap-2 text-xl font-semibold mb-4">🎮 How to Play</h3>
+                    <p class="text-[var(--sayori-muted)] leading-8">
+                        Players in a locked abandoned house. Everyone share a room with someone else.
+                    </p>
+                </section>
+                <section>
+
+                    <h3 class="flex items-center gap-2 text-xl font-semibold mb-4">🎭 Roles</h3>
+
+                    <div class="flex flex-wrap gap-3">
+                        <span class="game-chip">Residents</span>
+                        <span class="game-chip">Killer</span>
+                    </div>
+
+                    <p class="text-[var(--sayori-muted)] mt-5 leading-8">
+                        This game is still in development. We need volunteers to test the features out.
+                    </p>
+                </section>
+                <section>
+
+                    <h3 class="flex items-center gap-2 text-xl font-semibold mb-4">⌨ Commands</h3>
+                    <div class="flex flex-wrap gap-3">
+                        <button class="copy-command p-2 rounded" data-command="/finalnight">
+                            /finalnight
+                        </button>
+                    </div>
+                </section>
+                <section>
+                    <h3 class="flex items-center gap-2 text-xl font-semibold"> Tips</h3>
+                    <ul class="space-y-3 text-[var(--sayori-muted)]">
+                        <li>- Pay attention to who is sharing room with whom.</li>
+                    </ul>
+                </section>
+            </div>
+            <section class="rounded-2xl border border-[var(--sayori-border)] p-6 bg-[var(--sayori-raised)]">
+                <p class="section-kicker">Want to know more?</p>
+                <h3 class="font-serif text-3xl mt-3">We too!.</h3>
+                <p class="text-[var(--sayori-muted)] mt-4 leading-8">
+                    Join us in testing the game, and become the part of early development of <code>Finalnights</code>
+                </p>
+                <a href="https://discord.gg/bcCs3PE86q" class="sayori-btn sayori-btn-primary mt-6">
+                    Join Server →
+                </a>
+            </section>
+        </section>
+    </div>
+    <div class="min-h-[6px]"></div>
+
+    <section id="coming-soon" class="mt-16 p-2">
+        <p class="section-kicker">
+            More Games
+        </p>
+        <h2 class="font-serif text-4xl mt-3">
+            Coming Soon
+        </h2>
+        <p class="hero-description mt-4 max-w-2xl">
+            Sayori is constantly growing with new games, experiments, and community
+            ideas. Here's a small preview of what may arrive in future updates.
+        </p>
+        <div class="grid gap-5 md:grid-cols-3 mt-10">
+            <article
+                class="rounded-3xl p-6 bg-[var(--sayori-surface)] border border-dashed border-[var(--sayori-border)] transition duration-200 hover:-translate-y-1 hover:border-[var(--sayori-lavender)]">
+                <span
+                    class="inline-flex items-center rounded-full px-3 py-1 text-xs tracking-widest uppercase bg-[rgba(185,163,230,.08)] text-[var(--sayori-orange)]">
+                    🧠Concept </span>
+                <h3 class="font-serif text-3xl mt-5">Alibi</h3>
+                <p class="text-[var(--sayori-muted)] leading-8 mt-4">We are not yet able to reach the conclusion regarding the mechanism but you can join the discussion.</p>
+            </article>
+
+            <article
+                class="rounded-3xl p-6 bg-[var(--sayori-surface)] border border-dashed border-[var(--sayori-border)] transition duration-200 hover:-translate-y-1 hover:border-[var(--sayori-lavender)]">
+                <span
+                    class="inline-flex items-center rounded-full px-3 py-1 text-xs tracking-widest uppercase bg-[rgba(185,163,230,.08)] text-[var(--sayori-orange)]">🧪Experimental</span>
+                <h3 class="font-serif text-3xl mt-5">GTA v2</h3>
+
+                <p class="text-[var(--sayori-muted)] leading-8 mt-4">
+                    A new mode... in the existing <code>Guess The Agent</code> game.</p>
+            </article>
+            <article
+                class="rounded-3xl p-6 bg-[var(--sayori-surface)] border border-dashed border-[var(--sayori-border)] transition duration-200 hover:-translate-y-1 hover:border-[var(--sayori-lavender)] cursor-pointer">
+                <span
+                    class="inline-flex items-center rounded-full px-3 py-1 text-xs tracking-widest uppercase bg-[rgba(185,163,230,.08)] text-[var(--sayori-orange)]">
+                    Classified
+                </span>
+                <h3 class="font-serif text-3xl mt-5">
+                    D###hn##e
+                </h3>
+                <p class="text-[var(--sayori-muted)] leading-8 mt-4">
+                    Even Sayori refuses to reveal what's hidden here...
+                </p>
+            </article>
+        </div>
+    </section>
+
+</main>

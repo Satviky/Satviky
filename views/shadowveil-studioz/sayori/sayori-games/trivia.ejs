@@ -1,0 +1,303 @@
+<main class="sayori-home">
+    <section class="sayori-section pt-16 lg:pt-24">
+        <div class="max-w-[1180px] mx-auto px-5">
+            <p class="hero-eyebrow">CATEGORY</p>
+            <h1 class="font-serif text-[clamp(3rem,8vw,5.5rem)] leading-[0.92] mt-4">
+                Games:
+                <span class="text-[#731010]">
+                    Trivias
+                </span>
+            </h1>
+
+            <p class="hero-description mt-6 max-w-2xl">
+                Love quizes? answer when prompted.
+            </p>
+
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mt-12">
+
+                <div class="game-stat bg-[#731010]">
+                    <span>Games</span>
+                    <strong>4</strong>
+                </div>
+
+                <div class="game-stat bg-[#731010]">
+                    <span>Players</span>
+                    <strong>2-∞</strong>
+                </div>
+
+                <div class="game-stat bg-[#731010]">
+                    <span>Commands</span>
+                    <strong>4+</strong>
+                </div>
+
+                <div class="game-stat bg-[#731010]">
+                    <span>Status</span>
+                    <strong>Active</strong>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sidebar -->
+    <aside class="hidden lg:block">
+        <div class="sticky top-8">
+            <div class="sidebar-card bg-[#731010]">
+                <p class="section-kicker">Games</p>
+                <nav class="mt-6 space-y-2">
+                    <a href="#anime" class="sidebar-link hover:bg-[#e8a77b] hover:color-[#ee2500]">
+                        💖 Anime trivia
+                    </a>
+                    <a href="#country" class="sidebar-link hover:bg-[#e8a77b] hover:color-[#ee2500]">
+                        🌏Country trivia
+                    </a>
+                    <!-- <a href="#gk" class="sidebar-link hover:bg-[#e8a77b] hover:color-[#ee2500]">
+                        🧠General knowledge trivia
+                    </a> -->
+                    <a href="#math" class="sidebar-link hover:bg-[#e8a77b] hover:color-[#ee2500]">
+                        🔢Math trivia
+                    </a>
+
+                    <a href="#coming-soon" class="sidebar-link hover:color-[#ee2500]">
+                        ＋ More Coming Soon
+                    </a>
+                </nav>
+                <div class="mt-8 pt-6 border-t border-[var(--sayori-border)]">
+
+                    <p class="text-sm text-[var(--sayori-muted)]">
+                        Need a specific command?
+                    </p>
+                    <a href="?explore" class="sayori-btn mt-4">
+                        📖 Gamebook
+                    </a>
+                </div>
+            </div>
+        </div>
+    </aside>
+    <div class="hidden lg:block min-h-[8px]"></div>
+
+    <!-- Only visible on mobile -->
+    <div class="lg:hidden mb-10 max-w-[99vw]">
+        <select
+            class="w-[99vw] max-w-[99vw] bg-[#731010] border border-[var(--sayori-border)] rounded-xl p-4 text-[var(--sayori-text)]"
+            onchange="location.hash=this.value">
+            <option value="">Browse Games</option>
+            <option value="anime"> Anime trivia </option>
+            <option value="country"> Country trivia </option>
+            <!-- <option value="gk"> General knowledge </option> -->
+            <option value="math"> Math trivia </option>
+        </select>
+    </div>
+    <p class="sidebar-card bg-[#731010] mt-6 max-w-[99vw] mb-2">
+        Every game listed in this page have same working mechanism. Same requirement, and you can play them alone as well.
+    </p>
+
+    <div>
+        <section id="anime" class="game-card rounded-3xl overflow-hidden bg-[#731010] border border-[var(--sayori-border)]">
+            <header class="card-header px-8 py-12">
+                <div class="card-symbol">
+                    💖
+                </div>
+                <h2 class="text-2xl text-[var(--sayori-lavender-bright)]">Anime trivia</h2>
+                <p class="card-tagline">
+                    Your friend claims to be the biggest fan of your favourite anime? Challenge them by taking a competitive quiz against them.
+                </p>
+            </header>
+            <div class="px-8 pb-8 space-y-10">
+                <section>
+                    <h3 class="flex items-center gap-2 text-xl font-semibold mb-4">🎮 How to Play</h3>
+                    <p class="text-[var(--sayori-muted)] leading-8">
+                        Sayori will send a question in the chat and also mention the user who need to answer it. The the mentioned user failed to answer the question and timer runs out. Boom, you lose one heart.
+                    </p>
+                </section>
+                <section>
+
+                    <h3 class="flex items-center gap-2 text-xl font-semibold mb-4">Anime Lists</h3>
+                    <p class="text-[var(--sayori-muted)] mt-5 leading-8">
+                        If you want to play a specific Anime.
+                    </p>
+
+                    <div class="flex flex-wrap gap-3">
+                        <span class="game-chip">🧟‍♀️ Attack on titan</span>
+                        <span class="game-chip">🔗 Chainsaw Man</span>
+                        <span class="game-chip">🍎 Deathnote</span>
+                        <span class="game-chip">🧟‍♀️ Demon Slayer</span>
+                        <span class="game-chip">🔗 Jujutsu Kaisen</span>
+                        <span class="game-chip">🍎 My hero Academia</span>
+                        <span class="game-chip">🥷🏾 Naruto</span>
+                        <span class="game-chip">🏴‍☠️ One piece</span>
+                        <span class="game-chip">🕵🏾‍♂️ SpyxFamily</span>
+                    </div>
+
+                    <p class="text-[var(--sayori-muted)] mt-5 leading-8">
+                        write the name of the anime, you want to play in <code>anime_name</code> option to have only that anime in the play.
+                    </p>
+                </section>
+                <section>
+
+                    <h3 class="flex items-center gap-2 text-xl font-semibold mb-4">⌨ Commands</h3>
+                    <div class="flex flex-wrap gap-3">
+                        <button class="copy-command p-2 rounded" data-command="/animetrivia">
+                            /animetrivia
+                        </button>
+                    </div>
+                </section>
+                <section>
+                    <h3 class="flex items-center gap-2 text-xl font-semibold">How to use the commands?</h3>
+                    <ul class="space-y-3 text-[var(--sayori-muted)]">
+                        <li>type <code>/animetrivia anime_name: &lt;anime name&gt; heart: &lt;number&gt;</code> to start the
+                            quiz only of your favourite anime.</li>
+                        <li>To check the scores: <code>/animetrivia status</code></li>
+                        <li>To have more that one anime, you can use the prefix command
+                            <code>!animetrivia start anime1,anime2,...</code>
+                        </li>
+                    </ul>
+                </section>
+            </div>
+        </section>
+        <div class="min-h-[3px]"></div>
+        <section id="country" class="game-card rounded-3xl overflow-hidden bg-[#731010] border border-[var(--sayori-border)]">
+            <header class="card-header px-8 py-12">
+                <div class="card-symbol">
+                    🌏
+                </div>
+                <h2 class="text-2xl text-[var(--sayori-lavender-bright)]">Country trivia</h2>
+                <p class="card-tagline">
+                    Challenge your friend and check who have more knowledge about different countries, their culture;languages and many more things.
+                </p>
+            </header>
+
+            <div class="px-8 pb-8 space-y-10">
+                <section>
+                    <h3 class="flex items-center gap-2 text-xl font-semibold mb-4">🎮 How to Play</h3>
+                    <p class="text-[var(--sayori-muted)] leading-8">
+                        So, you and your friend need to join the game. Once you are all in, Sayori will start asking questions one by one. The one who loses all their heart gets eliminated. The last entity standing wins. <br>
+                        Stop laughing at <code>entity</code>, you are one of the enitity.
+                    </p>
+                </section>
+                <section>
+                    <h3 class="flex items-center gap-2 text-xl font-semibold mb-4">⌨ Commands</h3>
+                    <div class="flex flex-wrap gap-3">
+                        <button class="copy-command p-2 rounded" data-command="/countrytrivia">
+                            /countrytrivia
+                        </button>
+                    </div>
+                </section>
+
+                <section>
+                    <h3 class="flex items-center gap-2 text-xl font-semibold"> More content:</h3>
+                    <ul class="space-y-3 text-[var(--sayori-muted)]">
+                        <li>- Typing all this is hard, and the only way of survivng is using dry humour on the website and just to amuse myself, I added a section called more content and it's just me yapping.</li>
+                    </ul>
+                </section>
+            </div>
+        </section>
+        <!-- <div class="min-h-[3px]"></div>
+        <section id="gk"
+            class="game-card rounded-3xl overflow-hidden bg-[#731010] border border-[var(--sayori-border)]">
+            <header class="card-header px-8 py-12">
+                <div class="card-symbol">
+                    🧠
+                </div>
+                <h2 class="text-2xl text-[var(--sayori-lavender-bright)]">General knowledge trivia</h2>
+                <p class="card-tagline">
+                    Trivia Night, which feels like an actual trivia night. Cool!
+                </p>
+            </header>
+
+            <div class="px-8 pb-8 space-y-10">
+                <section>
+                    <h3 class="flex items-center gap-2 text-xl font-semibold mb-4">🎮 How to Play</h3>
+                    <p class="text-[var(--sayori-muted)] leading-8">
+                        Very simple, only answer when the bot pinged you. That's the question she want you to answer.
+                    </p>
+                </section>
+                <section>
+
+                    <h3 class="flex items-center gap-2 text-xl font-semibold mb-4">⌨ Command</h3>
+                    <div class="flex flex-wrap gap-3">
+                        <button class="copy-command p-2 rounded" data-command="/gktrivia">
+                            /gktrivia
+                        </button>
+                    </div>
+                </section>
+                <section>
+                    <h3 class="flex items-center gap-2 text-xl font-semibold"> Useful knowledge bit:</h3>
+                    <ul class="space-y-3 text-[var(--sayori-muted)]">
+                        <li>- Do not google the answer. By the time you open the chat back to type in the answer you will notice that you turn is already over.</li>
+                        <li>- Source: Trust me bro. Happened with me too.</li>
+                    </ul>
+                </section>
+            </div>
+        </section> -->
+        <div class="min-h-[3px]"></div>
+        <section id="math" class="game-card rounded-3xl overflow-hidden bg-[#731010] border border-[var(--sayori-border)]">
+            <header class="card-header px-8 py-12">
+                <div class="card-symbol">
+                    🔢
+                </div>
+                <h2 class="text-2xl text-[var(--sayori-lavender-bright)]">Math trivia</h2>
+                <p class="card-tagline">
+                    Your friend circle consist of people who are literally walking calculator? Make them fight to win the game, and enjoy the chaos.
+                </p>
+            </header>
+
+            <div class="px-8 pb-8 space-y-10">
+                <section>
+                    <h3 class="flex items-center gap-2 text-xl font-semibold mb-4">🎮 How to Play</h3>
+                    <p class="text-[var(--sayori-muted)] leading-8">
+                        Not again. Same as everygame above.
+                        <a href="#anime">Click me to read from one of the game above.</a>
+                    </p>
+                </section>
+                <section>
+                    <h3 class="flex items-center gap-2 text-xl font-semibold mb-4">⌨ Commands</h3>
+                    <div class="flex flex-wrap gap-3">
+                        <button class="copy-command p-2 rounded" data-command="/mathtrivia">
+                            /mathtrivia
+                        </button>
+                    </div>
+                </section>
+
+                <section>
+                    <h3 class="flex items-center gap-2 text-xl font-semibold"> Tips</h3>
+                    <ul class="space-y-3 text-[var(--sayori-muted)]">
+                        <li>- Tips? From me. Sit with pen and paper.</li>
+                        <li>- A calculator will be a better option.</li>
+                    </ul>
+                </section>
+            </div>
+        </section>
+        <div class="min-h-[3px]"></div>
+    </div>
+    <div class="min-h-[6px]"></div>
+
+    <section id="coming-soon" class="mt-16 p-2">
+        <p class="section-kicker">
+            More Games
+        </p>
+        <h2 class="font-serif text-4xl mt-3">
+            Coming Soon
+        </h2>
+        <p class="hero-description mt-4 max-w-2xl">
+            Nothing hurts in giving a sneak peek.
+        </p>
+        <div class="grid gap-5 md:grid-cols-3 mt-10">
+            <article
+                class="rounded-3xl p-6 bg-[#731010a3] border border-dashed border-[var(--sayori-border)] transition duration-200 hover:-translate-y-1 hover:border-[var(--sayori-lavender)] cursor-pointer">
+                <span
+                    class="inline-flex items-center rounded-full px-3 py-1 text-xs tracking-widest uppercase bg-[rgba(185,163,230,.08)] text-[var(--sayori-orange)]">
+                    Form
+                </span>
+                <h3 class="font-serif text-3xl mt-5">
+                    Do you have a cool trivia game idea?
+                </h3>
+                <p class="text-[var(--sayori-muted)] leading-8 mt-4">
+                    Drop your ideas in the form provided.
+                </p>
+                <a class="sayori-btn sayori-btn-secondary bg-[#731010]"
+                    href="https://forms.gle/w36x89tjFFxE32rY8 ">Form!</a>
+            </article>
+        </div>
+    </section>
+
+</main>

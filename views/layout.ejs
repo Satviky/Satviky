@@ -36,28 +36,25 @@
             <meta name="twitter:image" content="<%= meta.ogImage %>" />
 
 
-            <%
-                let safeSchema = null;
-
-                try {
-                if (schema && typeof schema === "object") {
-                    safeSchema = JSON.stringify(schema);
-                }
-                } catch (e) {
-                safeSchema = null;
-                }
-                %>
+            <% let safeSchema=null; try { if (schema && typeof schema==="object" ) { safeSchema=JSON.stringify(schema);
+                } } catch (e) { safeSchema=null; } %>
 
                 <% if (safeSchema) { %>
-                <script type="application/ld+json">
+                    <script type="application/ld+json">
                     <%- safeSchema %>
                 </script>
-                <% } %>
+                    <% } %>
 
-            <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@unocss/reset/tailwind.min.css" />
-            <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-            <link rel="stylesheet" href="/css/layout.css">
-            <link rel="stylesheet" href="/css/animation.css">
+                    <% if (brand==='sayori' ) { %>
+                        <link rel="stylesheet" href="/css/sayori.css">
+                    <% } %>
+
+                    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+                    <link rel="stylesheet" href="/css/layout.css">
+                    <link rel="stylesheet" href="/css/animation.css">
+                    
+                    
+                    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@unocss/reset/tailwind.min.css" />
 </head>
 
 <body class="<%= brand %>">
@@ -72,18 +69,49 @@
 
 
                                 <!-- this logic is incomplete -->
-                                <% if (typeof progressType !=='undefined' && progressType===true) { %>
-                                    <%- include('components/progCircle', { type: brand }) %>
-                                        <% } %>
+                    <% if (typeof progressType !=='undefined' && progressType===true) { %>
+                        <%- include('components/progCircle', { type: brand }) %>
+                            <% } %>
 
-                                            <%- body %>
+                                <%- body %>
 
-                                                <!-- ... and then load the runtime -->
-                                                <script src="https://cdn.jsdelivr.net/npm/@unocss/runtime"></script>
-                                                <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-                                                <script>
+                                    <!-- ... and then load the runtime -->
+                                    <script src="https://cdn.jsdelivr.net/npm/@unocss/runtime"></script>
+                                    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+                                    <script>
                                                     AOS.init();
-                                                </script>
+                                    </script>
+
+                                    <script>
+                                                    document.addEventListener("click", async (e) => {
+
+                                                        const button = e.target.closest(".copy-command");
+
+                                                        if (!button) return;
+
+                                                        const command = button.dataset.command;
+                                                        const original = button.textContent;
+
+                                                        try {
+                                                            await navigator.clipboard.writeText(command);
+                                                            button.textContent = "✓ Copied";
+                                                            button.classList.add("is-copied");
+                                                            setTimeout(() => {
+                                                                button.textContent = original;
+                                                                button.classList.remove("is-copied");
+                                                            }, 1500);
+                                                        } catch {
+                                                            button.textContent = "Copy failed";
+                                                            setTimeout(() => {
+                                                                button.textContent = original;
+                                                            }, 1500);
+                                                        }
+                                                    });
+                                    </script>
+
+<% if (brand==='sayori' ) { %>
+<script src="/js/explore.js"></script>
+<% } %>
 
 </body>
 

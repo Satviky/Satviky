@@ -1,0 +1,152 @@
+<style>
+    .official-glow {
+        position: absolute;
+        inset: -120px;
+        background: radial-gradient(circle, rgba(185, 163, 230, .2)0%, transparent 70%);
+        filter: blur(90px);
+        animation: glow 10s ease-in-out infinite;
+        pointer-events: none
+    }
+
+    @keyframes glow {
+
+        0%,
+        100% {
+            transform: translate(-30px, -20px);
+            opacity: .45
+        }
+
+        50% {
+            transform: translate(40px, 25px);
+            opacity: .75
+        }
+    }
+
+    @keyframes pulse {
+
+        0%,
+        100% {
+            opacity: .5;
+            transform: scale(.9)
+        }
+
+        50% {
+            opacity: 1;
+            transform: scale(1.15)
+        }
+    }
+
+    .online-dot {
+        width: .65rem;
+        height: .65rem;
+        background: #4ade80;
+        border-radius: 9999px;
+        display: inline-block;
+        animation: pulse 2s infinite
+    }
+
+    .online-avatar {
+        width: 2.75rem;
+        height: 2.75rem;
+        border-radius: 9999px;
+        border: 2px solid #2b2542;
+        margin-left: -10px;
+        transition: .2s;
+        cursor: pointer
+    }
+
+    .online-avatar:first-child {
+        margin-left: 0
+    }
+
+    .online-avatar:hover {
+        transform: translateY(-4px) scale(1.08);
+        z-index: 5
+    }
+</style>
+<main class="py-24">
+    <h1>hello, this page is under construction</h1>
+    <section class="text-center mb-16">
+        <p class="uppercase tracking-[0.3em] text-[var(--sayori-orange)] text-sm">
+            Community
+        </p>
+        <h1 class="font-serif text-[clamp(3rem,8vw,5rem)] mt-4">
+            Discover New Servers
+        </h1>
+        <p class="max-w-3xl mx-auto mt-6 leading-8 text-[var(--sayori-muted)]">
+            Server's where Sayori is actively used are displayed below.
+        </p>
+        <a href="https://forms.gle/hcrbutCiCKS8fyEp6"
+            class="inline-block mt-8 rounded-full bg-[var(--sayori-orange)] text-black font-semibold px-8 py-3 transition hover:scale-105">
+            Request your Server
+        </a>
+    </section>
+    <section class="relative overflow-hidden rounded-4xl border border-[var(--sayori-border)] bg-[#161226] p-8">
+        <div class="official-glow"></div>
+        <div class="relative z-10">
+            <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-6">
+                <div class="flex items-center gap-5"> <img id="server-icon" src="/images/ssz.gif"
+                        class="w-22 h-22 rounded-[28px] border border-[var(--sayori-border)] object-cover">
+                    <div>
+                        <div class="flex items-center gap-3">
+                            <h2 id="server-name" class="font-serif text-4xl">Shadowveil StudioZ</h2>
+
+                        </div>
+                        <div class="flex items-center gap-6 mt-3 text-[var(--sayori-muted)]">
+                            <div class="flex items-center gap-2">
+                                <span class="online-dot"></span><span id="online-count">20</span><span>Online</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex flex-col gap-2 justify-end items-end">
+                    <span
+                        class="rounded-full bg-[rgba(255,170,70,.18)] px-3 py-1 text-xs tracking-widest max-w-[fit-content]">OFFICIAL</span>
+                    <a id="join-btn" href="#"
+                        class="rounded-2xl bg-[var(--sayori-orange)] text-black px-6 py-3 font-semibold transition hover:scale-105">Join the Chaos →</a>
+                </div>
+            </div>
+            <p class="mt-8 max-w-3xl leading-8 text-[var(--sayori-muted)]">Shadowveil studioz is official home for Sayori where her new features are tested and new surprises are dropped almost every week, sometimes month. We try to be regular and host frequent mafia nights and GTA games. <br />
+            We maybe are high on chaos, but we are still a friendly community who tend to keep environment peaceful and welcoming for everyone.</p>
+            <div class="flex flex-wrap gap-3 mt-8">
+                <span class="rounded-full bg-[#2b2542] px-4 py-2">Community</span>
+                    <span class="rounded-full bg-[#2b2542] px-4 py-2">Chaos</span>
+                    <span class="rounded-full bg-[#2b2542] px-4 py-2">Events</span>
+            </div>
+            <div class="mt-8">
+                <p id="online-title" class="text-sm text-[var(--sayori-muted)] mb-4">Currently causing discord:</p>
+                <div id="online-users" class="flex items-center -space-x-3"></div>
+            </div>
+        </div>
+    </section>
+</main>
+
+<script>
+    const joinTexts = ["Join the Chaos →", "Come Say Hi →", "Proceed at Your Own Risk →", "Become Part of the Lore →", "Definitely No Bugs Here →", "One More Member Won't Hurt →", "Join Before Sayori Finds You →", "Welcome to the Asylum →"];
+    document.getElementById("join-btn").textContent = joinTexts[Math.floor(Math.random() * joinTexts.length)];
+
+    function animateCounter(id, end) { const e = document.getElementById(id); let n = 0; const i = Math.max(1, Math.ceil(end / 40)); const t = setInterval(() => { n += i; if (n >= end) { n = end; clearInterval(t) } e.textContent = n }, 20) }
+
+    fetch("https://discord.com/api/guilds/989942565908389908/widget.json").then(r => r.json()).then(data => {
+        document.getElementById("server-name").textContent = data.name;
+        document.getElementById("join-btn").href = data.instant_invite;
+        animateCounter("online-count", data.presence_count);
+
+        const c = document.getElementById("online-users");
+        c.innerHTML = "";
+        data.members.slice(0, 8).forEach(m => {
+            const img = document.createElement("img");
+            img.src = m.avatar_url;
+            img.title = m.username;
+            img.className = "online-avatar";
+            c.appendChild(img);
+        });
+
+        if (data.members.length > 8) {
+            const more = document.createElement("div");
+            more.className = "w-11 h-11 rounded-full bg-[#2b2542] flex items-center justify-center text-sm ml-2";
+            more.textContent = `+${data.members.length - 8}`;
+            c.appendChild(more);
+        }
+    });
+</script>

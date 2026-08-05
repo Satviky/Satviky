@@ -1,0 +1,510 @@
+<main class="sayori-home">
+    <section class="sayori-section pt-16 lg:pt-24">
+        <div class="max-w-[1180px] mx-auto px-5">
+            <p class="hero-eyebrow">CATEGORY</p>
+            <h1 class="font-serif text-[clamp(3rem,8vw,5.5rem)] leading-[0.92] mt-4">
+                Games:
+                <span class="text-[#e8a77b]">
+                    Teas
+                </span>
+            </h1>
+
+            <p class="hero-description mt-6 max-w-2xl">
+                Tea games is fast rapid fire format games filled qith questions from the category you choose.
+            </p>
+
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mt-12">
+
+                <div class="game-stat bg-[#371600]">
+                    <span>Games</span>
+                    <strong>7</strong>
+                </div>
+
+                <div class="game-stat bg-[#371600]">
+                    <span>Players</span>
+                    <strong>1-∞</strong>
+                </div>
+
+                <div class="game-stat bg-[#371600]">
+                    <span>Commands</span>
+                    <strong>7+</strong>
+                </div>
+
+                <div class="game-stat bg-[#371600]">
+                    <span>Status</span>
+                    <strong>Active</strong>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sidebar -->
+    <aside class="hidden lg:block">
+        <div class="sticky top-8">
+            <div class="sidebar-card bg-[#371600]">
+                <p class="section-kicker">Games</p>
+                <nav class="mt-6 space-y-2">
+                    <a href="#anime" class="sidebar-link hover:bg-[#e8a77b] hover:color-[#ee2500]">
+                        💖 Anime tea
+                    </a>
+                    <a href="#country" class="sidebar-link hover:bg-[#e8a77b] hover:color-[#ee2500]">
+                        🌏Country Tea
+                    </a>
+                    <a href="#geo" class="sidebar-link hover:bg-[#e8a77b] hover:color-[#ee2500]">
+                        🌍Geo Tea
+                    </a>
+                    <a href="#gk" class="sidebar-link hover:bg-[#e8a77b] hover:color-[#ee2500]">
+                        🧠General knowledge Tea
+                    </a>
+                    <a href="#jumble" class="sidebar-link hover:bg-[#e8a77b] hover:color-[#ee2500]">
+                        🧩Jumble Tea
+                    </a>
+                    <a href="#math" class="sidebar-link hover:bg-[#e8a77b] hover:color-[#ee2500]">
+                        🔢Math Tea
+                    </a>
+                    <a href="#science" class="sidebar-link hover:bg-[#e8a77b] hover:color-[#ee2500]">
+                        🧪Science Tea
+                    </a>
+
+                    <a href="#coming-soon" class="sidebar-link hover:color-[#ee2500]">
+                        ＋ More Coming Soon
+                    </a>
+                </nav>
+                <div class="mt-8 pt-6 border-t border-[var(--sayori-border)]">
+
+                    <p class="text-sm text-[var(--sayori-muted)]">
+                        Need a specific command?
+                    </p>
+                    <a href="?explore" class="sayori-btn mt-4">
+                        📖 Gamebook
+                    </a>
+                </div>
+            </div>
+        </div>
+    </aside>
+    <div class="hidden lg:block min-h-[8px]"></div>
+
+    <!-- Only visible on mobile -->
+    <div class="lg:hidden mb-10 max-w-[99vw]">
+        <select
+            class="w-[99vw] max-w-[99vw] bg-[#371600] border border-[var(--sayori-border)] rounded-xl p-4 text-[var(--sayori-text)]"
+            onchange="location.hash=this.value">
+            <option value="">Browse Games</option>
+            <option value="anime"> Anime Tea </option>
+            <option value="country"> Country Tea </option>
+            <option value="geo"> Geo </option>
+            <option value="gk"> General knowledge </option>
+            <option value="jumble"> Jumble Tea </option>
+            <option value="math"> Math Tea </option>
+            <option value="science"> Science Tea </option>
+        </select>
+    </div>
+    <p class="sidebar-card bg-[#371600] mt-6 max-w-[99vw] mb-2">
+        Every game listed in this page have same working mechanism. Same requirement, and you can play them alone as well. <br>
+        Game ends when you reach the score target or when someone uses the <code>/endgame</code> command.
+    </p>
+
+    <div>
+        <section id="anime" class="game-card rounded-3xl overflow-hidden bg-[#371600] border border-[var(--sayori-border)]">
+            <header class="card-header px-8 py-12">
+                <div class="card-symbol">
+                    💖
+                </div>
+                <h2 class="text-2xl text-[var(--sayori-lavender-bright)]">Anime Tea</h2>
+                <p class="card-tagline">
+                    Think you know about your favourite anime. Take a short quiz.
+                </p>
+            </header>
+            <div class="px-8 pb-8 space-y-10">
+                <section>
+                    <h3 class="flex items-center gap-2 text-xl font-semibold mb-4">🎮 How to Play</h3>
+                    <p class="text-[var(--sayori-muted)] leading-8">
+                        Sayori will send a question in the chat. The first one to send the right answer gets the point.
+                    </p>
+                </section>
+                <section>
+                    <p class="text-[var(--sayori-muted)] mt-5 leading-8">
+                        If no one answers for 7 consecutive questions, them the game ends on it's own.
+                    </p>
+                </section>
+                <section>
+
+                    <h3 class="flex items-center gap-2 text-xl font-semibold mb-4">Anime Lists</h3>
+                    <p class="text-[var(--sayori-muted)] mt-5 leading-8">
+                        If you want to play a specific Anime.
+                    </p>
+
+                    <div class="flex flex-wrap gap-3">
+                        <span class="game-chip">🧟‍♀️ Attack on titan</span>
+                        <span class="game-chip">🔗 Chainsaw Man</span>
+                        <span class="game-chip">🍎 Deathnote</span>
+                        <span class="game-chip">🧟‍♀️ Demon Slayer</span>
+                        <span class="game-chip">🔗 Jujutsu Kaisen</span>
+                        <span class="game-chip">🍎 My hero Academia</span>
+                        <span class="game-chip">🥷🏾 Naruto</span>
+                        <span class="game-chip">🏴‍☠️ One piece</span>
+                        <span class="game-chip">🕵🏾‍♂️ SpyxFamily</span>
+                    </div>
+
+                    <p class="text-[var(--sayori-muted)] mt-5 leading-8">
+                        write the name of the anime, you want to play in <code>anime_name</code> option to have only
+                        that anime in the play.
+                    </p>
+                </section>
+                <section>
+
+                    <h3 class="flex items-center gap-2 text-xl font-semibold mb-4">⌨ Commands</h3>
+                    <div class="flex flex-wrap gap-3">
+                        <button class="copy-command p-2 rounded" data-command="/animetea">
+                            /animetea
+                        </button>
+                        <button class="copy-command p-2 rounded" data-command="/endgame">
+                            /endgame
+                        </button>
+                    </div>
+                </section>
+                <section>
+                    <h3 class="flex items-center gap-2 text-xl font-semibold">How to use the commands?</h3>
+                    <ul class="space-y-3 text-[var(--sayori-muted)]">
+                        <li>type <code>/animetea anime_name: &lt;anime name&gt; pts: &lt;number&gt;</code> to start the
+                            quiz only of your favourite anime.</li>
+                        <li>To check the scores: <code>/animetea status</code></li>
+                        <li>To have more that one anime, you can use the prefix command
+                            <code>!animetea start anime1,anime2,...</code>
+                        </li>
+                    </ul>
+                </section>
+            </div>
+        </section>
+        <div class="min-h-[3px]"></div>
+        <section id="country" class="game-card rounded-3xl overflow-hidden bg-[#371600] border border-[var(--sayori-border)]">
+            <header class="card-header px-8 py-12">
+                <div class="card-symbol">
+                    🌏
+                </div>
+                <h2 class="text-2xl text-[var(--sayori-lavender-bright)]">Country Tea</h2>
+                <p class="card-tagline">
+                    Challenge your knowledge about countries.
+                </p>
+            </header>
+
+            <div class="px-8 pb-8 space-y-10">
+                <section>
+                    <h3 class="flex items-center gap-2 text-xl font-semibold mb-4">🎮 How to Play</h3>
+                    <p class="text-[var(--sayori-muted)] leading-8">
+                        Sayori will send a question related to something for which a country is famous or otherway
+                        around.
+                    </p>
+                </section>
+                <section>
+                    <h3 class="flex items-center gap-2 text-xl font-semibold mb-4">⌨ Commands</h3>
+                    <div class="flex flex-wrap gap-3">
+                        <button class="copy-command p-2 rounded" data-command="/countrytea">
+                            /countrytea
+                        </button>
+                        <button class="copy-command p-2 rounded" data-command="/endgame">
+                            /endgame
+                        </button>
+                    </div>
+                </section>
+
+                <section>
+                    <h3 class="flex items-center gap-2 text-xl font-semibold"> Tips</h3>
+                    <ul class="space-y-3 text-[var(--sayori-muted)]">
+                        <li>- If you don't know the answer, not a big deal just answer whatever you feel like. Maybe
+                            that will be your lucky guess.</li>
+                    </ul>
+                </section>
+            </div>
+        </section>
+        <div class="min-h-[3px]"></div>
+        <section id="geo" class="game-card rounded-3xl overflow-hidden bg-[#371600] border border-[var(--sayori-border)]">
+            <header class="card-header px-8 py-12">
+                <div class="card-symbol">
+                    🌍
+                </div>
+                <h2 class="text-2xl text-[var(--sayori-lavender-bright)]">Geo Tea</h2>
+                <p class="card-tagline">
+                    Very much similar to Country Tea, but a bit harder.
+                </p>
+            </header>
+
+            <div class="px-8 pb-8 space-y-10">
+                <section>
+                    <h3 class="flex items-center gap-2 text-xl font-semibold mb-4">🎮 How to Play</h3>
+                    <p class="text-[var(--sayori-muted)] leading-8">
+                        Sayori will send a question and you just have to answer it. The questions are harder than the country tea questions.
+                    </p>
+                </section>
+                <section>
+
+                    <h3 class="flex items-center gap-2 text-xl font-semibold mb-4">🎭 Roles</h3>
+
+                    <div class="flex flex-wrap gap-3">
+                        <span class="game-chip">Agent Black</span>
+                        <span class="game-chip">Agent Red</span>
+                        <span class="game-chip">Agent White</span>
+                    </div>
+
+                    <p class="text-[var(--sayori-muted)] mt-5 leading-8">
+                        Everyone describe their words, while trying to eliminate agent red and white.
+                    </p>
+                </section>
+                <section>
+
+                    <h3 class="flex items-center gap-2 text-xl font-semibold mb-4">⌨ Commands</h3>
+                    <div class="flex flex-wrap gap-3">
+                        <button class="copy-command p-2 rounded" data-command="/geotea">
+                            /geotea
+                        </button>
+                        <button class="copy-command p-2 rounded" data-command="/endgame">
+                            /endgame
+                        </button>
+                    </div>
+                </section>
+            </div>
+        </section>
+        <div class="min-h-[3px]"></div>
+        <section id="gk"
+            class="game-card rounded-3xl overflow-hidden bg-[#371600] border border-[var(--sayori-border)]">
+            <header class="card-header px-8 py-12">
+                <div class="card-symbol">
+                    🧠
+                </div>
+                <h2 class="text-2xl text-[var(--sayori-lavender-bright)]">General knowledge Tea</h2>
+                <p class="card-tagline">
+                    Have questions related to geography, science, sports, achivement, great leaders,etc.
+                </p>
+            </header>
+
+            <div class="px-8 pb-8 space-y-10">
+                <section>
+                    <h3 class="flex items-center gap-2 text-xl font-semibold mb-4">🎮 How to Play</h3>
+                    <p class="text-[var(--sayori-muted)] leading-8">
+                        Brush up your general knowledge and run the command. Bot will send a question and first to answer gets the point.
+                    </p>
+                </section>
+                <section>
+
+                    <h3 class="flex items-center gap-2 text-xl font-semibold mb-4">⌨ Command</h3>
+                    <div class="flex flex-wrap gap-3">
+                        <button class="copy-command p-2 rounded" data-command="/gktea">
+                            /gktea
+                        </button>
+                        <button class="copy-command p-2 rounded" data-command="/endgame">
+                            /endgame
+                        </button>
+                    </div>
+                </section>
+            </div>
+        </section>
+        <div class="min-h-[3px]"></div>
+        <section id="jumble" class="game-card rounded-3xl overflow-hidden bg-[#371600] border border-[var(--sayori-border)]">
+            <header class="card-header px-8 py-12">
+                <div class="card-symbol">
+                    🧩
+                </div>
+                <h2 class="text-2xl text-[var(--sayori-lavender-bright)]">Jumble Tea</h2>
+                <p class="card-tagline">
+                    Bot will scramble a word and send it in the chat. First one to unscramble it and send the right word wins.
+                </p>
+            </header>
+
+            <div class="px-8 pb-8 space-y-10">
+                <section>
+                    <h3 class="flex items-center gap-2 text-xl font-semibold mb-4">🎮 How to Play</h3>
+                    <p class="text-[var(--sayori-muted)] leading-8">
+                        Sayori will send scrambbled word in the chat. The first one to send the right word obtained after unscrabmling the word, gets the point.
+                    </p>
+                </section>
+                <section>
+
+                    <h3 class="flex items-center gap-2 text-xl font-semibold mb-4">Category Lists</h3>
+                    <p class="text-[var(--sayori-muted)] mt-5 leading-8">
+                        If you want to play a specific Category.
+                    </p>
+
+                    <div class="flex flex-wrap gap-3">
+                        <span class="game-chip">🍕Foods</span>
+                        <span class="game-chip">🔗 Animal</span>
+                        <span class="game-chip">🍎 Country</span>
+                        <span class="game-chip">🧟‍♀️ Finance</span>
+                        <span class="game-chip">🔗 Fruit</span>
+                        <span class="game-chip">🍎 Science</span>
+                        <span class="game-chip">🥷🏾 Geography</span>
+                        <span class="game-chip">🏴‍☠️ Tools</span>
+                    </div>
+
+                    <p class="text-[var(--sayori-muted)] mt-5 leading-8">
+                        write the name of the category, you want to play in <code>Category</code> option to have only
+                        that anime in the play.
+                    </p>
+                </section>
+                <section>
+
+                    <h3 class="flex items-center gap-2 text-xl font-semibold mb-4">⌨ Commands</h3>
+                    <div class="flex flex-wrap gap-3">
+                        <button class="copy-command p-2 rounded" data-command="/jumbletea">
+                            /jumbletea
+                        </button>
+                        <button class="copy-command p-2 rounded" data-command="/endgame">
+                            /endgame
+                        </button>
+                    </div>
+                </section>
+                <section>
+                    <h3 class="flex items-center gap-2 text-xl font-semibold">How to use the commands?</h3>
+                    <ul class="space-y-3 text-[var(--sayori-muted)]">
+                        <li>type <code>/jumbletea Category: &lt;category name&gt; pts: &lt;number&gt;</code> to start the quiz only of your prefered category.</li>
+                        <li>To check the scores: <code>/jumbletea status</code></li>
+                        <li>To have more that one category, you can use the prefix command
+                            <code>!jumbletea start category1,category2...</code>
+                        </li>
+                    </ul>
+                </section>
+            </div>
+        </section>
+        <div class="min-h-[3px]"></div>
+        <section id="math" class="game-card rounded-3xl overflow-hidden bg-[#371600] border border-[var(--sayori-border)]">
+            <header class="card-header px-8 py-12">
+                <div class="card-symbol">
+                    🔢
+                </div>
+                <h2 class="text-2xl text-[var(--sayori-lavender-bright)]">Math Tea</h2>
+                <p class="card-tagline">
+                    Challenge your knowledge about countries.
+                </p>
+            </header>
+
+            <div class="px-8 pb-8 space-y-10">
+                <section>
+                    <h3 class="flex items-center gap-2 text-xl font-semibold mb-4">🎮 How to Play</h3>
+                    <p class="text-[var(--sayori-muted)] leading-8">
+                        Sayori will send a question related to something for which a country is famous or otherway
+                        around.
+                    </p>
+                </section>
+                <section>
+                    <h3 class="flex items-center gap-2 text-xl font-semibold mb-4">⌨ Commands</h3>
+                    <div class="flex flex-wrap gap-3">
+                        <button class="copy-command p-2 rounded" data-command="/mathtea">
+                            /mathtea
+                        </button>
+                        <button class="copy-command p-2 rounded" data-command="/endgame">
+                            /endgame
+                        </button>
+                    </div>
+                </section>
+
+                <section>
+                    <h3 class="flex items-center gap-2 text-xl font-semibold"> Tips</h3>
+                    <ul class="space-y-3 text-[var(--sayori-muted)]">
+                        <li>- If you don't know the answer, not a big deal just answer whatever you feel like. Maybe
+                            that will be your lucky guess.</li>
+                    </ul>
+                </section>
+            </div>
+        </section>
+        <div class="min-h-[3px]"></div>
+        <section id="science" class="game-card rounded-3xl overflow-hidden bg-[#371600] border border-[var(--sayori-border)]">
+            <header class="card-header px-8 py-12">
+                <div class="card-symbol">
+                    🧪
+                </div>
+                <h2 class="text-2xl text-[var(--sayori-lavender-bright)]">Science Tea</h2>
+                <p class="card-tagline">
+                    Science nerds, here you go!
+                </p>
+            </header>
+
+            <div class="px-8 pb-8 space-y-10">
+                <section>
+                    <h3 class="flex items-center gap-2 text-xl font-semibold mb-4">🎮 How to Play</h3>
+                    <p class="text-[var(--sayori-muted)] leading-8">
+                        If you read about games above, you probably know what I am going to write here now, don't you? I can easily copy paste the lines from above and call it a day... but why not give this category a feel and a vibe?
+                    </p>
+                    <p class="text-[var(--sayori-muted)] leading-8">
+                        Yeah, I know these lines have nothing to do with how to play, but it's quit simple predict the answer and win.
+                    </p>
+                </section>
+                <section>
+
+                    <h3 class="flex items-center gap-2 text-xl font-semibold mb-4">subcategories?</h3>
+
+                    <div class="flex flex-wrap gap-3">
+                        <span class="game-chip">Error 404:</span>
+                        <span class="game-chip">Subcategories not found</span>
+                    </div>
+
+                    <p class="text-[var(--sayori-muted)] mt-5 leading-8">
+                        You can say that I gave special focus to it. But you can't deny the fact that I did the work right. Commands are right, and the vibe is perfect.
+                    </p>
+                </section>
+                <section>
+
+                    <h3 class="flex items-center gap-2 text-xl font-semibold mb-4">⌨ Commands</h3>
+                    <div class="flex flex-wrap gap-3">
+                        <button class="copy-command p-2 rounded" data-command="/sciencetea">
+                            /sciencetea
+                        </button>
+                        <button class="copy-command p-2 rounded" data-command="/endgame">
+                            /endgame
+                        </button>
+                    </div>
+                </section>
+                <section>
+                    <h3 class="flex items-center gap-2 text-xl font-semibold">How to use the commands?</h3>
+                    <ul class="space-y-3 text-[var(--sayori-muted)]">
+                        This time I am going to be little serious. Or maybe not.
+                        <li>Run the command.</li>
+                        <li>Answer the question.</li>
+                        <li>win the game.</li>
+                        Wasn't it too simple?
+                    </ul>
+                    Hey, I told you that it is simple.
+                </section>
+                <section class="rounded-2xl border border-[var(--sayori-border)] p-6 bg-[#2b1401]">
+                <p class="section-kicker">Liked the content?</p>
+                <h3 class="font-serif text-3xl mt-3">Loved the dry humour?</h3>
+                <p class="text-[var(--sayori-muted)] mt-4 leading-8">
+                    Join the Sayori's support server and meet the person behind the script for yourself.
+                </p>
+                <a href="https://discord.gg/bcCs3PE86q" class="sayori-btn bg-[#eaa088] mt-6">
+                    Join Server →
+                </a>
+            </section>
+            </div>
+        </section>
+    </div>
+    <div class="min-h-[6px]"></div>
+
+    <section id="coming-soon" class="mt-16 p-2">
+        <p class="section-kicker">
+            More Games
+        </p>
+        <h2 class="font-serif text-4xl mt-3">
+            Coming Soon
+        </h2>
+        <p class="hero-description mt-4 max-w-2xl">
+            Nothing hurts in giving a sneak peek.
+        </p>
+        <div class="grid gap-5 md:grid-cols-3 mt-10">
+            <article
+                class="rounded-3xl p-6 bg-[#2b1401] border border-dashed border-[var(--sayori-border)] transition duration-200 hover:-translate-y-1 hover:border-[var(--sayori-lavender)] cursor-pointer">
+                <span
+                    class="inline-flex items-center rounded-full px-3 py-1 text-xs tracking-widest uppercase bg-[rgba(185,163,230,.08)] text-[var(--sayori-orange)]">
+                    Form
+                </span>
+                <h3 class="font-serif text-3xl mt-5">
+                    Do you have a cool tea game idea?
+                </h3>
+                <p class="text-[var(--sayori-muted)] leading-8 mt-4">
+                    Drop your ideas in the form provided.
+                </p>
+                <a class="sayori-btn sayori-btn-secondary bg-[#eaa088]"
+                    href="https://forms.gle/w36x89tjFFxE32rY8 ">Form!</a>
+            </article>
+        </div>
+    </section>
+
+</main>

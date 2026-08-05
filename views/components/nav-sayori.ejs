@@ -1,24 +1,154 @@
+<div class="hidden lg:block">
+    <nav
+        class=" fixed top-4 left-1/2 -translate-x-1/2 z-[90] w-[min(1200px,96vw)] flex items-center justify-between rounded-full border border-[var(--sayori-border)] bg-[rgba(35,30,48,.38)] backdrop-blur-[6px] px-6 py-3 shadow-xl">
+        <a href="/shadowveil-studioz/sayori/"
+            class="font-serif text-2xl hover:text-[var(--sayori-lavender)] transition">
+            Sayori
+        </a>
+        <div class="flex items-center gap-3">
+            <div class="relative">
 
-<!-- Navbar -->
-<nav class="p-3 mb-2 d-flex justify-content-lg-between align-items-center no-phone">
-    <div class="my-name">Sayori</div>
-    <div class="nav-default">
-        <ul class="nav nav-underline">
-            <!-- <li class="nav-item"><a class="nav-link" href="/shadowveil-studioz/sayori">Home</a></li> -->
-            <li class="nav-item"><a class="nav-link" href="/shadowveil-studioz/sayori/privacy-policy">Privacy Policy</a>
-            </li>
-            <li class="nav-item"><a class="nav-link" href="/shadowveil-studioz/sayori/tos">Terms of Service</a></li>
-            <li class="nav-item add-btn"><a class="nav-link"
-                    href="https://discord.com/oauth2/authorize?client_id=1403392346053411029">Add me!</a></li>
-            <li class="nav-item join-btn"><a class="nav-link" href="https://discord.gg/sC6SQBd8As">Join Server!</a></li>
-        </ul>
+                <button id="categories-btn" class="rounded-full px-4 py-2 hover:bg-[var(--sayori-raised)] transition">
+
+                    Categories ▾
+
+                </button>
+
+                <div id="categories-menu"
+                    class=" hidden absolute top-full left-0 mt-3 w-64 rounded-2xl border border-[var(--sayori-border)] bg-[rgba(35,30,48,.9)] backdrop-blur-md overflow-hidden shadow-xl ">
+                    <a href="/shadowveil-studioz/sayori/guess-games"
+                        class="block px-5 py-3 hover:bg-[var(--sayori-raised)]"> 🎯 Guess </a>
+                    <a href="/shadowveil-studioz/sayori/tea-games"
+                        class="block px-5 py-3 hover:bg-[var(--sayori-raised)]"> ☕ Tea </a>
+                    <a href="/shadowveil-studioz/sayori/trivia-games"
+                        class="block px-5 py-3 hover:bg-[var(--sayori-raised)]"> 🧠 Trivia </a>
+                    <a href="/shadowveil-studioz/sayori/word-games"
+                        class="block px-5 py-3 hover:bg-[var(--sayori-raised)]"> 🔤 Word Games </a>
+                    <a href="/shadowveil-studioz/sayori/socialdeduction"
+                        class="block px-5 py-3 hover:bg-[var(--sayori-raised)]"> 🕵️ Social Deduction </a>
+                    <a href="/shadowveil-studioz/sayori/simplefun"
+                        class="block px-5 py-3 hover:bg-[var(--sayori-raised)]"> 🥳 Simple Fun </a>
+                </div>
+            </div>
+            <div class="relative">
+                <button id="resources-btn"
+                    class="rounded-full px-4 py-2 hover:bg-[var(--sayori-raised)] transition">Resources ▾</button>
+                <div id="resources-menu"
+                    class=" hidden absolute top-full left-0 mt-3 w-64 rounded-2xl border border-[var(--sayori-border)] bg-[rgba(35,30,48,.88)] backdrop-blur-md overflow-hidden shadow-xl ">
+                    <a href="/shadowveil-studioz/sayori/feedback"
+                        class="block px-5 py-3 hover:bg-[var(--sayori-raised)] transition"> 💡 Feedback </a>
+                    <a href="/shadowveil-studioz/sayori/featured-servers"
+                        class="block px-5 py-3 hover:bg-[var(--sayori-raised)] transition"> 🌐 Featured Servers </a>
+                    <a href="/shadowveil-studioz/sayori/changelog"
+                        class="block px-5 py-3 hover:bg-[var(--sayori-raised)] transition"> 📝 Changelog </a>
+                    <a href="/shadowveil-studioz/sayori/more-commands"
+                        class="block px-5 py-3 hover:bg-[var(--sayori-raised)] transition"> ⚙️ More Commands </a>
+                </div>
+            </div>
+        </div>
+        <div class="flex items-center gap-3">
+            <a href="/shadowveil-studioz/sayori/privacy-policy" class="text-sm hover:text-[var(--sayori-lavender)]">
+                Privacy Policy
+            </a>
+            <a href="/shadowveil-studioz/sayori/tos" class="text-sm hover:text-[var(--sayori-lavender)]"> ToS </a>
+            <a href="https://discord.com/oauth2/authorize?client_id=1403392346053411029"
+                class=" rounded-full bg-[var(--sayori-orange)] text-black px-4 py-2 font-medium transition hover:scale-105">
+                Add Me </a>
+            <a href="https://discord.gg/sC6SQBd8As"
+                class=" rounded-full bg-[var(--sayori-lavender)] px-4 py-2 font-medium transition hover:scale-105">Join
+                Server </a>
+        </div>
+    </nav>
+</div>
+<div class="lg:hidden">
+    <nav id="mobile-nav-btn"
+        class=" fixed top-4 left-1/2 -translate-x-1/2 z-[90] w-[94vw] rounded-full border border-[var(--sayori-border)] bg-[rgba(35,30,48,.45)] backdrop-blur-md px-5 py-3 flex items-center justify-between ">
+        <a
+            href="/shadowveil-studioz/sayori/"
+            class="font-serif text-xl">Sayori</a>
+        <button class="text-2xl">☰</button>
+    </nav>
+    <div
+        id="mobile-nav"
+        class=" hidden fixed inset-0 z-[100] bg-[rgba(20,18,30,.55)] backdrop-blur-xl ">
+        <div
+            class=" h-full overflow-y-auto p-8 space-y-6 ">
+            <div class="flex items-center justify-between">
+                <h2 class="font-serif text-3xl">Sayori</h2>
+                <button
+                    id="mobile-close"
+                    class="text-3xl">✕</button>
+            </div>
+            <hr class="border-[var(--sayori-border)]">
+            <button
+                id="mobile-cat-btn"
+                class="w-full text-left text-lg">Categories ▾</button>
+            <div
+                id="mobile-categories"
+                class="hidden ml-5 flex flex-col gap-4">
+                <a href="/shadowveil-studioz/sayori/guess-games">🎯 Guess</a>
+                <a href="/shadowveil-studioz/sayori/tea-games">☕ Tea</a>
+                <a href="/shadowveil-studioz/sayori/trivia-games">🧠 Trivia</a>
+                <a href="/shadowveil-studioz/sayori/word-games">🔤 Word Games</a>
+                <a href="/shadowveil-studioz/sayori/socialdeduction">🕵️ Social Deduction</a>
+                <a href="/shadowveil-studioz/sayori/simplefun">🥳 Simple Fun</a>
+            </div>
+            <button
+                id="mobile-resource-btn"
+                class="w-full text-left text-lg">Resources ▾</button>
+            <div
+                id="mobile-resources"
+                class="hidden ml-5 flex flex-col gap-4">
+                <a href="/shadowveil-studioz/sayori/feedback">💡 Feedback</a>
+                <a href="/shadowveil-studioz/sayori/featured-servers">🌐 Featured Servers</a>
+                <a href="/shadowveil-studioz/sayori/changelog">📝 Changelog</a>
+                <a href="/shadowveil-studioz/sayori/shadowpedia">📚 Shadowpedia</a>
+                <a href="/shadowveil-studioz/sayori/more-commands">⚙️ More Commands</a>
+            </div>
+            <hr class="border-[var(--sayori-border)]">
+            <div class="flex justify-between">
+                <a href="/shadowveil-studioz/sayori/privacy-policy">Privacy Policy</a>
+                <a href="/shadowveil-studioz/sayori/tos">Terms of Service</a>
+            </div>
+            <hr class="border-[var(--sayori-border)]">
+            <a href="https://discord.com/oauth2/authorize?client_id=1403392346053411029"
+                class="sayori-btn">Add Me</a>
+            <a href="https://discord.gg/sC6SQBd8As"
+                class="sayori-btn sayori-btn-secondary">Join Server</a>
+        </div>
     </div>
-</nav>
+</div>
 
-<!-- Navbar -->
-<nav class="gothic-nav d-flex justify-content-center align-items-center">
-    <a href="/shadowveil-studioz/sayori/privacy-policy" class="nav-icon" title="Privacy Policy">📜</a>
-    <a href="/shadowveil-studioz/sayori/tos" class="nav-icon" title="ToS">⚖️</a>
-    <a href="https://discord.com/oauth2/authorize?client_id=1403392346053411029" class="nav-icon" title="Add Me">➕</a>
-    <a href="https://discord.gg/CAzPpWJfmS" class="nav-icon" title="Join Discord">💬</a>
-</nav>
+
+<script>
+    function setupDropdown(buttonId, menuId) {
+        const button = document.getElementById(buttonId);
+        const menu = document.getElementById(menuId);
+
+        button.addEventListener("click", (e) => {
+            e.stopPropagation();
+            menu.classList.toggle("hidden");
+        });
+
+        document.addEventListener("click", () => {
+            menu.classList.add("hidden");
+        });
+    }
+
+    setupDropdown("categories-btn", "categories-menu");
+    setupDropdown("resources-btn", "resources-menu");
+</script>
+
+<script>
+    const mobileNav = document.getElementById("mobile-nav");
+    document
+        .getElementById("mobile-nav-btn")
+        .onclick = () => {
+            mobileNav.classList.remove("hidden");
+        };
+    document
+        .getElementById("mobile-close")
+        .onclick = () => {
+            mobileNav.classList.add("hidden");
+        };
+</script>

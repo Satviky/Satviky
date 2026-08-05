@@ -1,0 +1,416 @@
+<main class="sayori-home">
+    <section class="sayori-section pt-16 lg:pt-24">
+        <div class="max-w-[1180px] mx-auto px-5">
+            <p class="hero-eyebrow">CATEGORY</p>
+            <h1 class="font-serif text-[clamp(3rem,8vw,5.5rem)] leading-[0.92] mt-4">
+                SimpleFun:
+                <span class="text-[#FFD34E]">
+                    Two Player
+                </span>
+            </h1>
+
+            <p class="hero-description mt-6 max-w-2xl">
+                A lot of different types of games, which we were not able to fit in any other category but for exactly 2
+                players. Cuz, why should big group have all the fun? <br>
+                To be honest, some games are present in other category as well, but since they are casual and simple, we
+                decided to add them here as well. We were kind enough to add them at the end so you don't have to go
+                scrolling the section all over again.
+            </p>
+
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mt-12">
+
+                <div class="game-stat bg-[#562447]">
+                    <span>Games</span>
+                    <strong>5</strong>
+                </div>
+
+                <div class="game-stat bg-[#562447]">
+                    <span>Players</span>
+                    <strong>2</strong>
+                </div>
+
+                <div class="game-stat bg-[#562447]">
+                    <span>Commands</span>
+                    <strong>5+</strong>
+                </div>
+
+                <div class="game-stat bg-[#562447]">
+                    <span>Status</span>
+                    <strong>Active</strong>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sidebar -->
+    <aside class="hidden lg:block">
+        <div class="sticky top-8">
+            <div class="sidebar-card bg-[#562447]">
+                <p class="section-kicker">Games</p>
+                <nav class="mt-6 space-y-2">
+                    <a href="#bs" class="sidebar-link hover:bg-[#6A2E58] hover:text-[#FFD34E]">
+                        💥Battleship
+                    </a>
+                    <a href="#cf" class="sidebar-link hover:bg-[#6A2E58] hover:text-[#FFD34E]">
+                        🟡Connect4
+                    </a>
+                    <a href="#rps" class="sidebar-link hover:bg-[#6A2E58] hover:text-[#FFD34E]">
+                        📜Rock Paper Scissors
+                    </a>
+                    <a href="#ttt" class="sidebar-link hover:bg-[#6A2E58] hover:text-[#FFD34E]">
+                        ⭕Tictactoe
+                    </a>
+                    <a href="#wordlec" class="sidebar-link  hover:bg-[#6A2E58] hover:text-[#FFD34E]">
+                        🔡 Wordle Challenge
+                    </a>
+                    <a href="#coming-soon" class="sidebar-link hover:text-[#FFD34E]">
+                        ＋ More Coming Soon
+                    </a>
+                </nav>
+                <div class="mt-8 pt-6 border-t border-[var(--sayori-border)]">
+
+                    <p class="text-sm text-[var(--sayori-muted)]">
+                        Need a specific command?
+                    </p>
+                    <a href="?explore" class="sayori-btn mt-4">
+                        📖 Gamebook
+                    </a>
+                </div>
+            </div>
+        </div>
+    </aside>
+    <div class="hidden lg:block min-h-[8px]"></div>
+
+    <!-- Only visible on mobile -->
+    <div class="lg:hidden mb-10 max-w-[99vw]">
+        <select
+            class="w-[99vw] max-w-[99vw] bg-[#562447] border border-[var(--sayori-border)] rounded-xl p-4 text-[var(--sayori-text)]"
+            onchange="location.hash=this.value">
+            <option value="">Browse Games</option>
+            <option value="bs"> 💥Battleship </option>
+            <option value="cf"> 🟡Connect4 </option>
+            <option value="rps"> 📜Rock Paper Scissors </option>
+            <option value="ttt"> ⭕Tictactoe </option>
+            <option value="wordlec"> 🔡Wordle Challenge </option>
+        </select>
+    </div>
+    <div>
+
+        <section id="bs"
+            class="game-card rounded-3xl overflow-hidden bg-[#562447] border border-[var(--sayori-border)]">
+            <header class="card-header px-8 py-12">
+                <div class="card-symbol">
+                    💥
+                </div>
+                <h2 class="text-2xl text-[var(--sayori-lavender-bright)]">Battleship</h2>
+                <p class="card-tagline">
+                    My favourite game from this section. it is game requiring strategy and decision making skills.
+                </p>
+            </header>
+
+            <div class="px-8 pb-8 space-y-10">
+                <section>
+                    <h3 class="flex items-center gap-2 text-xl font-semibold mb-4">
+                        🎮 How to Play
+                    </h3>
+
+                    <p class="text-[var(--sayori-muted)] leading-8">
+                        This game is played in the dm. No matter which channel you start.
+                        Both players secretly place their ships on the board by typing <code>attack &lt;cordinate_number&gt;</code>. During each turn,
+                        choose a coordinate to fire at using <code>attack &lt;co-ordinate_number&gt;</code>. A hit damages your opponent's fleet,
+                        while a miss simply ends your turn, because why not? Sink every enemy ship before yours are destroyed to win the battle.
+                    </p>
+
+                    <ul class="space-y-3 text-[var(--sayori-muted)]">
+                        <li>- Ships are hidden from your opponent.</li>
+                        <li>- Every turn you may attack one coordinate.</li>
+                        <li>- A successful hit reveals part of an enemy ship.</li>
+                        <li>- Sink every ship to win the match.</li>
+                        <li>- In the embed you can see the coordinates which you attacked on.</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h3 class="flex items-center gap-2 text-xl font-semibold mb-4">
+                        ⌨ Commands
+                    </h3>
+                    <div class="flex flex-wrap gap-3">
+                        <button class="copy-command p-2 rounded" data-command="!battleship">
+                            !battleship
+                        </button>
+                        <button class="copy-command p-2 rounded" data-command="rotate">
+                            rotate
+                        </button>
+                        <button class="copy-command p-2 rounded" data-command="place">
+                            place
+                        </button>
+                        <button class="copy-command p-2 rounded" data-command="attack">
+                            attack
+                        </button>
+                    </div>
+                </section>
+
+                <section>
+                    <h3 class="flex items-center gap-2 text-xl font-semibold"> Tips </h3>
+                    <ul class="space-y-3 text-[var(--sayori-muted)]">
+                        <li>- Spread your shots instead of attacking random nearby tiles.</li>
+                        <li>- Once you find part of a ship, check the surrounding tiles to locate the rest.</li>
+                        <li>- Since majority part of the game take place in Sayori's dms, you do not need to write the prefix before rotate, attack or place.</li>
+                    </ul>
+                </section>
+                <section>
+                    <h3 class="flex items-center gap-2 text-xl font-semibold"> How I play this! </h3>
+                    <ul class="space-y-3 text-[var(--sayori-muted)]">
+                        <li>- So, I try to figure out where and how I should place my fleet to make sure that opponent will literally have to cover 50% of the board before reaching my last ship.</li>
+                        <li>- Once I am ready, I wait for the opponent and then the game start.</li>
+                        <li>- I pick a random coordinate on left side, preferrably from first 3 columns. Then no matter hit or miss, I move toward left leaving three columns.
+                            <ul>
+                                <li>for example, I started with <code>attack d3</code>, my next move will be <code>attack d7</code></li>
+                                <li>Notice, there is 3 columns skipped.</li>
+                            </ul>
+                        </li>
+                        <li>A lot of time, you need to improvise your strategy midgame. A strategy works against one opponent but it doesn't guarantee then it can help you win against others as well.</li>
+                        <li>Best of luck.</li>
+                    </ul>
+                </section>
+            </div>
+        </section>
+        <div class="min-h-[3px]"></div>
+        <section id="cf"
+            class="game-card rounded-3xl overflow-hidden bg-[#562447] border border-[var(--sayori-border)]">
+            <header class="card-header px-8 py-12">
+                <div class="card-symbol">
+                    💥
+                </div>
+                <h2 class="text-2xl text-[var(--sayori-lavender-bright)]">Connect4</h2>
+                <p class="card-tagline">
+                    A good 2 player game with few lines and red and yellow dics.
+                </p>
+            </header>
+
+            <div class="px-8 pb-8 space-y-10">
+                <section>
+                    <h3 class="flex items-center gap-2 text-xl font-semibold mb-4">
+                        🎮 How to Play
+                    </h3>
+                    <p class="text-[var(--sayori-muted)] leading-8">
+                        Drop your coloured disc into one of the columns. The first player to connect
+                        four discs in a row wins. The line can be horizontal, vertical or diagonal. See, direction of
+                        line doesn't matter as long as it is straight.
+                    </p>
+                </section>
+                <section>
+                    <h3 class="flex items-center gap-2 text-xl font-semibold mb-4">
+                        ⌨ Commands
+                    </h3>
+                    <div class="flex flex-wrap gap-3">
+                        <button class="copy-command p-2 rounded" data-command="/connectfour">
+                            /connectfour
+                        </button>
+                    </div>
+                </section>
+                <section>
+                    <h3 class="flex items-center gap-2 text-xl font-semibold">
+                        Tips
+                    </h3>
+                    <ul class="space-y-3 text-[var(--sayori-muted)]">
+                        <li>- Control the centre columns as much possible. Trust me bro.</li>
+                        <li>- Don't only look for your own win, block your opponent too. Because you are watching
+                            opportunity, the opponent is too.</li>
+                    </ul>
+                </section>
+            </div>
+        </section>
+        <div class="min-h-[3px]"></div>
+        <section id="rps"
+            class="game-card rounded-3xl overflow-hidden bg-[#562447] border border-[var(--sayori-border)]">
+            <header class="card-header px-8 py-12">
+                <div class="card-symbol">
+                    📜
+                </div>
+                <h2 class="text-2xl text-[var(--sayori-lavender-bright)]">Rock Paper Scissor</h2>
+                <p class="card-tagline">
+                    Who doesn't know this game? Rock Paper Scissor shoot, and boom!
+                </p>
+            </header>
+
+            <div class="px-8 pb-8 space-y-10">
+                <section>
+                    <h3 class="flex items-center gap-2 text-xl font-semibold mb-4">
+                        🎮 How to Play
+                    </h3>
+                    <p class="text-[var(--sayori-muted)] leading-8">
+                        Both players secretly choose Rock, Paper or Scissors. Once both have made
+                        their choice, Sayori reveals the result and declares the winner.
+                        <br>
+                        More details?
+                        Come on man, I don't get paid enough to write a guide on 'how to play rps?', isn't it a common knowledge?
+                    </p>
+                </section>
+                <section>
+                    <h3 class="flex items-center gap-2 text-xl font-semibold mb-4">
+                        ⌨ Commands
+                    </h3>
+                    <div class="flex flex-wrap gap-3">
+                        <button class="copy-command p-2 rounded" data-command="/rps">
+                            /rps
+                        </button>
+                    </div>
+                </section>
+                <section>
+                    <h3 class="flex items-center gap-2 text-xl font-semibold">
+                        Things I assume you already know, but sie we are here, here's a quick reminder:
+                    </h3>
+                    <ul class="space-y-3 text-[var(--sayori-muted)]">
+                        <li>- Rock beats Scissors.</li>
+                        <li>- Scissors beats Paper.</li>
+                        <li>- Paper beats Rock.</li>
+                    </ul>
+                </section>
+            </div>
+        </section>
+        <div class="min-h-[3px]"></div>
+        <section id="ttt"
+            class="game-card rounded-3xl overflow-hidden bg-[#562447] border border-[var(--sayori-border)]">
+            <header class="card-header px-8 py-12">
+                <div class="card-symbol">
+                    ⭕
+                </div>
+                <h2 class="text-2xl text-[var(--sayori-lavender-bright)]">Tictactoe</h2>
+                <p class="card-tagline">
+                    Really? This game is stupid. Like there is no way to win this damn game. It always ends in a tie. What kind of game always ends in a tie?
+                    <br>
+                    Wait wait, you actually won the game against someone? Damn, you smartie pants.
+                </p>
+            </header>
+            <div class="px-8 pb-8 space-y-10">
+                <section>
+                    <h3 class="flex items-center gap-2 text-xl font-semibold mb-4">
+                        🎮 How to Play
+                    </h3>
+                    <p class="text-[var(--sayori-muted)] leading-8">
+                        Take turns placing your mark on the board. The first player to connect
+                        three marks in a row wins.
+                    </p>
+                </section>
+                <section>
+                    <h3 class="flex items-center gap-2 text-xl font-semibold mb-4">
+                        ⌨ Commands
+                    </h3>
+                    <div class="flex flex-wrap gap-3">
+                        <button class="copy-command p-2 rounded" data-command="/tictactoe">
+                            /tictactoe
+                        </button>
+                    </div>
+                </section>
+                <section>
+                    <h3 class="flex items-center gap-2 text-xl font-semibold">
+                        Tips
+                    </h3>
+                    <ul class="space-y-3 text-[var(--sayori-muted)]">
+                        <li>- The centre tile is usually the strongest opening move.</li>
+                        <li>- Always look one move ahead before placing your mark.</li>
+                    </ul>
+                </section>
+            </div>
+        </section>
+        <div class="min-h-[3px]"></div>
+        <section id="wordlec"
+            class="game-card rounded-3xl overflow-hidden bg-[#562447] border border-[var(--sayori-border)]">
+            <header class="card-header px-8 py-12">
+                <div class="card-symbol">
+                    🔠
+                </div>
+                <h2 class="text-2xl text-[var(--sayori-lavender-bright)]">Wordle Challenge</h2>
+                <p class="card-tagline">
+                    Too pro for wordle!
+                </p>
+                <div class="flex flex-wrap gap-3 mt-8">
+                    <div class="game-chip">
+                        👥 2
+                    </div>
+                    <div class="game-chip">
+                        ⏱ 1-10 min
+                    </div>
+                    <div class="game-chip">
+                        💬 Text
+                    </div>
+                </div>
+            </header>
+
+            <div class="px-8 pb-8 space-y-10">
+                <section>
+                    <h3 class="flex items-center gap-2 text-xl font-semibold mb-4">🎮 How to Play</h3>
+                    <p class="text-[var(--sayori-muted)] leading-8">
+                        Challenge your friend to play wordle with you. <br>
+                        Works exactly like wordle but you have to solve the puzzle in dm. <br>
+                        Whoever solves first, wins.
+                    </p>
+                </section>
+                <section>
+                </section>
+                <section>
+
+                    <h3 class="flex items-center gap-2 text-xl font-semibold mb-4">⌨ Commands</h3>
+                    <div class="flex flex-wrap gap-3">
+                        <button class="copy-command p-2 rounded" data-command="/wordlechallenge">
+                            /wordlechallenge
+                        </button>
+                    </div>
+                </section>
+                <section>
+                    <h3 class="flex items-center gap-2 text-xl font-semibold"> Tips</h3>
+                    <ul class="space-y-3 text-[var(--sayori-muted)]">
+                        <li>- Do not try a word with repeated letters on your first try.</li>
+                        <li>- Pay attention to the colours.</li>
+                    </ul>
+                </section>
+                <section class="rounded-2xl border border-[var(--sayori-border)] p-6 bg-[#470048] text-black">
+                    <p class="section-kicker">No friends to challenge,</p>
+                    <h3 class="font-serif text-3xl mt-3">Looking for someone to challege?</h3>
+                    <p class="text-[var(--sayori-muted)] mt-4 leading-8">
+                        We are ready to accept the challenge, just hop in.
+                    </p>
+                    <a href="https://discord.gg/bcCs3PE86q" class="sayori-btn game-btn-op bg-[#FFD34E] text-black mt-6">
+                        Discord server →
+                    </a>
+                </section>
+            </div>
+        </section>
+
+    </div>
+    <div class="min-h-[6px]"></div>
+
+    <section id="coming-soon" class="mt-16 p-2">
+        <p class="section-kicker">
+            More Games
+        </p>
+        <h2 class="font-serif text-4xl mt-3">
+            Coming Soon
+        </h2>
+        <p class="hero-description mt-4 max-w-2xl">
+            Nothing hurts in giving a sneak peek.
+        </p>
+        <div class="grid gap-5 md:grid-cols-3 mt-10">
+            <article
+                class="rounded-3xl p-6 bg-[#6A2E58] border border-dashed border-[var(--sayori-border)] transition duration-200 hover:-translate-y-1 hover:border-[var(--sayori-lavender)] cursor-pointer">
+                <span
+                    class="inline-flex items-center rounded-full px-3 py-1 text-xs tracking-widest uppercase bg-[rgba(185,163,230,.08)] text-[var(--sayori-orange)]">
+                    Form
+                </span>
+                <h3 class="font-serif text-3xl mt-5">
+                    Do you have a cool guessing game idea?
+                </h3>
+                <p class="text-[var(--sayori-muted)] leading-8 mt-4">
+                    Drop your ideas in the form provided.
+                </p>
+                <p class="text-[var(--sayori-muted)] leading-8 mt-4">
+                    It's always fun to hear new ideas.
+                </p>
+                <a class="sayori-btn sayori-btn-secondary bg-[#FFD34E] text-black"
+                    href="https://forms.gle/w36x89tjFFxE32rY8 ">Form!</a>
+            </article>
+        </div>
+    </section>
+
+</main>

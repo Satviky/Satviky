@@ -32,12 +32,20 @@ const lingoHomeKeywords = 'Lingo app, Lingo by Shadowveil Studioz, language lear
 const lingoPrivacyKeywords = 'Lingo privacy policy, Lingo app privacy, Lingo Shadowveil Studioz privacy policy, Lingo data policy';
 const lingoTosKeywords = 'Lingo terms, Lingo terms of service, Lingo Shadowveil Studioz terms, Lingo app terms';
 
-const sayoriHomeKeywords = 'Sayori bot, Sayori Discord bot, Shadowveil Studioz Sayori, interactive Discord bot, Discord bot games, Sayori bot features';
+const sayoriHomeKeywords = 'Sayori bot, Sayori Discord bot, Shadowveil Studioz Sayori, interactive Discord bot, Discord bot games, Sayori bot features, Sayori discord, mafia sayori, discovery';
 const sayoriPrivacyKeywords = 'Sayori privacy policy, Sayori bot privacy, Shadowveil Studioz Sayori privacy policy, Discord bot privacy policy';
 const sayoriTosKeywords = 'Sayori terms of service, Sayori bot terms, Shadowveil Studioz Sayori terms, Discord bot terms';
-const sayoriMafiaKeywords = 'Sayori mafia rules, mafia rules Discord bot, Sayori mafia game, Shadowveil Studioz mafia rules';
-const sayoriGtaKeywords = 'Guess the Agent, Sayori Guess the Agent, Shadowveil Studioz game, Sayori bot game';
+const sayoriSDKeywords = 'Sayori mafia rules, mafia rules Discord bot, Sayori mafia game, Shadowveil Studioz mafia rules, Sayori bot, targeter role in mafia, reviver roles, what does revenger do in mafia, what does targeter do in mafia, what does reviver do in mafia, how to become a mafia in sayori bot, how does detective inspect other people?';
 
+const sayoriMafiaKeywords = 'Sayori mafia rules, mafia rules Discord bot, Sayori mafia game, Shadowveil Studioz mafia rules, targeter role in mafia, reviver roles, what does revenger do in mafia, what does targeter do in mafia, what does reviver do in mafia, how to become a mafia in sayori bot';
+const sayoriGtaKeywords = 'Guess the Agent, Sayori Guess the Agent, Shadowveil Studioz game, Sayori bot game, how do I know if I am agent Red?, Is agent red imposter in gta?';
+
+const sGGKeywords = 'guess, sayori guess game, how to play guess game in sayori, guess the number game, guess word, guess the agent'
+const sWGKeywords = 'word games, sayori word games, wordle sayori, unlimited wordle, wordle challenge, how to challenge my friend for wordle?'
+const sTTKeywords = 'tea games, trivia games, anime tea, anime trivia, country tea, country trivia, geo tea, math tea, math trivia, general knowledge tea, general knowledge trivia, gktea, gktrivia, jumble tea, science tea, teacher sayori, sayori teacher mode, shadowveil studioz teas, satvikytea'
+const sSFKeywords = 'simple fun, casual, casual games on sayori, easy sayori games, multiplayer but easy games to play on Sayori'
+const shadowpediaSayoriKeywords =
+'Shadowpedia, Sayori, Shadowveil StudioZ, Sayori Discord bot, Shadowpedia encyclopedia, Sayori wiki, Shadowveil StudioZ products';
 const brandMetaDefaults = {
     personal: {
         author: 'Satvik Gupta',
@@ -469,6 +477,7 @@ app.get('/shadowveil-studioz/sayori', (req, res) => {
     renderPage(res, 'shadowveil-studioz/sayori/sayori', '/shadowveil-studioz/sayori', {
         brand: 'sayori',
         active: true,
+        
         meta: {
             title: 'Sayori',
             description: 'Sayori is an interactive Discord bot by Shadowveil Studioz with games, utility features, and social interactions.',
@@ -521,6 +530,58 @@ app.get('/shadowveil-studioz/sayori/tos', (req, res) => {
         }
     });
 });
+app.get('/shadowveil-studioz/sayori/feedback', (req, res) => {
+    renderPage(res, 'shadowveil-studioz/sayori/feedback', '/shadowveil-studioz/sayori/tos', {
+        brand: 'sayori',
+        active: true,
+        meta: {
+            title: 'Sayori - Feedback | Shadowveil Studioz',
+            description: 'Submit feedback and suggestions regarding Sayori - Discord bot by Shadowveil Studioz.',
+            keywords: sayoriHomeKeywords,
+            ogTitle: 'Sayori Feedbacks & Suggestions',
+            ogDescription: 'Submit feedbacks and sggestions regarding Sayori by Shadowveil Studioz.'
+        }
+    });
+});
+app.get('/shadowveil-studioz/sayori/featured-servers', (req, res) => {
+    renderPage(res, 'shadowveil-studioz/sayori/featured-servers', '/shadowveil-studioz/sayori/featured-servers', {
+        brand: 'sayori',
+        active: true,
+        meta: {
+            title: 'Sayori - Featred Servers | Shadowveil Studioz',
+            description: 'View and join servers featured by Sayori - Discord bot by Shadowveil Studioz.',
+            keywords: sayoriHomeKeywords,
+            ogTitle: 'Sayori Featured servers',
+            ogDescription: 'find a server to play Sayori on.'
+        }
+    });
+});
+app.get('/shadowveil-studioz/sayori/changelog', (req, res) => {
+    renderPage(res, 'shadowveil-studioz/sayori/changelog', '/shadowveil-studioz/sayori/changelog', {
+        brand: 'sayori',
+        active: true,
+        meta: {
+            title: 'Sayori - Changelog | Shadowveil Studioz',
+            description: 'Read the changelog and find how Sayori became the current Sayori you know.',
+            keywords: sayoriHomeKeywords,
+            ogTitle: 'Sayori Changelogs',
+            ogDescription: 'Read about the new updates and upcoming updates as well.'
+        }
+    });
+});
+app.get('/shadowveil-studioz/sayori/more-commands', (req, res) => {
+    renderPage(res, 'shadowveil-studioz/sayori/morecommands', '/shadowveil-studioz/sayori/morecommands', {
+        brand: 'sayori',
+        active: true,
+        meta: {
+            title: 'Sayori - Commands | Shadowveil Studioz',
+            description: 'Read about every non game command.',
+            keywords: sayoriHomeKeywords,
+            ogTitle: 'Sayori - Commands',
+            ogDescription: 'Read about the new updates and upcoming updates as well.'
+        }
+    });
+});
 
 app.get('/shadowveil-studioz/sayori/mafia/rules', (req, res) => {
     renderPage(res, 'shadowveil-studioz/sayori/mafia-rules', '/shadowveil-studioz/sayori/mafia/rules', {
@@ -548,6 +609,207 @@ app.get('/shadowveil-studioz/sayori/gta', (req, res) => {
             ogDescription: 'Play Guess the Agent through the Sayori experience by Shadowveil Studioz.'
         }
     });
+});
+
+app.get('/shadowveil-studioz/sayori/socialdeduction', (req, res) => {
+    renderPage(
+        res,
+        'shadowveil-studioz/sayori/sayori-games/socialdeduction',
+        '/shadowveil-studioz/sayori/socialdeduction',
+        {
+            brand: 'sayori',
+            active: true,
+            meta: {
+                title: 'Social Deduction Games - Sayori | Shadowveil Studioz',
+                description:
+                    'Explore social deduction games available in Sayori, including Mafia and Guess the Agent.',
+                keywords: sayoriSDKeywords,
+                ogTitle: 'Social Deduction Games | Sayori',
+                ogDescription:
+                    'Discover social deduction games available in Sayori.'
+            }
+        }
+    );
+});
+app.get('/shadowveil-studioz/sayori/word-games', (req, res) => {
+    renderPage(
+        res,
+        'shadowveil-studioz/sayori/sayori-games/wordgames',
+        '/shadowveil-studioz/sayori/wordgames',
+        {
+            brand: 'sayori',
+            active: true,
+            meta: {
+                title: 'Word Games - Sayori | Shadowveil Studioz',
+                description:
+                    'Explore word games available in Sayori, like guessword, wordchain, wordle.',
+                keywords: sWGKeywords,
+                ogTitle: 'Word Games | Sayori',
+                ogDescription:
+                    'Discover word games available in Sayori.'
+            }
+        }
+    );
+});
+app.get('/shadowveil-studioz/sayori/guess-games', (req, res) => {
+    renderPage(
+        res,
+        'shadowveil-studioz/sayori/sayori-games/guess',
+        '/shadowveil-studioz/sayori/guess',
+        {
+            brand: 'sayori',
+            active: true,
+            meta: {
+                title: 'Guess - Sayori | Shadowveil Studioz',
+                description:
+                    'Explore Guess games available in Sayori, like guessword, guess, guesstime, etc.',
+                keywords: sGGKeywords,
+                ogTitle: 'Guess Games | Sayori',
+                ogDescription:
+                    'Discover guessing games available in Sayori.'
+            }
+        }
+    );
+});
+app.get('/shadowveil-studioz/sayori/tea-games', (req, res) => {
+    renderPage(
+        res,
+        'shadowveil-studioz/sayori/sayori-games/tea',
+        '/shadowveil-studioz/sayori/tea',
+        {
+            brand: 'sayori',
+            active: true,
+            meta: {
+                title: 'Tea - Sayori | Shadowveil Studioz',
+                description:
+                    'Explore Tea games available in Sayori, like guessword, guess, guesstime, etc.',
+                keywords: sTTKeywords,
+                ogTitle: 'Tea Games | Sayori',
+                ogDescription:
+                    'Discover tea games available in Sayori. Tea games are rapid fire rounds which you can play alone or with your friends.'
+            }
+        }
+    );
+});
+app.get('/shadowveil-studioz/sayori/trivia-games', (req, res) => {
+    renderPage(
+        res,
+        'shadowveil-studioz/sayori/sayori-games/trivia',
+        '/shadowveil-studioz/sayori/trivia',
+        {
+            brand: 'sayori',
+            active: true,
+            meta: {
+                title: 'Trivia - Sayori | Shadowveil Studioz',
+                description:
+                    'Explore Tea games available in Sayori, like guessword, guess, guesstime, etc.',
+                keywords: sTTKeywords,
+                ogTitle: 'Trivia Games | Sayori',
+                ogDescription:
+                    'Discover trivia games available in Sayori.'
+            }
+        }
+    );
+});
+app.get('/shadowveil-studioz/sayori/simplefun/single-player', (req, res) => {
+    renderPage(
+        res,
+        'shadowveil-studioz/sayori/sayori-games/simplefnsp',
+        '/shadowveil-studioz/sayori/simplefunsp',
+        {
+            brand: 'sayori',
+            active: true,
+            meta: {
+                title: 'Simple Fun | Single player | Shadowveil Studioz - Sayori',
+                description:
+                    'Simple, easy to understand and casual games available on Sayori.',
+                keywords: sSFKeywords,
+                ogTitle: 'Simple Fun Games | Sayori',
+                ogDescription:
+                    'Discover Simple Fun games available in Sayori.'
+            }
+        }
+    );
+});
+app.get('/shadowveil-studioz/sayori/simplefun/two-player', (req, res) => {
+    renderPage(
+        res,
+        'shadowveil-studioz/sayori/sayori-games/simplefun2p',
+        '/shadowveil-studioz/sayori/simplefunsp',
+        {
+            brand: 'sayori',
+            active: true,
+            meta: {
+                title: 'Simple Fun | 2 player | Shadowveil Studioz - Sayori',
+                description:
+                    'Simple, easy to understand and casual games available on Sayori.',
+                keywords: sSFKeywords,
+                ogTitle: 'Simple Fun Games | Sayori',
+                ogDescription:
+                    'Discover Simple Fun games available in Sayori.'
+            }
+        }
+    );
+});
+app.get('/shadowveil-studioz/sayori/simplefun/multiplayer', (req, res) => {
+    renderPage(
+        res,
+        'shadowveil-studioz/sayori/sayori-games/simplefunmp',
+        '/shadowveil-studioz/sayori/simplefunsp',
+        {
+            brand: 'sayori',
+            active: true,
+            meta: {
+                title: 'Simple Fun | multiplayer | Shadowveil Studioz - Sayori',
+                description:
+                    'Simple, easy to understand and casual games available on Sayori.',
+                keywords: sSFKeywords,
+                ogTitle: 'Simple Fun Games | Sayori',
+                ogDescription:
+                    'Discover Simple Fun games available in Sayori.'
+            }
+        }
+    );
+});
+app.get('/shadowveil-studioz/sayori/simplefun', (req, res) => {
+    renderPage(
+        res,
+        'shadowveil-studioz/sayori/sayori-games/simplefun',
+        '/shadowveil-studioz/sayori/simple-fun',
+        {
+            brand: 'sayori',
+            active: true,
+            meta: {
+                title: 'Simple Fun | Shadowveil Studioz - Sayori',
+                description:
+                    'Choose between Single Player, Two Player and Multiplayer casual games available in Sayori.',
+                keywords: sSFKeywords,
+                ogTitle: 'Simple Fun | Sayori',
+                ogDescription:
+                    'Browse every Simple Fun game category available in Sayori.'
+            }
+        }
+    );
+});
+app.get('/shadowveil-studioz/shadowpedia/sayori', (req, res) => {
+    renderPage(
+        res,
+        'shadowveil-studioz/sayori/s-sayori',
+        '/shadowveil-studioz/sayori/s-sayori',
+        {
+            brand: 'sayori',
+            active: true,
+            meta: {
+                title: 'Sayori | Shadowpedia | Shadowveil Studioz',
+                description:
+                    'Shadowpedia is a cool encyclopedia featuring people, products and characters linked to shadowveil studioz.',
+                keywords: shadowpediaSayoriKeywords,
+                ogTitle: 'Shadowpedia',
+                ogDescription:
+                    'Read about Sayori on shadowpedia'
+            }
+        }
+    );
 });
 
 app.use((req, res) => {

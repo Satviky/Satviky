@@ -1,0 +1,394 @@
+<main class="sayori-home">
+    <section class="sayori-section pt-16 lg:pt-24">
+        <div class="max-w-[1180px] mx-auto px-5">
+            <p class="hero-eyebrow">CATEGORY</p>
+            <h1 class="font-serif text-[clamp(3rem,8vw,5.5rem)] leading-[0.92] mt-4">
+                Word
+                <span class="text-[#007d27]">
+                    Games
+                </span>
+            </h1>
+
+            <p class="hero-description mt-6 max-w-2xl">
+                Good vocabulary. A dictionary nerd?
+            </p>
+
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mt-12">
+
+                <div class="game-stat bg-[#01270deb]">
+                    <span>Games</span>
+                    <strong>4</strong>
+                </div>
+
+                <div class="game-stat bg-[#01270deb]">
+                    <span>Players</span>
+                    <strong>1-N</strong>
+                </div>
+                <div class="game-stat bg-[#01270deb]">
+                    <span>Commands</span>
+                    <strong>4+</strong>
+                </div>
+                <div class="game-stat bg-[#01270deb]">
+                    <span>Status</span>
+                    <strong>Active</strong>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sidebar -->
+    <aside class="hidden lg:block">
+        <div class="sticky top-8">
+            <!-- <div class="sidebar-card bg-[#787ce41c]"> -->
+            <div class="sidebar-card bg-[#01270deb]">
+                <p class="section-kicker">Games</p>
+                <nav class="mt-6 space-y-2">
+                    <a href="#gw" class="sidebar-link hover:bg-[#003a00] hover:color-[#00AF00]">
+                        🔍 GuessWord
+                    </a>
+                    <a href="#wc" class="sidebar-link hover:bg-[#003a00] hover:color-[#00AF00]">
+                        🔗 Wordchain
+                    </a>
+                    <a href="#wordle" class="sidebar-link hover:bg-[#003a00] hover:color-[#00AF00]">
+                        🔠 Wordle
+                    </a>
+                    <a href="#wordlec" class="sidebar-link hover:bg-[#003a00] hover:color-[#00AF00]">
+                        🔡 Wordle Challenge
+                    </a>
+
+                    <a href="#coming-soon" class="sidebar-link">
+                        ＋ More Coming Soon
+                    </a>
+                </nav>
+                <div class="mt-8 pt-6 border-t border-[var(--sayori-border)]">
+
+                    <p class="text-sm text-[var(--sayori-muted)]">
+                        Need a specific command?
+                    </p>
+                    <a href="?explore" class="sayori-btn mt-4">
+                        📖 Gamebook
+                    </a>
+                </div>
+            </div>
+        </div>
+    </aside>
+    <div class="hidden lg:block min-h-[8px]"></div>
+
+    <!-- Only visible on mobile -->
+    <div class="lg:hidden mb-10 max-w-[99vw]">
+        <select
+            class="w-[99vw] max-w-[99vw] bg-[#01270deb] border border-[var(--sayori-border)] rounded-xl p-4 text-[var(--sayori-text)]"
+            onchange="location.hash=this.value">
+            <option value="">Browse Games</option>
+            <option value="gw"> Guess Word </option>
+            <option value="wc"> Wordchain </option>
+            <option value="wordle"> Wordle </option>
+            <option value="wordlec"> Wordle Challenge </option>
+        </select>
+    </div>
+    <div>
+
+        <section id="gw"
+            class="game-card rounded-3xl overflow-hidden bg-[#01270deb] border border-[var(--sayori-border)]">
+            <header class="card-header px-8 py-12">
+                <div class="card-symbol">
+                    🔍
+                </div>
+                <h2 class="text-2xl text-[var(--sayori-lavender-bright)]">Guess Word</h2>
+                <p class="card-tagline">
+                    What's this word?
+                </p>
+                <div class="flex flex-wrap gap-3 mt-8">
+                    <div class="game-chip">
+                        👥 2–As many
+                    </div>
+                    <div class="game-chip">
+                        ⏱ 1-2 min
+                    </div>
+                    <div class="game-chip">
+                        💬 Text
+                    </div>
+                    <div class="game-chip">
+                        🔍 Hidden Word
+                    </div>
+
+                </div>
+
+            </header>
+
+            <div class="px-8 pb-8 space-y-10">
+                <section>
+                    <h3 class="flex items-center gap-2 text-xl font-semibold mb-4">🎮 How to Play</h3>
+                    <p class="text-[var(--sayori-muted)] leading-8">
+                        One of the player who reacted will be selected as hint giver. The job of hint giver is to describe their word as precisely as possible.
+                    </p>
+                </section>
+                <section>
+
+                    <h3 class="flex items-center gap-2 text-xl font-semibold mb-4">🎭 Roles</h3>
+
+                    <div class="flex flex-wrap gap-3">
+                        <span class="game-chip">Hint Giver</span>
+                        <span class="game-chip">Guessers</span>
+                    </div>
+
+                    <p class="text-[var(--sayori-muted)] mt-5 leading-8">
+                        Hint giver is supposed to give hints to make other guess what their word is.
+                    </p>
+                </section>
+                <section>
+
+                    <h3 class="flex items-center gap-2 text-xl font-semibold mb-4">⌨ Command</h3>
+                    <div class="flex flex-wrap gap-3">
+                        <button class="copy-command p-2 rounded" data-command="/guessword">
+                            /guessword
+                        </button>
+                    </div>
+                </section>
+                <section>
+                    <h3 class="flex items-center gap-2 text-xl font-semibold"> Tips</h3>
+                    <ul class="space-y-3 text-[var(--sayori-muted)]">
+                        <li>- Do not reveal your word directly in the chat.</li>
+                        <li>- Do not use fill in the blanks format.</li>
+                    </ul>
+                </section>
+            </div>
+        </section>
+        <div class="min-h-[3px]"></div>
+        <section id="wc" class="game-card rounded-3xl overflow-hidden bg-[#01270deb] border border-[var(--sayori-border)]">
+            <header class="card-header px-8 py-12">
+                <div class="card-symbol">
+                    🔗
+                </div>
+                <h2 class="text-2xl text-[var(--sayori-lavender-bright)]">Wordchain</h2>
+                <p class="card-tagline">
+                    dictionary Nerds, here you go?
+                </p>
+                <div class="flex flex-wrap gap-3 mt-8">
+                    <div class="game-chip">
+                        👥 2–Undefined
+                    </div>
+                    <div class="game-chip">
+                        ⏱ 1min to as long as you can.
+                    </div>
+                    <div class="game-chip">
+                        💬 Text
+                    </div>
+                </div>
+
+            </header>
+
+            <div class="px-8 pb-8 space-y-10">
+                <section>
+                    <h3 class="flex items-center gap-2 text-xl font-semibold mb-4">🎮 How to Play</h3>
+                    <p class="text-[var(--sayori-muted)] leading-8">
+                        Bot will prompt a play to type a word with the a letter.
+                        Now whatever the word theplayer wrote, the last letter need to be the first letter of next players word.
+                    </p>
+                </section>
+                <section>
+
+                    <h3 class="flex items-center gap-2 text-xl font-semibold mb-4">⚙️ Mode</h3>
+
+                    <div class="flex flex-wrap gap-3">
+                        <span class="game-chip">Easy</span>
+                        <span class="game-chip">Medium</span>
+                        <span class="game-chip">Hard</span>
+                        <span class="game-chip">Impossible</span>
+                    </div>
+
+                    <p class="text-[var(--sayori-muted)] mt-5 leading-8">
+                        Remember, last letter is first letter for the next player.
+                    </p>
+                </section>
+                <section>
+
+                    <h3 class="flex items-center gap-2 text-xl font-semibold mb-4">⌨ Command</h3>
+                    <div class="flex flex-wrap gap-3">
+                        <button class="copy-command p-2 rounded" data-command="/wc">
+                            /wc
+                        </button>
+                    </div>
+                </section>
+                <section>
+                    <h3 class="flex items-center gap-2 text-xl font-semibold"> Tips</h3>
+                    <ul class="space-y-3 text-[var(--sayori-muted)]">
+                        <li>- There are less number of words starting from x and y.</li>
+                        <li>- Make sure to check the minimum letters required as per the difficulty.</li>
+                    </ul>
+                </section>
+            </div>
+            <section class="rounded-2xl border border-[var(--sayori-border)] p-6 bg-[#1a3023]">
+                <p class="section-kicker">Want to know about modes?</p>
+                <h3 class="font-serif text-3xl mt-3">Here we go.</h3>
+                <p class="text-[var(--sayori-muted)] mt-4 leading-8">
+                    <strong>Easy:</strong> Almost impossible to end. Minimum 3 letters required.
+                </p>
+                <p class="text-[var(--sayori-muted)] mt-4 leading-8">
+                    <strong>Medium:</strong> Still very endless. Minimum 4 letters required.
+                </p>
+                <p class="text-[var(--sayori-muted)] mt-4 leading-8">
+                    <strong>Hard:</strong> Almost impossible to end. Minimum 6 letters required.
+                </p>
+                <p class="text-[var(--sayori-muted)] mt-4 leading-8">
+                    <strong>Impossible:</strong> Not really impoosible, minimum 8 letters required.
+                </p>
+                <a href="https://discord.gg/bcCs3PE86q" class="sayori-btn game-btn-op bg-[#a3e6a5] mt-6">
+                    Discord server →
+                </a>
+            </section>
+        </section>
+        <div class="min-h-[3px]"></div>
+        <section id="wordle" class="game-card rounded-3xl overflow-hidden bg-[#01270deb] border border-[var(--sayori-border)]">
+            <header class="card-header px-8 py-12">
+                <div class="card-symbol">
+                    🔠
+                </div>
+                <h2 class="text-2xl text-[var(--sayori-lavender-bright)]">Wordle</h2>
+                <p class="card-tagline">
+                    Up for a challenge?
+                </p>
+                <div class="flex flex-wrap gap-3 mt-8">
+                    <div class="game-chip">
+                        👥 1
+                    </div>
+                    <div class="game-chip">
+                        ⏱ 1-10 min
+                    </div>
+                    <div class="game-chip">
+                        💬 Text
+                    </div>
+                </div>
+            </header>
+
+            <div class="px-8 pb-8 space-y-10">
+                <section>
+                    <h3 class="flex items-center gap-2 text-xl font-semibold mb-4">🎮 How to Play</h3>
+                    <p class="text-[var(--sayori-muted)] leading-8">
+                        Type in a valid 5 letter word. Press enter. Use the coloured feedback to figure out the right answer.
+                        The colours tell speak a lot.
+                    </p>
+                </section>
+                <section>
+
+                    <h3 class="flex items-center gap-2 text-xl font-semibold mb-4">🎨 Colours</h3>
+
+                    <div class="flex flex-wrap gap-3">
+                        <span class="game-chip">Gray</span>
+                        <span class="game-chip">Yellow</span>
+                        <span class="game-chip">Green</span>
+                    </div>
+
+                    <p class="text-[var(--sayori-muted)] mt-5 leading-8">
+                        <strong>Gray:</strong> Simply not present in the word <br>
+                        <strong>Yellow:</strong> Present in the word but not in this position <br>
+                        <strong>Green:</strong> Word is present and is at right position
+                    </p>
+                </section>
+                <section>
+
+                    <h3 class="flex items-center gap-2 text-xl font-semibold mb-4">⌨ Commands</h3>
+                    <div class="flex flex-wrap gap-3">
+                        <button class="copy-command p-2 rounded" data-command="/wordle">
+                            /wordle
+                        </button>
+                    </div>
+                </section>
+                <section>
+                    <h3 class="flex items-center gap-2 text-xl font-semibold"> Tips</h3>
+                    <ul class="space-y-3 text-[var(--sayori-muted)]">
+                        <li>- Do not try a word with repeated letters on your first try.</li>
+                        <li>- Pay attention to the colours.</li>
+                    </ul>
+                </section>
+            </div>
+        </section>
+        <div class="min-h-[3px]"></div>
+        <section id="wordlec" class="game-card rounded-3xl overflow-hidden bg-[#01270deb] border border-[var(--sayori-border)]">
+            <header class="card-header px-8 py-12">
+                <div class="card-symbol">
+                    🔠
+                </div>
+                <h2 class="text-2xl text-[var(--sayori-lavender-bright)]">Wordle Challenge</h2>
+                <p class="card-tagline">
+                    Too pro for wordle!
+                </p>
+                <div class="flex flex-wrap gap-3 mt-8">
+                    <div class="game-chip">
+                        👥 2
+                    </div>
+                    <div class="game-chip">
+                        ⏱ 1-10 min
+                    </div>
+                    <div class="game-chip">
+                        💬 Text
+                    </div>
+                </div>
+            </header>
+
+            <div class="px-8 pb-8 space-y-10">
+                <section>
+                    <h3 class="flex items-center gap-2 text-xl font-semibold mb-4">🎮 How to Play</h3>
+                    <p class="text-[var(--sayori-muted)] leading-8">
+                        Challenge your friend to play wordle with you. <br>
+                        Works exactly like wordle but you have to solve the puzzle in dm. <br>
+                        Whoever solves first, wins.
+                    </p>
+                </section>
+                <section>
+                </section>
+                <section>
+
+                    <h3 class="flex items-center gap-2 text-xl font-semibold mb-4">⌨ Commands</h3>
+                    <div class="flex flex-wrap gap-3">
+                        <button class="copy-command p-2 rounded" data-command="/wordlechallenge">
+                            /wordlechallenge
+                        </button>
+                    </div>
+                </section>
+                <section>
+                    <h3 class="flex items-center gap-2 text-xl font-semibold"> Tips</h3>
+                    <ul class="space-y-3 text-[var(--sayori-muted)]">
+                        <li>- Do not try a word with repeated letters on your first try.</li>
+                        <li>- Pay attention to the colours.</li>
+                    </ul>
+                </section>
+                <section class="rounded-2xl border border-[var(--sayori-border)] p-6 bg-[#1a3023]">
+                <p class="section-kicker">No friends to challenge,</p>
+                <h3 class="font-serif text-3xl mt-3">Looking for someone to challege?</h3>
+                <p class="text-[var(--sayori-muted)] mt-4 leading-8">
+                    We are ready to accept the challenge, just hop in.
+                </p>
+                <a href="https://discord.gg/bcCs3PE86q" class="sayori-btn game-btn-op bg-[#a3e6a5] mt-6">
+                    Discord server →
+                </a>
+            </section>
+            </div>
+        </section>
+    </div>
+    <div class="min-h-[6px]"></div>
+
+    <section id="coming-soon" class="mt-16 p-2">
+        <p class="section-kicker">
+            More Games
+        </p>
+        <h2 class="font-serif text-4xl mt-3">
+            Coming Soon
+        </h2>
+        <p class="hero-description mt-4 max-w-2xl">
+            Sayori is constantly growing with new games, experiments, and community
+            ideas. Here's a small preview of what may arrive in future updates.
+        </p>
+        <div class="grid gap-5 md:grid-cols-2 xl:grid-cols-3 mt-10">
+            <article
+                class="rounded-3xl p-8 bg-[#01270deb] border border-dashed border-[var(--sayori-border)] transition duration-200 hover:-translate-y-1 hover:border-[var(--sayori-lavender)]">
+                <span
+                    class="inline-flex items-center rounded-full px-3 py-1 text-xs tracking-widest uppercase bg-[rgba(185,163,230,.08)] text-[var(--sayori-orange)]">
+                    🕸️ Almost here </span>
+                <h3 class="font-serif text-3xl mt-5">Wordweb</h3>
+                <p class="text-[var(--sayori-muted)] leading-8 mt-4">We are testing and doing final finishes for the game.</p>
+            </article>
+        </div>
+    </section>
+
+</main>
