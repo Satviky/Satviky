@@ -346,7 +346,7 @@ const exploreData = [
         category: "Word Game",
         url: "/shadowveil-studioz/sayori/word-games#wc",
         keywords: [
-            "dictionary", "spelling"
+            "dictionary", "spelling", "wordchain"
         ],
         commands: [
             "/wc"
@@ -523,20 +523,17 @@ function createExplore() {
                     type="text"
                     placeholder="Search games, commands or categories..."
                     class=" flex-1 bg-transparent outline-none text-lg ">
-                <span class=" rounded-lg border border-[var(--sayori-border)] px-3 py-1 text-xs text-[var(--sayori-muted)] ">
+                <span>
                     <button id="explore-close" class="rounded-lg border border-[var(--sayori-border)] px-3 py-1 text-xs text-[var(--sayori-muted)] transition duration-150 hover:bg-[rgba(185,163,230,.08)] hover:border-[var(--sayori-lavender)] hover:text-white active:scale-95">
                         ESC X
                     </button>
                 </span>
             </div>
-
             <div id="explore-results" class=" flex-1 overflow-y-auto p-3 space-y-2 "> </div>
 
             <div class=" flex items-center justify-between px-6 py-4 border-t border-[var(--sayori-border)] text-xs text-[var(--sayori-muted)] ">
                 <div> ↑ ↓ Navigate </div>
-
                 <div> ⏎ Open </div>
-
                 <div> <span class="rounded-md border px-2 py-1 text-[11px]">Esc</span> Close </div>
             </div>
         </div>
