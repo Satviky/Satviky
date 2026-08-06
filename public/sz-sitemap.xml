@@ -19,33 +19,117 @@
         <priority>0.8</priority>
     </url>
     <url>
-        <loc>https://www.gsatvik.in/shadowveil-studioZ#team</loc>
-        <lastmod>2026-03-22</lastmod>
-        <changefreq>daily</changefreq>
-        <priority>0.2</priority>
-    </url>
-    <url>
         <loc>https://gsatvik.in/contact</loc>
         <lastmod>2026-03-11</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.4</priority>
     </url>
     <url>
-        <loc>https://gsatvik.in/shadowveil-studioZ/lingo</loc>
+        <loc>https://gsatvik.in/shadowveil-studioz/lingo</loc>
         <lastmod>2026-01-02</lastmod>
         <changefreq>yearly</changefreq>
-        <priority>0.8</priority>
+        <priority>1</priority>
     </url>
     <url>
-        <loc>https://gsatvik.in/shadowveil-studioZ/sayori</loc>
-        <lastmod>2026-06-23</lastmod>
+        <loc>https://gsatvik.in/shadowveil-studioz/sayori</loc>
+        <lastmod>2026-08-06</lastmod>
         <changefreq>monthly</changefreq>
-        <priority>0.8</priority>
+        <priority>1</priority>
     </url>
     <url>
         <loc>https://gsatvik.in/lt</loc>
         <lastmod>2025-05-24</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://www.gsatvik.in/shadowveil-studioz/sayori/socialdeduction</loc>
+        <lastmod>2026-08-06</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+    </url>
+    <url>
+        <loc>https://www.gsatvik.in/shadowveil-studioz/sayori/tea-games</loc>
+        <lastmod>2026-08-06</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+    </url>
+    <url>
+        <loc>https://www.gsatvik.in/shadowveil-studioz/sayori/trivia-games</loc>
+        <lastmod>2026-08-06</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+    </url>
+    <url>
+        <loc>https://www.gsatvik.in/shadowveil-studioz/sayori/guess-games</loc>
+        <lastmod>2026-08-06</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+    </url>
+    <url>
+        <loc>https://www.gsatvik.in/shadowveil-studioz/sayori/word-games</loc>
+        <lastmod>2026-08-06</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+    </url>
+    <url>
+        <loc>https://www.gsatvik.in/shadowveil-studioz/sayori/simplefun</loc>
+        <lastmod>2026-08-06</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+    </url>
+    <url>
+        <loc>https://www.gsatvik.in/shadowveil-studioz/sayori/simplefun/single-player</loc>
+        <lastmod>2026-08-06</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://www.gsatvik.in/shadowveil-studioz/sayori/simplefun/two-player</loc>
+        <lastmod>2026-08-06</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://www.gsatvik.in/shadowveil-studioz/sayori/simplefun/multiplayer</loc>
+        <lastmod>2026-08-06</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://www.gsatvik.in/shadowveil-studioz/sayori/tos</loc>
+        <lastmod>2026-08-06</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.4</priority>
+    </url>
+    <url>
+        <loc>https://www.gsatvik.in/shadowveil-studioz/sayori/privacy-policy</loc>
+        <lastmod>2026-08-06</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.4</priority>
+    </url>
+    <url>
+        <loc>https://www.gsatvik.in/shadowveil-studioz/sayori/feedback</loc>
+        <lastmod>2026-08-06</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+    </url>
+    <url>
+        <loc>https://www.gsatvik.in/shadowveil-studioz/sayori/featured-servers</loc>
+        <lastmod>2026-08-06</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.4</priority>
+    </url>
+    <url>
+        <loc>https://www.gsatvik.in/shadowveil-studioz/sayori/changelog</loc>
+        <lastmod>2026-08-06</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://www.gsatvik.in/shadowveil-studioz/sayori/more-commands</loc>
+        <lastmod>2026-08-06</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
     </url>
 </urlset>
