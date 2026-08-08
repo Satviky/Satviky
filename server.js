@@ -60,7 +60,7 @@ const brandMetaDefaults = {
     sayori: {
         author: 'Shadowveil Studioz',
         keywords: sayoriHomeKeywords,
-        ogImage: '/images/op-ssz.png'
+        ogImage: '/images/sayori/sayori_phone.png'
     },
     none: {
         author: 'Shadowveil Studioz',
@@ -607,6 +607,19 @@ app.get('/shadowveil-studioz/sayori/gta', (req, res) => {
             keywords: sayoriGtaKeywords,
             ogTitle: 'Guess the Agent | Sayori',
             ogDescription: 'Play Guess the Agent through the Sayori experience by Shadowveil Studioz.'
+        }
+    });
+});
+app.get('/shadowveil-studioz/sayori/mafia', (req, res) => {
+    renderPage(res, 'shadowveil-studioz/sayori/sayori-games/mafia', '/shadowveil-studioz/sayori/mafia', {
+        brand: 'sayori',
+        active: true,
+        meta: {
+            title: 'Mafia guide | Shadowveil Studioz',
+            description: 'Mafia is a Sayori game experience by Shadowveil Studioz.',
+            keywords: sayoriGtaKeywords,
+            ogTitle: 'Mafia Guide | Sayori',
+            ogDescription: 'Play Mafia through the Sayori experience by Shadowveil Studioz.'
         }
     });
 });
