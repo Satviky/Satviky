@@ -138,4 +138,22 @@
         <changefreq>weekly</changefreq>
         <priority>0.7</priority>
     </url>
+    <url>
+        <loc>https://www.gsatvik.in/shadowveil-studioz/shadowpedia/kaddu</loc>
+        <lastmod>2026-08-11</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://www.gsatvik.in/shadowveil-studioz/shadowpedia/satviky</loc>
+        <lastmod>2026-08-11</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://www.gsatvik.in/shadowveil-studioz/shadowpedia/syst</loc>
+        <lastmod>2026-08-11</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.7</priority>
+    </url>
 </urlset>

@@ -548,7 +548,7 @@ app.get('/shadowveil-studioz/sayori/featured-servers', (req, res) => {
         brand: 'sayori',
         active: true,
         meta: {
-            title: 'Sayori - Featred Servers | Shadowveil Studioz',
+            title: 'Sayori - Featured Servers | Shadowveil Studioz',
             description: 'View and join servers featured by Sayori - Discord bot by Shadowveil Studioz.',
             keywords: sayoriHomeKeywords,
             ogTitle: 'Sayori Featured servers',
