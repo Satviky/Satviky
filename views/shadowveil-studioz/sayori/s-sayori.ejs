@@ -1,13 +1,32 @@
 <style>
     h1 {
         font-family: "Times New Roman", system-ui;
-        font-size: 8rem;
+        font-size: 2rem;
         border-bottom: 1px solid blueviolet;
     }
 
-    h1 {
-        font-family: "Times New Roman", system-ui;
-        font-size: larger;
+    h2 {
+        font-family: "Caveat Brush", 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 1.75rem;
+    }
+
+    h3 {
+        font-family: "Special Elite", system-ui;
+        font-size: 1.5rem;
+    }
+
+    .rb {
+        border-bottom: 1px solid var(--sayori-border);
+    }
+
+    .rd {
+        border-bottom: 1px solid var(--sayori-lavender);
+    }
+
+    @media (max-width: 620px) {
+        .contb{
+            width: 96vw;
+        }
     }
 </style>
 
@@ -23,7 +42,7 @@
         <section class="p-2">
             <h1>Sayori</h1>
             <div class="flex items-start flex-col lg:flex-row-reverse">
-                <div class="p-4 border border-[#202020] bg-[#12101b] min-w-[300px]">
+                <div class="p-4 border border-[#202020] bg-[#12101b] min-w-[300px] max-w-[320px]">
                     <table>
                         <tbody>
                             <tr>
@@ -46,7 +65,7 @@
                         </tbody>
                     </table>
                 </div>
-                <div class="p-2">
+                <div class="p-2 contb">
                     <div id="introduction">
                         Sayori is a game bot developed by Shadowveil Studioz. This bot was started as beta game bot to
                         test the games before adding it to their other bot L.I.N.G.O, but the plan was changed and it
@@ -55,8 +74,9 @@
                     <div>
                         <h2>History</h2>
                         <p>It all start in mid 2025, when Lingo was being buffed with unique features like friendship
-                            and popularity. The developer <a title="Satviky" href="#">Satviky</a> wanted to add games in the bot and <a
-                                title="Kaddu aka Saksham Gupta" href="#">Kaddu</a> volunteered to work on few games which can later be added on
+                            and popularity. The developer <a title="Satviky" href="#">Satviky</a> wanted to add games in
+                            the bot and <a title="Kaddu aka Saksham Gupta" href="#">Kaddu</a> volunteered to work on few
+                            games which can later be added on
                             L.I.N.G.O. <br> It is said that once the game were ready Satviky thought that making the
                             game bot, an actual bot will be profitable and that's where the Sayori came into the
                             picture.</p>
@@ -77,18 +97,26 @@
                                 players their roles.
                                 <ul>
                                     <li>The game starts, and mafia starts their killing spree.</li>
-                                    <li>One after another players are dying. Everybody need to team up to find the mafias and eliminate them before every innocent civilian is killed.</li>
-                                    <li>If the Mafia is the one one surviving then they win. If there is only one civilian left, then the victory goes to Mafias.</li>
-                                    <li>Some of the civilians have special roles, letting them do cool things in the game [mostly they get to use their powers once only except doctor]</li>
+                                    <li>One after another players are dying. Everybody need to team up to find the
+                                        mafias and eliminate them before every innocent civilian is killed.</li>
+                                    <li>If the Mafia is the one one surviving then they win. If there is only one
+                                        civilian left, then the victory goes to Mafias.</li>
+                                    <li>Some of the civilians have special roles, letting them do cool things in the
+                                        game [mostly they get to use their powers once only except doctor]</li>
                                 </ul>
                             </li>
-                            <li><strong>Guess The Agent:</strong>Find the imposter and win the game. This game also have multiple roles.
-                            <ol>
-                                <li><strong>Agent Red:</strong> They are the imposter, but they are not aware of this.</li>
-                                <li><strong>Agent Black:</strong>They are not the imposter</li>
-                                <li><strong>Agent White:</strong>They are the imposter and they are aware of this.</li>
-                            </ol></li>
-                            <li><strong>Guessword:</strong>Bot choses one of the person and then they get a word in DM. Hint giver explain the word to other players and whoever guesses it first, wins.</li>
+                            <li><strong>Guess The Agent:</strong>Find the imposter and win the game. This game also have
+                                multiple roles.
+                                <ol>
+                                    <li><strong>Agent Red:</strong> They are the imposter, but they are not aware of
+                                        this.</li>
+                                    <li><strong>Agent Black:</strong>They are not the imposter</li>
+                                    <li><strong>Agent White:</strong>They are the imposter and they are aware of this.
+                                    </li>
+                                </ol>
+                            </li>
+                            <li><strong>Guessword:</strong>Bot choses one of the person and then they get a word in DM.
+                                Hint giver explain the word to other players and whoever guesses it first, wins.</li>
                             <li>There are a lot of more games, but here was the top 3.</li>
                         </ol>
                         </p>

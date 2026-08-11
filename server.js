@@ -830,7 +830,7 @@ app.get('/shadowveil-studioz/shadowpedia/satviky', (req, res) => {
         'shadowpedia/satviky',
         '/shadowpedia/satviky',
         {
-            brand: 'ssz',
+            brand: 'sayori',
             active: true,
             meta: {
                 title: 'Satviky | Shadowpedia | Shadowveil Studioz',
@@ -850,7 +850,7 @@ app.get('/shadowveil-studioz/shadowpedia/kaddu', (req, res) => {
         'shadowpedia/kaddu',
         '/shadowpedia/kaddu',
         {
-            brand: 'ssz',
+            brand: 'sayori',
             active: true,
             meta: {
                 title: 'Kaddu | Shadowpedia | Shadowveil Studioz',
@@ -870,7 +870,7 @@ app.get('/shadowveil-studioz/shadowpedia/syst', (req, res) => {
         'shadowpedia/syst',
         '/shadowpedia/syst',
         {
-            brand: 'ssz',
+            brand: 'sayori',
             active: true,
             meta: {
                 title: 'Syst | Shadowpedia | Shadowveil Studioz',
