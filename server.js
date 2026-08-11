@@ -824,6 +824,66 @@ app.get('/shadowveil-studioz/shadowpedia/sayori', (req, res) => {
         }
     );
 });
+app.get('/shadowveil-studioz/shadowpedia/satviky', (req, res) => {
+    renderPage(
+        res,
+        'shadowpedia/satviky',
+        '/shadowpedia/satviky',
+        {
+            brand: 'ssz',
+            active: true,
+            meta: {
+                title: 'Satviky | Shadowpedia | Shadowveil Studioz',
+                description:
+                    'Shadowpedia is a cool encyclopedia featuring people, products and characters linked to shadowveil studioz.',
+                keywords: homeKeywords,
+                ogTitle: 'Shadowpedia',
+                ogDescription:
+                    'Read about Sayori on shadowpedia'
+            }
+        }
+    );
+});
+app.get('/shadowveil-studioz/shadowpedia/kaddu', (req, res) => {
+    renderPage(
+        res,
+        'shadowpedia/kaddu',
+        '/shadowpedia/kaddu',
+        {
+            brand: 'ssz',
+            active: true,
+            meta: {
+                title: 'Kaddu | Shadowpedia | Shadowveil Studioz',
+                description:
+                    'Shadowpedia is a cool encyclopedia featuring people, products and characters linked to shadowveil studioz.',
+                keywords: homeKeywords,
+                ogTitle: 'Shadowpedia',
+                ogDescription:
+                    'Read about Sayori on shadowpedia'
+            }
+        }
+    );
+});
+app.get('/shadowveil-studioz/shadowpedia/syst', (req, res) => {
+    renderPage(
+        res,
+        'shadowpedia/syst',
+        '/shadowpedia/syst',
+        {
+            brand: 'ssz',
+            active: true,
+            meta: {
+                title: 'Syst | Shadowpedia | Shadowveil Studioz',
+                description:
+                    'Shadowpedia is a cool encyclopedia featuring people, products and characters linked to shadowveil studioz.',
+                keywords: homeKeywords,
+                ogTitle: 'Shadowpedia',
+                ogDescription:
+                    'Read about Sayori on shadowpedia'
+            }
+        }
+    );
+});
 
 app.use((req, res) => {
     res.status(404);
