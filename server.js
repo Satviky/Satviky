@@ -884,6 +884,26 @@ app.get('/shadowveil-studioz/shadowpedia/syst', (req, res) => {
         }
     );
 });
+app.get('/shadowveil-studioz/shadowpedia/endeavour', (req, res) => {
+    renderPage(
+        res,
+        'shadowpedia/endeavour',
+        '/shadowpedia/endeavour',
+        {
+            brand: 'sayori',
+            active: true,
+            meta: {
+                title: 'Endeavour | Shadowpedia | Shadowveil Studioz',
+                description:
+                    'Shadowpedia is a cool encyclopedia featuring people, products and characters linked to shadowveil studioz.',
+                keywords: homeKeywords,
+                ogTitle: 'Shadowpedia',
+                ogDescription:
+                    'Read about Sayori on shadowpedia'
+            }
+        }
+    );
+});
 
 app.use((req, res) => {
     res.status(404);
