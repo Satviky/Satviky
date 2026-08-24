@@ -27,6 +27,33 @@ td {
   text-align: center;
 }
 
+.res h2 {
+  font-family: "Caveat Brush", 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 2rem;
+  font-weight: 400;
+}
+
+.res h3 {
+  font-family: "Special Elite", system-ui;
+  font-size: 1.5rem;
+}
+
+.res h4{
+  font-family: "Bree Serif", serif;
+  font-size: 1.25rem;
+}
+
+.caveat{
+  font-family: "Caveat Brush", 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.spel{
+  font-family: "Special Elite", system-ui;
+}
+
+.bree{
+  font-family: "Bree Serif", serif;
+}
+
 .sayori-home {
   background:
     radial-gradient(circle at 75% 8%,

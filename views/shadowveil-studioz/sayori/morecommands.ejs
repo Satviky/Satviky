@@ -1,4 +1,70 @@
-<main class="flex justify-center items-center min-h-[99vh]">
-    Half Time.
-    This page will be added later
+<main class="res py-24 px-4">
+    <section class="text-center mb-8">
+        <p class="uppercase tracking-[0.3em] text-[var(--sayori-orange)] text-sm">
+            Commands
+        </p>
+        <h1 class="font-serif text-[clamp(3rem,8vw,5rem)] mt-4">
+            Discover a few more commands.
+        </h1>
+        <p class="max-w-3xl mx-auto mt-6 leading-8 text-[var(--sayori-muted)]">
+            We couldn't find a way to place these commands on the website and this is why we have this page. It is not just 2 or 4 commands, but really a big set of commands.
+        </p>
+        
+    </section>
+    <section class="p-4">
+        <section id="help" class="p-2">
+            <h2>Help</h2>
+            <p>Help command is a general command, containing list of all the commands along with their basic descriptions.</p>
+            <button class="copy-command p-2 rounded" data-command="/help">
+                /help
+            </button>
+            <h3>How does this command actually help?</h3>
+            <p>using <code class="text-[var(--sayori-orange)]">/help</code> command opens a menu where you can navigate using the <code class="text-pink">Dropdown Menu</code> or the interactive <code class="text-pink">buttons</code>.</p>
+            <ul>
+                <li><strong>Page 0: Navigation</strong> The first page we see in the embed. It display list of the pages to make the navigation easier.</li>
+                <li><strong>Page 1: Guess games</strong> This page provides all the commands to the Guess games and to end them.</li>
+                <li><strong>Page 2: Social Deduction games</strong> The page provides all the information about the social deduction games present in the bot.</li>
+                <li><strong>Page 3: Tea games</strong> This page contain details about the tea games present in Sayori.</li>
+                <li><strong>Page 4: Trivia games</strong> This page contain details about the trivia games present in Sayori.</li>
+                <li><strong>Page 5: Simple Fun</strong> This page provides all the commands to start the simple games. Games in this categories are quick games with gameplay time ranging from 1-10 minutes.</li>
+                <li><strong>Page 6: Misc</strong> All other commands which do not belong to any pages mentioned above are listed in that page.</li>
+            </ul>
+        </section>
+        <section id="endgame" class="p-2">
+            <h2>Endgame</h2>
+            <p>A cool command used to end the run  ning games. Works for most of the game but doesn't work for a lot of games.</p>
+            <button class="copy-command p-2 rounded" data-command="/endgame">
+                /endgame
+            </button>
+            <p>If we be transparent for you, we made this command as general but felt too lazy to implement it for every game.</p>
+            <ul>
+                <ul class="py-2">
+                    <h3>Fun Fact about GTA's endgame</h3>
+                    <li>Using <code>!endgame</code> to stop GTA doesn't actually stop GTA immediately.</li>
+                    <li>If you run the command, you will notice that the collector stops only after completing that cycle, regardless of when you first run the command.</li>
+                    <li class="pt-2"><strong>When does the cycle end?</strong></li>
+                    <li>It ends when the voting phase should start. So, you don't get to see voting phase but everything before that is pretty much active.</li>
+                    <li class="text-[var(--sayori-muted)]">No. I am not making things up.</li>
+                </ul>
+                <div>
+                    <h3>Some Common questions [not FAQ];</h3>
+                    <h4>I was in a game and I ran the endgame command but bot said 'no games currently running in the channel'.</h4>
+                    <p>It is because we have not yet added the endgame function to this game.</p>
+                    <ul class="pb-4">
+                        <h5 class="caveat">What to do if endgame is not present?</h5>
+                        <li>You can inform us about that using the <code class="text-pink">/feedback</code> because sometimes we just forget that we have to add this function and it does not get added automatically.</li>
+                        <li>You can join the server and explain us the problem in person. We can remove the game from current running list.</li>
+                        <li>You can wait for the game to end. <p class="text-[var(--sayori-muted)]">Personally I prefer yelling at the main developer for not doing their part properly</p></li>
+                    </ul>
+                    <h4>How does the command work?</h4>
+                    <p>There is a function in the code of <code class="text-[var(--sayori-orange)]">/endgame</code> which deletes the game from the memory of Sayori. Every time we try to add a new game, we have to make a function which calls that function already present in <code class="text-[var(--sayori-orange)]">/endgame</code> to make the things work as they should.</p>
+                    <p>Sometimes it happens easily and sometimes we have situation like <code class="text-pink">GTA</code> but it is always fun to look forward.</p>
+                </div>
+            </ul>
+        </section>
+    </section>
+    <section class="min-h-[90vh] flex justify-center items-center">
+        Half Time.
+        This page will be added later
+    </section>
 </main>
