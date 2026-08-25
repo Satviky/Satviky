@@ -884,11 +884,11 @@ app.get('/shadowveil-studioz/shadowpedia/syst', (req, res) => {
         }
     );
 });
-app.get('/shadowveil-studioz/shadowpedia/endeavour', (req, res) => {
+app.get('/shadowveil-studioz/shadowpedia/endeavor', (req, res) => {
     renderPage(
         res,
-        'shadowpedia/endeavour',
-        '/shadowpedia/endeavour',
+        'shadowpedia/endeavor',
+        '/shadowpedia/endeavor',
         {
             brand: 'sayori',
             active: true,
