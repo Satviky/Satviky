@@ -3,19 +3,9 @@
         font-family: "Times New Roman", system-ui;
         font-size: 2rem;
     }
-
-    h2 {
-        font-family: "Caveat Brush", 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-        font-size: 1.75rem;
-    }
-
-    h3 {
-        font-family: "Special Elite", system-ui;
-        font-size: 1.5rem;
-    }
 </style>
-<main class="pt-24 px-4 lg:px-16">
-    <section class="text-center mb-16">
+<main class="res pt-24 px-4 lg:px-16">
+    <section class="text-center">
         <p class="uppercase tracking-[0.3em] text-[var(--sayori-orange)] text-sm">
             Guide
         </p>
@@ -26,8 +16,8 @@
             Everyone become a pro in a game, by knowing the details which no one else knows
         </p>
     </section>
-    <section>
-        <h2 class="pt-6">Roles:</h2>
+    <section class="py-2">
+        <h2>Roles:</h2>
         <ol>
             <li><strong>Civilians:</strong> They are the innocent people living in the town.</li>
             <li><strong>Mafia:</strong> Title charecter. Their main goal is to eliminate every civilian before they
@@ -43,23 +33,61 @@
             </li>
         </ol>
     </section>
+
+    <section class="py-2">
+        <h2>Win Condition</h2>
+        <ul>
+            <li>Civilians win when they vote out all the mafias present in the game.</li>
+            <li>Mafias win they eliminate all the civilians.</li>
+        </ul>
+    </section>
     
     <section>
-        <h2 class="pt-6">How to play</h2>
+        <h2>Getting Started</h2>
         <p>Because you need to know how a game works, before you play. Mafia is somethng which is not at all fun if played without understanding</p>
         <h3 class="pt-4">Creating Lobby</h3>
         <p>You can create the lobby using the command <code>/mafia</code></p>
-        <p>You will see an embed. If you have sayori premium, you can toggle roles from the setting embed.</p>
+        <p>You will see an embed <sup><a href="#embed">[1]</a></sup>. If you have sayori premium, you can toggle roles from the setting embed.</p>
         <p>
             Once the setting is confirmed, bot moves to the join embed, where you have to press the button titled
-            <code>join</code> to join the game. There are more buttons, but they are all self explainatory.
+            <code>join</code> to join the game.
         </p>
         <p>After this the bot DMs you that you have joined the mafia lobby.</p>
-        <h3 class="pt-4">Game Play</h3>
+        <div class="note">
+            <p class="px-2">
+                If you don't want to play, you can press the button titled <code>leave</code> to exit the game. <br>If you are lobby host then the host permissions will be transfered to the next user who joined. <br>
+            If everyone left then the lobby closes, ending the game safely.
+            </p>
+    </div>
+    </section>
+    <section id="embed">
+        <h2>Lobby Embed</h2>
+        <img title="Mafia lobby screenshot" src="/images/sayori/mafia-lobby.png" alt="An image showing a discord messege sent by a bot. The message contains an embed with 4 buttons. The embed's title says 'Mafia lobby' The embed also features the name of the lobby host, players joined, roles toggled on and information about the time asigned for day,night and voting phases. The buttons at bottom are titled as Join, Leave, Start and How to play">
+    </section>
+    <section>
+        <h3>Night Cycle</h3>
+        <p>The most important phase of the Game.</p>
+        <h3>What happened here?</h3>
+        <ul>
+            <li>Mafia choses a person to kill.</li>
+            <li>Doctor decided on who they are going to shield that night. [Of course they can't shield themselves.]</li>
+            <li>Detective do their inspection in night time as well.</li>
+            <li>Targeter doesn't do a thing but their role is also active during the night phase.</li>
+        </ul>
+        <h3>Day Cycle</h3>
+        <p>AKA the discussion time</p>
+        <ul>
+            <li>Player discuss about who they think the mafia is</li>
+            <li>Everyone casts their vote</li>
+        </ul>
+    </section>
+    <section class="py-2">
+        <h3 class="pt-4">Concise Game Play</h3>
         <p>When host starts, or the bot auto-start the game, you will recieve your role in DMs. Do not reveal your role
             in the chat.</p>
         <p>If you are mafia, you can start eliminating players, if you are civilian, then you should focus on everyone's
             behaviour and find out who the mafia is.</p>
+        <p>When Win Conditions are met, the game ends.</p>
         <p>Good luck playing.</p>
     </section>
 </main>

@@ -30,6 +30,13 @@ td {
 .res [id] {
   scroll-margin-top: 8rem;
 }
+.note{
+  padding: 4px;
+  background-color: var(--sayori-raised);
+  background: linear-gradient(to right, #211a30 40%, #f39a62);
+  border-left: 2px solid var(--sayori-orange);
+  color: var(--sayori-lavender-muted);
+}
 
 .res h2 {
   font-family: "Caveat Brush", 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
