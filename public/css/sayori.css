@@ -30,12 +30,39 @@ td {
 .res [id] {
   scroll-margin-top: 8rem;
 }
-.note{
+
+.content a{
+  color: var(--sayori-orange-soft);
+  transition: all ease 1s;
+}
+.content a:hover{
+  color: var(--sayori-orange);
+  font-size: large;
+}
+
+#ref a {
+  color: var(--sayori-orange-soft);
+  transition: all ease 1s;
+}
+
+#ref a:hover {
+  font-size: large;
+  color: var(--sayori-orange);
+}
+
+
+.note {
   padding: 4px;
   background-color: var(--sayori-raised);
   background: linear-gradient(to right, #211a30 40%, #f39a62);
   border-left: 2px solid var(--sayori-orange);
   color: var(--sayori-lavender-muted);
+}
+
+.quote {
+  /* background: var(--sayori-surface); */
+  background: linear-gradient(to bottom right, #796b91 50%, #f39a62);
+  border-left: 2px solid var(--sayori-lavender);
 }
 
 .res h2 {
@@ -49,19 +76,20 @@ td {
   font-size: 1.5rem;
 }
 
-.res h4{
+.res h4 {
   font-family: "Bree Serif", serif;
   font-size: 1.25rem;
 }
 
-.caveat{
+.caveat {
   font-family: "Caveat Brush", 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
-.spel{
+
+.spel {
   font-family: "Special Elite", system-ui;
 }
 
-.bree{
+.bree {
   font-family: "Bree Serif", serif;
 }
 
